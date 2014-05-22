@@ -1,0 +1,161 @@
+\chapter{Meson Spectra}
+To calculate the spectra of the radial excitations of the mesons, we examine the relevant terms from the string frame action (\ref{eqStringAction}),
+\be
+\cS_{meson}=-\frac{1}{16\pi G_5} \int d^5x \sqrt{-g} e^{-2\Phi}\mathrm{Tr}\left[ \left|DX\right|^2+V_m(\Phi,X^2,\mathcal{G})+\frac{1}{2g_5^2}\left(F_A^2 +F_V^2\right) \right].
+\label{eqMesonL}
+\ee
+The $2 \times 2$ scalar  field $X$ contains the scalar and pseudoscalar fields $(S,\pi)$, as well as the VEV.
+
+We find the equations of motion for the various meson fields by varying the meson action.
+For the vector and axial-vector fields, we  assume that the Kaluza-Klein modes are separable from the 4D parts of the fields.
+The equation of motion in the axial gauge $\Psi_5=0$  is given by
+\be
+-\partial_z^2\Psi_n+\omega'\partial_z\Psi_n +M_\Psi^2(z) \Psi_n=m^2_{\Psi_n}\Psi_n,
+\ee
+where $\omega=2\Phi(z)+log(z)$. 
+The $z$-dependent mass term coefficient $M^2_V=0$  for the vector field, and 
+\be
+M^2_A=\frac{g_5^2L^2\chi^2}{z^2}
+\ee
+for the axial field.
+The equation can be put in the Schr{\"o}dinger form with the substitution $\Psi_n=e^{\omega/2}\psi_n$, resulting in
+\be
+-\partial^2_z\psi_n+\left(\oneqt \omega^{'2}-\thalf\omega^{''}+M_\psi^2\right)\psi_n=m^2_{\Psi_n}\psi_n.
+\ee
+These equations are analytically solvable in the IR limit, but full analysis requires the use of a numerical shooting method to find the mass eigenvalues.
+This model finds a better phenomenological fit than the results presented in \cite{gherghetta-kelley}, particularly for the ground state $\rho$ meson, as shown in Figure \ref{figRho}. 
+The scalar mesons are expected to mix with the scalar glueball field of this model, and this analysis is not performed here. 
+
+\begin{figure}[htb]
+\center{\includegraphics[width=300pt]{axial.eps}}
+\caption{Comparison of the predicted mass eigenvalues for the axial-vector sector with the experimental $a_1$ meson spectrum \cite{PDG}.}
+\end{figure}
+
+\begin{table}[htb]
+\center
+\begin{tabular}{| c || c | c  |}
+\hline
+n & $a_1$ experimental (MeV) & $a_1$ model \\
+\hline
+1 & 1230$\pm$ 40 &	    	1280	 \\
+2 & 1647 $\pm$ 22 & 	1723	 \\
+3 & 1930  $^{+30}_{-70}$ & 1904\\
+4 & 2096 $\pm$ 122 &      2078	 \\ 
+5 & 2270 $^{+55}_{-40}$  & 2254\\
+\hline
+\end{tabular}
+\caption{The experimental and predicted values for the masses of the axial-vector mesons.}
+\label{tabAxial}
+\end{table}
+
+\begin{figure}[htb]
+\center{\includegraphics[width=300pt]{rho.eps}}
+\caption{Comparison of the predicted mass eigenvalues for the vector sector with the experimental $\rho$ meson spectrum \cite{PDG}.}
+\label{figRho}
+\end{figure}
+
+\begin{table}[htb]
+\center
+\begin{tabular}{| c || c | c  |}
+\hline
+n & $\rho$ experimental (MeV) & $\rho$ model \\
+\hline
+1 & 775.5 $\pm$  1 & 860	\\
+2 & 1282 $\pm$ 37 & 1216 \\
+3 & 1465 $\pm$ 25 & 1489 \\
+4 &  1720 $\pm$ 20 & 1720 \\ 
+5 &  1909 $\pm$ 30 & 1923 \\
+6 &  2149 $\pm$  17& 2107 \\
+7 &  2265 $\pm$  40& 2276 \\ 
+\hline
+\end{tabular}
+\caption{The experimental and predicted values for the masses of the vector mesons.}
+\label{tabRho}
+\end{table}
+
+\section{Pseudoscalar Sector}
+
+When using the exponential representation for the scalar field, the terms from the potential do not contribute to the equations of motion for the pion field.
+This can be easily seen by noting that $|X_e|^n$ does not contain any terms involving the $\pi_e$ field when $n$ is even. 
+We have required the potential to be an even function of $X$, so there are no such terms.
+This would seem to suggest that we use the exponential representation to calculate the pion mass spectrum.
+However, as noted in \cite{bartz-pions}, $\pi_e$ is extremely sensitive to boundary conditions, and the numerical results are not reliable.
+For this reason, we seek to work with an equation of motion written in the linear representation.
+
+For convenience, we begin by deriving the equations of motion in the exponential representation.
+Working in the axial gauge $A_z = 0$, we rewrite the axial meson field in terms of its perpendicular and longitudinal components: $A_\mu = A_{\mu\perp} +\partial_\mu \varphi$.
+Only the longitudinal component of the axial field, $\varphi$, contributes to the pion equations of motion.
+We use (\ref{eqMesonL}), keeping only the relevant terms
+\ba
+\cL = e^{-2\Phi} \sqrt{-g} [ \chi^2 (\partial_\mu \pi_e \partial^\mu \pi_e +  \partial_\mu \varphi \partial^\mu \varphi - 2 \partial_\mu \pi \partial^\mu \varphi +  \partial_z \pi_e \partial^z \pi_e)  \\ \nonumber
+ + \frac{1}{g_5^2}\partial_z \partial_\mu \varphi \partial^z\partial^\mu \varphi ].
+\ea
+
+Varying with respect to $\varphi$ yields
+\be
+e^{2\Phi} \partial_z \left(\frac{e^{-2\Phi}}{z}\partial_z \varphi \right) + \frac{g_5^2 \chi^2}{z^3}(\pi_e-\varphi)=0,
+\ee
+while varying $\pi_e$ gives
+\be
+\frac{e^{2\Phi} z^3}{\chi^2}\partial_z \left(\frac{e^{-2\Phi}\chi^2}{z^3} \partial_z \pi_e \right) +m_n^2(\pi_e-\varphi) = 0.
+\ee
+
+It was shown in \cite{bartz-pions} that the equations of motion are equivalent under the substitution $\pi_e \rightarrow \pi_l/\chi(z)$, so we make the appropriate substitution and expand the equations:
+\be
+- \varphi'' + \left(2\Phi'+\frac{1}{z}\right)\varphi' = \frac{g_5^2 \chi}{z^2}(\chi \varphi -\pi_l)
+\ee
+\be 
+-\pi_l'' + \left(2\Phi'+\frac{3}{z}\right)\pi_l' + \left(\chi''-2\chi' \Phi' - \frac{3 \chi'}{z}\right)\frac{\pi_l}{\chi} = m_n^2 (\pi_l - \chi \varphi).
+\ee
+We can put these equations into Sch{\"o}dinger-like form with the following substitutions
+\ba
+\varphi & = & e^{\omega/2}\varphi_n \\
+\pi_l & = & e^{\omega_s/2} \pi_n, 
+\ea
+with $\omega =2 \Phi + \log(z)$ and $\omega_s = 2 \Phi + 3\log(z)$.
+This yields 
+\be
+-\varphi_n''+\left(\oneqt \omega'^2-\thalf \omega" +\frac{g_5^2 \chi^2}{z^2}\right)\varphi_n = \frac{g_5^2 \chi}{z} \pi_n
+\ee
+\be
+-\pi_n''+\left(\oneqt \omega_s'^2-\thalf \omega_s" +\frac{\chi''}{\chi}-\frac{2\chi' \Phi'}{\chi} - \frac{3 \chi'}{z\chi}-m_n^2 \right) \pi_n = -m_n^2 \frac{\chi}{z}\varphi_n.
+\label{eqPiEOM2}
+\ee
+
+The dependence of these equations of motion on the scalar potential can be made explicit by using the background equation for the chiral field, written here in the string frame
+\be
+z^2\chi'' -3z\chi' \left(1+\frac{z\Phi'}{\rt6} \right) = m_X^2\chi +\frac{\partial U}{\partial \chi}.
+\ee
+Substituting, we can re-write (\ref{eqPiEOM2}) as
+\be
+-\pi_n''+\left(\oneqt \omega_s'^2-\thalf \omega_s" +\frac{m_X^2}{z^2}+\frac{1}{z^2} \frac{\partial U}{\partial \chi} -m_n^2 \right) \pi_n = -m_n^2 \frac{\chi}{z}\varphi_n
+\ee
+
+\begin{figure}[htb]
+\center{\includegraphics[width=300pt]{pion.eps}}
+\caption{Comparison of the predicted mass eigenvalues for the scalar sector with the experimental $\pi$ meson spectrum.}
+\label{figPion}
+\end{figure}
+
+\begin{table}[htb]
+\label{tabPion}
+\begin{center}
+\begin{tabular}{| c || c | c  |}
+\hline
+n & $\pi$ experimental (MeV) & $\pi$ model \\
+\hline
+1 & 140 &				0 \\
+2 & 1300 $\pm$ 100 & 	1580 \\
+3 & 1816 $\pm$ 14&		1868 \\
+4 & 2070 $\pm$ 35* & 	2078 \\ 
+5 & 2360 $\pm$ 25* &	2230	\\
+6 & -- & 				2389 \\
+7 & -- & 				2544 \\
+8 & -- &				2686 \\
+\hline
+\end{tabular}
+\caption{The experimental and predicted values for the masses of the pseudoscalar mesons.
+*Appears only in the further states of the PDG.}
+\end{center}
+
+\end{table}
