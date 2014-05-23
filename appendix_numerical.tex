@@ -68,3 +68,57 @@ As illustrated in Figure \ref{fig:shooting}, when the test value for $m_n$ is le
 As $m_n$ is incremented, eventually $y_1(x_f)$ becomes negative.
 A root-finding routine is used to approximate the values $\lambda_n$ such that $y_1(x_f)=0$. 
 The number of antinodes in the wavefunction indicates to which excitation mode the eigenvalue corresponds.
+
+\section{Matrix Method}\label{appMatrix}
+
+The coupled second-order 
+The equations of motion can be reduced to a set of second-order differential equations,
+\begin{eqnarray}
+-\varphi'' + V_1(z)  \varphi + f(z)\pi  = 0, \label{equphiAppend}\\
+-\pi'' + V_2(z) \pi + g(z)\varphi = 0, \label{equpiAppend}
+\end{eqnarray}
+where the eigenvalues are contained within the coefficient functions. 
+These equations can be expressed as a system of first-order differential equations
+\begin{equation} \label{equmatrixphi}
+\Phi' + W(z) \Phi = 0,
+\end{equation}
+where $W$ is the matrix
+\begin{equation}
+W = \left(\begin{array}{cccc}
+0     & 1     & 0     & 0 \\ 
+V_1(z)& 0     &   f(z)& 0 \\
+0     & 0     & 0     & 1 \\
+g(z)  & 0     & V_2(z)& 0
+\end{array}\right)
+\end{equation}
+and $\Phi$ is the vector
+\begin{equation}
+\Phi_{\alpha i} = \left(\begin{array}{c} \varphi_{i} \\
+			-\varphi'_{i} \\
+			\pi_{i} \\
+			-\pi'_{i} \end{array}\right)		
+\end{equation}
+that forms an orthonormal basis of solutions. 
+We can propagate the solution $\Phi$ between two boundary points
+\begin{equation}
+\Phi(z_f) = U(z, z_f, z_0, m_n^2)\Phi(z_0),
+\end{equation}
+where we solve (\ref{equmatrixphi}) with the appropriate boundary condition at $z_0$. 
+The eigenvectors and eigenvalues of $U$ are then calculated. 
+Two of the solutions are divergent, but the solutions that correspond to the two smaller eigenvalues do not diverge.
+We label the non-divergent solutions as the eigenvectors $u_3$ and $u_4$. 
+The non-divergent solutions for $\Phi_{i}$ can be written as a linear combination of $u_3$ and $u_4$
+\begin{equation}
+\Phi_{i} = \alpha u_3 + \beta u_4.
+\end{equation}   
+Non-trivial values of  $\alpha$ and $\beta$ satisfy
+\begin{equation}\label{equNontrivial1}
+\left(\begin{array}{cc} u_3^1 & u_4^1 \\ u_3^{3} & u_4^{3} \end{array}\right)\left(\begin{array}{c} \alpha \\ \beta\end{array}\right) = 0
+\end{equation}
+for Dirichlet or
+\begin{equation}\label{equNontrivial2}
+\left(\begin{array}{cc} u_3^2 & u_4^2 \\ u_3^{4} & u_4^{4} \end{array}\right)\left(\begin{array}{c} \alpha \\ \beta\end{array}\right) = 0
+\end{equation}
+for Neumann boundary conditions. 
+The values of $m_n^2$ that minimize the determinant of the matrix (\ref{equNontrivial1}) or (\ref{equNontrivial2}) are the eigenvalues of the system (\ref{equphiAppend}-\ref{equpiAppend}). 
+An abrupt change in its behavior of the plot of the determinant vs. the value of $m_n$ signals the location of an eigenvalue. 
