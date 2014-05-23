@@ -30,23 +30,41 @@ The angle of the cannon is incremented until the cannonball hits the target, whi
 
 More concretely, the boundary value problem is written as in (\ref{eq:ODE}), with boundary conditions
 \ba
-B_{1j}(x_1,y_1,\dots, y_N) &=& 0 \quad \quad j=1,\dots, n_1 \\
-B_{2k}(x_2,y_1,\dots, y_N) &=& 0 \quad \quad k=1,\dots, n_2 
+B_{1j}(x_0,y_1,\dots, y_N) &=& 0 \quad \quad j=1,\dots, n_1 \\
+B_{2k}(x_f,y_1,\dots, y_N) &=& 0 \quad \quad k=1,\dots, n_2 
 \ea
-with $n_1$ boundary conditions at point $x_1$ and $n_2=N-n_1$ at point $x_2$.
-These boundary conditions generically can be any algebraic combination of the variables, but in this work they are always of the form $y_i(x) = 0$.
+with $n_1$ boundary conditions at point $x_0$ and $n_2=N-n_1$ at point $x_f$.
+These boundary conditions generically can be any algebraic combination of the variables.
 
-To convert this to an initial value problem, set the $n_1$ components of $\bf{y}$ to the values specified by the boundary conditions at $x_1$, and set the other components of $\bf{y}$ to arbitrary values.
-Once this initial value is solved, the values at $x_2$ are compared to the boundary conditions $B_2$.
-This process is repeated with an altered set of arbitrary values for $\bf{y}$. 
-A root-finding routine is used to find the values that satisfy the boundary conditions.
+For concreteness, consider a second-order eigenvalue problem of the type considered in this thesis,
+\be
+\psi_n''(z) + V(z) \psi_n(z) = m_n^2 \psi_n(z).
+\ee
+This can be reduced to two first-order differential equations by making the substitutions $y_1=\psi$, $y_2=\psi'$, resulting in the system
+\ba
+y_1' &=& y_2 \\
+y_2' &=& \left(m_n^2 -V(z) \right)y_1.
+\ea
+The boundary conditions are $y_1(z_0) = y_1(z_f) = 0$. 
+\footnote{In the soft-wall model, we should take the limit $z_f\rightarrow \infty$.
+This is impossible to do numerically, but it is easy to make $z_f$ sufficiently large that the eigenvalues are not effected.}
+In this instance, the eigenvalues are of greater importance than the behavior of the solutions $y_1, y_2$, so the overall normalization of the solutions is arbitrary.
 
-A similar method can be used for eigenvalue problems, sets of differential equations that have a solution only for particular values of a certain parameter.
-In such problems, the eigenvalue is of greater interest than the behavior of the function itself. 
-Because of this, the overall normalization of the solution is unimportant, and the initial values can remain arbitrary. 
+This boundary value problem is changed to an initial value problem by setting 
+\ba
+y_1(z_0) = 0 \\
+y_2(z_0) = c,
+\ea
+where $c$ is an arbitrary constant. 
+A small test value for $m_n$ is chosen, and the initial value problem is solved. 
 
 \begin{figure}[htb]
 \center{\includegraphics[width=300pt]{shooting.pdf}}
 \caption{An illustration of the shooting method.}
 \label{fig:shooting}
 \end{figure}
+
+As illustrated in Figure \ref{fig:shooting}, when the test value for $m_n$ is less than the first eigenvalue $\lambda_1$, the value of $y_1(x_f)$ is positive.
+As $m_n$ is incremented, eventually $y_1(x_f)$ becomes negative.
+A root-finding routine is used to approximate the values $\lambda_n$ such that $y_1(x_f)=0$. 
+The number of antinodes in the wavefunction indicates to which excitation mode the eigenvalue corresponds.
