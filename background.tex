@@ -1,0 +1,112 @@
+\chapter{Background}
+\label{background}
+
+In this chapter, we cover the background of gauge/gravity dualities and the AdS/CFT correspondence.
+Our focus is on the phenomenological applications of these models, so many of the technical details of the correspondence will not be presented here.
+A variety of review articles cover the topic in more mathematical detail
+
+Once we have established the basics of AdS/CFT, we will review the applications of the  duality to hadronic physics known as AdS/QCD.
+We will present the simplest AdS/QCD models and the results derived from them, and improve on these results in later chapters.
+
+\section{What is AdS/CFT?}
+The general principle of dualities is to describe the same physical systems with two different but equivalent theories. 
+The goal of this approach is to find that one of the theories is more analytically tractable than the other, and therefore more useful in describing physical phenomena.
+The original work on the AdS/CFT correspondence began with a duality between ten-dimensional string theory on $AdS_5 \times S^5$ and $\mathcal{N}=4 $ Super Yang-Mills Theory.
+The details of the string theory are not crucial to the understanding of the derivation of the correspondence.
+The constituents of the theory are extended objects known as $p$-branes, where $p$ refers to the spatial dimension of the object. 
+One-dimensional $p$-branes are more commonly known as strings, which can be either closed or open.
+Closed strings are propagate freely through space, while open strings have  their endpoints on $p$-dimensional Dirichlet-branes (D-branes). 
+These strings are characterized by their length $l_s$ and the coupling constant $g_s$ that describes the strength of their interactions. 
+These parameters are are related to the $D$-dimensional Newton's constant
+\be
+G_D \sim g_s^2 l_s^{D-2}.
+\ee
+The string length can also be related to the Regge slope parameter
+\be
+\alpha' = l_s^2.
+\label{eq:ReggeSlope}
+\ee
+
+We motivate the AdS/CFT correspondence by examining a stack of $N$ D3 branes as a background for a type IIB string theory.
+We consider the dynamics of this system by taking the limits of low energy and strong coupling. 
+The order in which these limits are taken determines the appearance of the result, yielding the two sides of the duality.
+
+Taking the low-energy limit first gives an $SU(N)$ gauge theory, $\mathcal{N} =4 $ Super Yang-Mills (SYM) Theory. 
+\footnote{N.B.  $N$ refers to the number of D3 branes and the number of colors in the gauge theory, while $\mathcal{N}$ indicates the number of supercharges in the SYM theory.}
+The gauge coupling in this theory is related to the string coupling by
+\be
+g_{YM}^2=4\pi g_s.
+\label{eq:gYM}
+\ee
+Assuming the string length is small, any interactions involving the open strings in the bulk (the region away from the branes) can be ignored.
+We are now free to make the assumption of strong coupling in the SYM theory.
+There are now two decoupled components of the low-energy system: the string theory governing the open strings in the bulk, and the strongly-coupled SYM theory on the branes.
+
+Now, let us take the strong coupling limit first. 
+In this instance, we have a large number of coincident D-branes resulting in a large energy density, and we must use general relativity to take into account its effect on the curvature of spacetime.
+The classical metric that solves the supergravity equations is
+\be
+ \label{equSGmetric}
+ds^{2} = \frac{1}{\sqrt{1+\frac{L^{4}}{r^{4}}}}\left( -dt^{2} + d\vec{x}^{2}\right) + \sqrt{1+\frac{L^{4}}{r^{4}}}(dr^{2}+r^2 d\Omega_5),
+\ee
+where the curvature radius $L$ sets the scale and is given by\cite{FILL-IN}
+\be
+L^{4} = 4 \pi g_{s}N \alpha'^{2}.
+\label{eq:L4}
+\ee
+The vector $\vec{x}$ runs over three spatial dimensions, and $d\Omega_5$ is the five-dimensional angular element.
+
+The stack of $N$ D3 branes is located at $r=0$, and to an observer located at $r=\infty$, any excitations near the branes appears to be low energy due to gravitational red-shifting.
+As a consequence, taking the low-energy limit is equivalent to taking the limit $r \ll L$.
+The metric becomes
+\be
+\label{equ10drmetric}
+ds^{2} = \frac{r^{2}}{L^{2}} (-dt^{2}+d\vec{x}^{2}) + \frac{L^{2}}{r^{2}}dr^{2} + L^2 d\Omega_{5},
+\ee
+where $r$ is strictly positive.
+This metric is a product of five dimensional anti-de Sitter space with a five-dimensional sphere ($AdS_5\times S_5$).
+We can re-write this metric using the coordinate transformation
+\be
+z = \frac{L^{2}}{r}.
+\ee
+This transformation gives a metric with a single warp factor,
+\be
+\label{equ5dzmetric}
+ds^{2} = \frac{L^2}{z^2}\left(-dt^{2} + d\vec{x}^{2} + dz^{2}\right),
+\ee
+where  $z>0$, with a UV cut-off at an infinitesimal $z$-value, $z=z_0$.  
+The closed string excitations in the bulk are decoupled from the excitations near the branes.
+
+In each of these descriptions, we began with a stack of $N$ D3 branes and ended with a low-energy, strongly-coupled system.
+Taking the low-energy limit first results in an $\mathcal{N}=4$ SYM gauge theory, while taking the strong coupling limit first yields a system of excitations on an $AdS_5 \times S_5$ metric.
+Maldacena's conjecture is that these two systems should describe the same physics.
+Each system has closed strings in the bulk that are decoupled from the rest of the system, so the conjecture results in a proposed duality between the $\mathcal{N}=4$ SYM theory and type IIB string theory in anti-de Sitter space.
+
+This duality is particularly useful if we can ignore all stringy effects and treat the type IIB string theory as a classical supergravity theory on the metric (\ref{equ10drmetric}). 
+This approximation is valid if the string length is much less than the radius of curvature,
+\be
+l_s \ll L.
+\ee
+We can relate these quantities to the Yang-Mills coupling using (\ref{eq:ReggeSlope}), (\ref{eq:gYM}), and (\ref{eq:L4}), yielding
+\be
+\frac{L^4}{l_s^4} = g_{YM}^2 N.
+\ee
+The quantity $g_{YM} N$ is known as the 't Hooft coupling, $\lambda$.
+Thus, the requirement that the string length be small is equivalent to requiring the 't Hooft coupling to be large, $\lambda \gg 1$.
+In other words, the classical approximation is valid when the dual gauge theory is strongly coupled.
+The 't Hooft coupling acts as the effective gauge coupling, which is often expressed as a scalar field called the dilaton, $\Phi$, where
+\be
+\Phi = \log \lambda.
+\ee
+The behavior of the dilaton field will take a central role in this thesis.
+
+In summary, Maldacena conjectured that a ten-dimensional string theory is dual to $\mathcal{N} = 4 $ super Yang-Mills theory.
+We showed that the regime in which stringy effects can be neglected is equivalent to the strong-coupling limit of the gauge theory.
+The usefulness of this duality is evident, because the strong-coupling regime of a gauge theory is the limit in which it is difficult to perform calculations.
+Conveniently, this regime is dual to the string theory regime where calculations are easy because they can be done classically.
+
+For our purposes, we reduce the 10-dimensional metric (\ref{equ10drmetric}) to a five-dimensional space by ignoring the $S_5$ manifold and keeping only the $AdS_5$ metric (\ref{equ5dzmetric}).
+It turns out that discarding $S_5$ removes the supersymmetry from the SYM theory, resulting in a non-supersymmetric conformal field theory.
+In the end, we have a duality between a classical gravity theory in five dimensional anti-de Sitter space and a four-dimensional conformal field theory, our AdS/CFT correspondence.
+It is this relationship between a field theory in four dimensions and a gravitational theory in five dimensions that lends these models the evocative name \it{holography}.
+
