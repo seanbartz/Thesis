@@ -1,4 +1,4 @@
-\chapter{Soft-Wall Model
+\chapter{Soft-Wall Model of AdS/QCD
 \label{sec:Soft-Wall-Model}}
 
 In this chapter, we will provide detail on previous work done on the soft-wall AdS/QCD model.
@@ -144,13 +144,14 @@ is given in \cite{karch-katz-son-adsqcd} as
 
 \be
 S_{5}=\int d^{5}x\sqrt{-g}e^{-\Phi(z)}Tr\left[|DX|^{2}+m_{X}^{2}|X|^{2}+\frac{1}{4g_{5}^{2}}(F_{L}^{2}+F_{R}^{2})\right].
+\label{eq:SimpleAction}
 \ee
 The 5D gauge coupling constant $g_{5}$ is fixed by calculating the vector current two-point function using this model and then comparing this to the leading order result from QCD, leading to the identification $g_{5}^{2}=12\pi^{2}/N_{c}$ \cite{stephanov-katz-son}. 
 
 The field $X$ includes both the scalar and pseudoscalar fields, as well as a non-trivial vacuum expectation value (VEV)
 \ba
 X^{ab}_{e} &=& \left(\frac{\chi(z)}{2}+S^a(x,z)t^b\right)Ie^{2i\pi_{e}(x,z)^{a}t^{b}}\label{eq:ExpRep}\\ 
-X^{ab}_{l} &=& \left(\frac{\chi(z)}{2}+S^a(x,z)t^b\right)I+i\pi_{l}(x,z)^{a}t^{b},
+X^{ab}_{l} &=& \left(\frac{\chi(z)}{2}+S^a(x,z)t^b\right)I+i\pi_{l}(x,z)^{a}t^{b}, \label{eq:LinRep}
 \ea
 with $I$ the $N_{f}\times N_{f}$ identity matrix and $t^{a}$ the $SU(N_{f})$ generators, which are normalized as
 \be
@@ -192,6 +193,12 @@ The covariant derivative can also be written in terms of the vector and axial fi
 D_{M}X=\partial_{M}X-i\{A_{M}^{a},X\}+i[V_{M}^{a},X].
 \label{eq:covariant_der}
 \ee
+This relation allows us to re-write the action (\ref{eq:SimpleAction}),
+\be
+S_{5}=\int d^{5}x\sqrt{-g}e^{-\Phi(z)}Tr\left[|DX|^{2}+m_{X}^{2}|X|^{2}+\frac{1}{2g_{5}^{2}}(F_{A}^{2}+F_{V}^{2})\right].
+\ee
+
+
 
 The scalar field $X$ takes on a $z$-dependent vacuum expectation value (VEV), breaking the chiral symmetry. 
 In a flavor-symmetric model, the VEV has the form 
@@ -199,6 +206,11 @@ In a flavor-symmetric model, the VEV has the form
 \langle X\rangle=\frac{\chi(z)}{2}I,
 \ee
 where $I$ is the $N_{f}\times N_{f}$ identity matrix. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Equations of Motion}
+\label{sub:EOM}
+By varying the action (\ref{eq:SimpleAction}), one obtains the equations of motion for the scalar, pseudoscalar, vector, and axial-vector mesons, as well as for the scalar vacuum expectation value.
 
 Substituting the chiral field into the Lagrangian using (\ref{eq:ExpRep}), we vary the Lagrangian with respect to $\chi(z)$,
 \ba
@@ -213,7 +225,8 @@ The equation of motion becomes
 \ee
 In this model, the warp factor $a(z)=1/z$ and the mass of the scalar field $m_{X}^{2}L^{2} = -3$.
 With these substitutions,  the equation of motion becomes
-\be\label{equVEVfullsimple}
+\be
+\label{equVEVfullsimple}
 \chi'' - \Phi'\chi'-\frac{3}{z}\chi'+\frac{3}{z^{2}}\chi=0.
 \ee
 
@@ -224,21 +237,98 @@ In the hard wall model, there is no dilaton, so we can set $\Phi'=0$, finding th
 \ee
 where $c_1$ and $c_2$ are integration constants. 
 Comparing this solution to the UV behavior of the bulk fields in the AdS/CFT dictionary (\ref{equstandardform}), $c_{1}$  and $c_{2}$ correspond to the source term and the operator expectation value, respectively,
-\begin{eqnarray}
+\ba
 c_{1} &\sim& m_{q}, \\
 c_{2} &\sim& \langle q\bar{q}\rangle \equiv \sigma.
-\end{eqnarray}
+\ea
 Here $m_{q}$ is the quark mass and $\sigma=\langle\bar{q}q\rangle$ is the chiral condensate, the variation of the vacuum energy with respect to $m_{q}$. 
-In \cite{karch-katz-son-adsqcd}, it is shown that, when $\chi(z)$ is defined by (\ref{eq:VEV}) over the whole range of $z$, the chiral condensate is proportional to the quark mass.
-Thus, the spontaneous and explicit chiral symmetry breaking terms are related, contrary to expectations.
 
-As an example calculation, we can derive the mass spectrum of the vector $\rho$ mesons by varying the vector field and using the axial gauge condition $V_{z}=0.$ 
+In the simplest soft-wall model, it has been shown \cite{FILL-IN} that the solution to (\ref{equVEVfullsimple}) is given by 
+\be
+\chi_{sw}(z)= \frac{m_q}{L} z \,\Gamma\left(\frac{3}{2}\right) U\left(\frac{1}{2},0,\lambda z^{2}\right),
+\label{eq:ChiSW}
+\ee
+where $U(a,b,y)$ is the Tricomi confluent hypergeometric function. 
+(There is also another solution that disregarded because it leads to an action that is not finite in the IR.)
+In the small-$z$ limit, (\ref{eq:ChiSW}) expands to \cite{Colangelo:2008us}
+\be
+\label{equvevswsolexp}
+\chi_{sw}(z)\rightarrow \frac{m_{q}}{L}z - \frac{\lambda m_{q}}{2L}z^{3}\left(1-2\gamma_{E} - 2 \log(\sqrt{\lambda} z) - \psi\left(\frac{3}{2}\right)\right),
+\ee
+where $\psi$ is the Euler function.
+However, comparing this solution to the UV behavior of the chiral condensate in the AdS/CFT dictionary (\ref{equstandardform}), we see that $\sigma \sim m_q$.
+This is undesirable in a theory with spontaneous chiral symmetry breaking.
+In addition, when $z$ becomes large, we see that the chiral condensate becomes a constant, $\chi \sim m_q$, linking the IR and UV behavior. 
+As we will see, the IR behavior of the chiral field governs the behavior of the axial meson spectrum, another limitation of the solution (\ref{eq:ChiSW}).
+More generally, we can see that this issue is caused because the equation (\ref{equVEVfullsimple}) is linear in $\chi$.
+With only one normalizable solution, only one constant survives the application of boundary conditions.
+As a result, $m_q$ and $\sigma$ cannot be independent.
+To remedy this, it was suggested \cite{Karch} to examine higher-order terms in the scalar potential. 
+A particular example of this will be examined in Section \ref{sub:Modified-Soft-Wall-Model}, and a more general approach will be discussed in Chapter \ref{ch:dynamical}.
+
+\subsubsection{Scalar Sector}
+We now examine the fluctuations of the scalar field $X$, rather than its VEV, to determine the spectrum of the $f_0$ scalar mesons.
+We use the expression in (\ref{eq:ExpRep}), though it does not matter which representation for the pseudoscalar component of the field is used,
+\be
+X(x,z)= \left(S(x,z) +\frac{\chi(z)}{2}\right)\mathrm{e}^{2i\pi(x,z)}.
+\ee
+To obtain the equations of motion, we vary the action with respect to the scalar field $S(x,z)$,
+\ba
+\delta \mathcal{L}_{S} &=& \delta\left({\rm e}^{-\Phi}\sqrt{-g} \,{\rm Tr}\left[g^{MN}\partial_{M}S(x,z)\partial_{N}S(x,z) + m_{X}^{2}S(x,z)^{2}\right]\right)\nonumber\\
+&=& \delta\left({\rm e}^{-\Phi}\sqrt{-g}\,{\rm Tr}(t^{a}t^{b})\left(g^{\mu\nu}\partial_{\mu}S\partial_{\nu}S + g^{zz}\partial_{z}S\partial_{z}S + m_{X}^{2} S^{2}\right) \right)\nonumber\\
+&=& {\rm e}^{-\Phi}a(z)^{3}\eta^{\mu\nu}\partial_{\mu}S\, \delta \partial_{\nu}S + {\rm e}^{-\Phi}a(z)^{3}\partial_{z}S \,\delta \partial_{z}S + {\rm e}^{-\Phi} a(z)^5 m_X^2 S\, \delta S\nonumber\\
+&=& \left(-{\rm e}^{-\Phi} a(z)^{3} \partial_{\mu}\partial^{\mu}S - \partial_{z}\left({\rm e}^{-\Phi}a(z)^{3}\partial_{z}S\right) + {\rm e}^{-\Phi}a(z)^5 m_X^2 S\right)\delta S, \label{equlastS}
+\ea
+leaving the equation of motion,
+\be
+\label{equScalargenEOM}
+{\rm e}^{\Phi}a^{-3}\partial_{z}\left({\rm e}^{-\Phi}a^3\partial_{z}S\right) + \partial_{\mu}\partial^{\mu}S - a^{2}m_{X}^{2}S = 0.
+\ee
+We separate the $z$-dependent part of the field by using Kaluza-Klein decomposition,
+\be
+S(x,z) = \sum_{n=0}^{\infty}S_{n}(z)\mathcal{S}_{n}(x).
+\ee
+We use the AdS warp factor $a(z)=1/z$ and use Proca's equation 
+\be
+\partial_i\partial^i S_n = m_n^2 S_n,
+\ee 
+to obtain the equation of motion
+\be
+-\partial_z^2 S_n+ \omega_s' \partial_z S_n = m_{S_n}^2 S_n,
+\ee
+where we have defined 
+\be
+\omega_s \equiv \Phi(z) + 3 \log z,
+\label{eq:omegaScalar}
+\ee
+and ($'$) represents differentiation with respect to $z$. 
+We can eliminate the first derivative of the field $S_n$ and put the equation of motion in Schr{\"o}dinger-like form with the substitution
+\be
+S_n=\mathrm{e}^{\omega_s/2} s_n.
+\ee
+The final equation of motion is now
+\be
+-s_n'' +\left(\oneqt \omega_s'^2 -\thalf \omega_s'' + \frac{m_X^2}{z^2}\right)s_n = m_{S_n}^2 s_n.
+\ee
+
+\subsubsection{Pseudoscalar Sector}
+The pseudoscalar eigenstates correspond to the pions, the pseudo-Goldstone bosons of chiral symmetry.
+This sector is the most difficult to analyze because the pseudoscalar field couples to the longitudinal component of the axial-vector field, 
+\be
+A_\mu = A_{\mu \perp} +\partial_\mu \varphi.
+\ee
+This results in two coupled differential equations, one that comes from varying the action with respect to the pseudoscalar field $\pi$, and one that comes from varying with respect to $\varphi$.
+There are also subtleties in the choice of representation, as illustrated above in (\ref{eq:ExpRep}-\ref{eq:LinRep}).
+The various issues involved in analyzing the pseudoscalar sector are discussed in Section \ref{sec:Pions}.
+
+\subsubsection{Vector Sector}
+We can derive the mass spectrum of the vector $\rho$ mesons by varying the vector field and using the axial gauge condition $V_{z}=0.$ 
 Varying the action, we find that 
 \ba
 \delta \mathcal{S}_{V} &=& -\delta\left({\rm e}^{-\Phi}\sqrt{-g}g^{\mu\rho}g^{\nu\sigma}\left(\partial_{\mu}V_{\nu}\partial_{\rho}V_{\sigma} - \partial_{\mu}V_{\nu}\partial_{\sigma}V_{\rho}\right)+{\rm e}^{-\Phi}\sqrt{-g}g^{zz}g^{\mu\nu}\partial_{z}V_{\mu}\partial_{z}V_{\nu}\right) \nonumber\\
 &=& -{\rm e}^{-\Phi}\sqrt{-g}g^{\mu\rho}g^{\nu\sigma}\left(\partial_{\mu}V_{\nu}\delta\partial_{\rho}V_{\sigma} - \partial_{\mu}V_{\nu}\delta\partial_{\sigma}V_{\rho}\right) - {\rm e}^{-\Phi}\sqrt{-g}g^{zz}g^{\mu\nu}\partial_{z}V_{\mu}\delta\partial_{z}V_{\nu}\nonumber\\
 &=& {\rm e}^{-\Phi}a(z) (\partial^{2}V_{\mu}\delta V^{\mu} - \partial_{\mu}\partial^{\nu}V_{\nu}\delta V^{\mu}) + \partial_{z}\left({\rm e}^{-\Phi} a(z)\partial_{z} V_{\mu}\right)\delta V^{\mu}\nonumber\\
-&=& \left({\rm e}^{-\Phi} a(z) \partial_{\nu}\partial^{\nu}V_{\mu} + \partial_{z}\left({\rm e}^{-\Phi} a(z)\partial_{z} V_{\mu}\right)\right)\delta V^{\mu},\label{equVectorstep}
+&=& \left({\rm e}^{-\Phi} a(z) \partial_{\nu}\partial^{\nu}V_{\mu} + \partial_{z}\left({\rm e}^{-\Phi} a(z)\partial_{z} V_{\mu}\right)\right)\delta V^{\mu},\label{equVectorStep}
 \ea
  
 We can separate out the $z-$dependence of the field using Kaluza-Klein (KK) decomposition 
@@ -253,11 +343,13 @@ The equation of motion is now one dimensional
 \ee
 where we have defined
 \be
-\omega \equiv \Phi(z)+\log z,
+\omega \equiv \Phi(z)+\log z.
 \label{eq:omega}
 \ee 
-and ($'$) represents differentiation with respect to $z$. 
-We can eliminate the first derivative of the field, bringing the equation of motion into Schr{\"o}dinger-like form, using the substitution $V_{n}(z)=e^{\omega/2}v_{n}(z)$.
+We can eliminate the first derivative of the field, bringing the equation of motion into Schr{\"o}dinger-like form, using the substitution 
+\be
+V_{n}(z)=e^{\omega/2}v_{n}(z).
+\ee
 The equation of motion is now
 \be
 -v_{n}^{''}+\left(\frac{1}{4}\omega^{'2}-\frac{1}{2}\omega^{''}\right)v_{n}=m_{V_{n}}^{2}v_{n}.\label{eq:EOM-vector-simple}
@@ -270,10 +362,69 @@ Using the asymptotic form of the dilaton $\Phi=\lambda z^{2},$ the mass eigenval
 The eigenvalues for this equation are $m_{n}^{2}=\lambda(4n+4)$ for $n=0,1,2,3,\dots$ 
 The parameter $\lambda$ is set by matching this trajectory to experimental data. 
 
-The equation of motion for the axial sector is derived using the same method.
-Varying the action, we get an equation of similar form to (\label{equVectorstep}), but with an additional chiral symmetry-breaking term $\chi^2 A_\mu$,
+We can also determine the value of the 5D coupling constant $g_5$ used in the action (\ref{eq:SimpleAction}) by analyzing the vector sector.
+This is done by matching the vector two-point function $\Pi_{V}(q^{2})$ calculated from this model to the calculation from the operator product expansion of QCD \cite{Cherman:2008eh},
+As shown in \cite{Erlich:2005qh, Kim:2008ff}, we calculate the two-point function near the UV boundary.
+We begin by re-writing (\ref{equVectorStep}) in the hard-wall case $\Phi' = 0$, 
 \be
-\delta\mathcal{S}_{A} = \left({\rm e}^{-\phi} a(z) \partial^{2}A_{\mu} + \partial_{z}\left({\rm e}^{-\phi} a(z)\partial_{z} A_{\mu}\right)+ {\rm e}^{-\phi}g_{5}^{2}a(z)^{3}v^{2}A_{\mu}\right)\delta A^{\mu}. 
+\partial_z\left(\frac{1}{z}\partial_z V\mu(q,z)\right)+\frac{q^2}{z} V_\mu(q,z) = 0,
+\ee
+where $V_\mu(q,z)$ is the 4D Fourier transform of $V_\mu(x,z)$, and we have used the Fourier-transformed version of the Proca equation,
+\be
+\partial_i\partial^i V_\mu(q,z) = -q^2 V_\mu(q,z)
+\ee
+Evaluating the vector part of the action (\ref{eq:SimpleAction}) leaves the boundary action
+\be
+\mathcal{S}_b = -\frac{1}{2g_5^2} \int d^4 x \left(\frac{1}{z} V_\mu\partial_zV^\mu\right)_{z= \epsilon}, 
+\label{eq:BoundaryAction}
+\ee
+where $\epsilon$ is a UV boundary close to $z=0$.
+We define $V_0^\mu$ to be the Fourier-transformed source of the vector current $J^\mu=\bar{q}\gamma_\mu t^a q$ at the UV boundary,
+\be
+V_0^\mu \equiv \int d^4x \EXP^{iqx} J^\mu.
+\ee
+Re-writing the vector field in a separable form
+\be
+V^\mu(q,z) = V(q,z) V_0^\mu(q),
+\ee
+we see that we should choose the UV boundary condition $V^\mu(q,\epsilon)=1$.
+Using this separable form, (\ref{eq:BoundaryAction}) becomes
+\be
+\mathcal{S}_b = -\frac{1}{2g_5^2} \int d^4 x V_{0\mu} \left(\frac{\partial_zV(q,z)}{z}\right)_{z=\epsilon} V^\mu_0.
+\ee
+This expression shows why $V(q,z)$ is often known as the \emph{bulk-to-boundary} propagator.
+Twice differentiating the boundary action with respect to $V_0$, we obtain the vector current two-point function, 
+\be
+\int{d^{4}x \EXP^{iqx} \langle J_{\mu}^{a}(x)J_{\nu}^{b}(0)\rangle} = \delta^{ab}(q_{\mu}q_{\nu} - q^{2}g_{\mu\nu})\Pi_{V}(q^{2}),
+\ee
+where
+\be
+\Pi_{V}(Q^{2}) =  -\frac{1}{ g_{5}^{2}Q^2} \left. \frac{\partial_z V(q,z)}{z}\right|_{z=\epsilon},
+\ee
+where $Q^2 = -q^2$.
+In the limit of large $Q^2$, we can expand $V(q,z)$ near the UV boundary,
+\be
+V(Q,z) = 1+ \frac{Q^2 z^2}{4} \log{Q^2z^2}+\dots, 
+\ee
+and to first order, the correlation function becomes
+\be
+\Pi_{V}(Q^{2}) = -\frac{1}{2 g_{5}^{2}}\log{Q^{2}}.
+\ee
+Matching to the large-$N_{c}$ QCD perturbative result,
+\be
+\Pi_{V}(k^{2}) = -\frac{N_{c}}{24\pi^{2}}\log{k^{2}},
+\ee 
+where $N_c$ is the number of colors, we find that 
+\be\label{eq:g5}
+g_{5}^{2} = \frac{12 \pi^{2}}{N_{c}}.
+\ee
+In this work, we take $N_c = 3$, and assume that this value is large enough for the large $N_c$ results to hold.
+
+\subsubsection{Axial-Vector Sector}
+The equation of motion for the axial sector is derived using the same method.
+Varying the action with respect to $A_\mu$ and using the axial gauge $A_z=0$, we get an equation of similar form to (\ref{equVectorStep}), but with an additional chiral symmetry-breaking term $\chi^2 A_\mu$,
+\be
+\delta\mathcal{S}_{A} = \left({\rm e}^{-\Phi} a(z) \partial^{2}A_{\mu} + \partial_{z}\left({\rm e}^{-\Phi} a(z)\partial_{z} A_{\mu}\right)+ {\rm e}^{-\Phi}g_{5}^{2}a(z)^{3}v^{2}A_{\mu}\right)\delta A^{\mu}. 
 \ee
 After KK decomposition, 
 \be
@@ -284,60 +435,166 @@ the equation of motion becomes
 -\partial_z^2 A_{n}+\omega'\partial_zA_{n} +\frac{g_5^2 \chi(z)^2}{z^2}= m_{A_{n}}^{2}A_{n},
 \ee
 with $\omega$ defined as in (\ref{eq:omega}).
-
- yielding
+To put the equation of motion in Schr{\"o}dinger form, we make the substitution
+\be
+A_n = \mathrm{e}^{\omega/2} a_n,
+\ee
+yielding
 \be
 -a_{n}^{''}+\left(\frac{1}{4}\omega^{'2}-\frac{1}{2}\omega^{''}+g_{5}^{2}\frac{L^{2}}{z^{2}}\chi^{2}(z)\right)a_{n}=m_{V_{n}}^{2}a_{n}.\label{eq:EOM-axial-simple}
 \ee
-The only difference from (\ref{eq:EOM-vector-simple}) is the presence of the $z$-dependent mass term involving the VEV. 
-The significant drawbacks for this simple soft-wall model are the relatively poor modeling of the ground state and lower resonances and the lack of independent spontaneous and explicit chiral symmetry
-breaking terms.
+The only difference from (\ref{eq:EOM-vector-simple}) is the presence of the $z$-dependent mass term involving the chiral condensate. 
+The IR asymptotic behavior of the chiral condensate $\chi(z)$ controls the splitting between the vector and axial-vector mesons at large values of $n$.
+Experimentally, we see a constant splitting between the squared masses of the $a_1$ and $\rho$ mesons, which suggests that chiral symmetry is not restored for the higher excitations.
+In this model, we can see that the difference between the equations of motion (\ref{eq:EOM-vector-simple}) and (\ref{eq:EOM-axial-simple}) is given by
+\be
+\Delta m^2 \equiv \left(m_{A_n}^2 -m_{V_n}^2\right)_{n\rightarrow \infty} = g_5^2 \frac{L^2\chi^2}{z^2} (z \rightarrow \infty).
+\ee
+To obtain a constant mass splitting, this quantity must become a constant as $z$ approaches infinity. 
+This tells us that $\chi \sim z$ in the IR limit.
+
+The significant drawbacks for this simple soft-wall model are the relatively poor modeling of the ground state and lower resonances and the lack of independent spontaneous and explicit chiral symmetry breaking terms.
 
 
-\section{Modified Soft-Wall Model\label{sub:Modified-Soft-Wall-Model}}
+\section{Modified Soft-Wall Model
+\label{sub:Modified-Soft-Wall-Model}}
 
 An improvement on the soft-wall model, suggested in \cite{karch-katz-son-adsqcd}, is adding higher-order terms of $X$ to the scalar potential, separating the spontaneous and explicit chiral symmetry breaking. 
 The model established in \cite{gherghetta-kelley} adds a quartic scalar term to the action:
 \be
-S_{5}=\int d^{5}x\sqrt{-g}e^{-\Phi(z)}Tr\left[|DX|^{2}+m_{X}^{2}|X|^{2}-\kappa|X|^{4}+\frac{1}{2g_{5}^{2}}(F_{A}^{2}+F_{V}^{2})\right],\label{equAction1}
+\mathcal{S}=\int d^{5}x\sqrt{-g}e^{-\Phi(z)}Tr\left[|DX|^{2}+m_{X}^{2}|X|^{2}-\kappa|X|^{4}+\frac{1}{2g_{5}^{2}}(F_{A}^{2}+F_{V}^{2})\right],\label{equAction1}
 \ee
-where $\kappa$ is a parameter to be fit to the data.
- Taking $X=X_{0}$ and varying (\ref{equAction1}), we find that $\chi(z)$ has the following nonlinear equation of motion:
+where $\kappa$ is a dimensionless parameter to be fit to the data.
+To obtain the required linear Regge trajectories for the meson spectra, the dilaton field must be quadratic in $z$ in the IR region, 
 \be
-\partial_{z}(a^{3}e^{-\Phi}\partial_{z}\chi(z))-a^{5}e^{-\Phi}\left(m_{X}^{2}\chi(z)-\frac{\kappa}{2}\chi^{3}(z)\right)=0.\label{eq:dilatonEOM}
+\Phi(z\rightarrow \infty) = \lambda z^2,
 \ee
-The VEV retains the same UV asymptotic form (\ref{eq:VEV}), while the non-restoration of chiral symmetry dictates that $\chi(z)\sim z$ in the infrared region. 
-The VEV is parameterized so that it matches the expected asymptotic behavior. 
-A suitable form was found and justified in \cite{gherghetta-kelley}
+where $\lambda$ sets an energy scale for the model that is related to the slope of the Regge trajectories.
+
+The chiral symmetry breaking of the model is examined by deriving the equation of motion for the vacuum expectation value of the scalar field $X$.
+Varying (\ref{equAction1}) with respect to $X$, we find
+ \ba
+\delta \mathcal{S}_X&=& -2{\rm e}^{-\Phi}\sqrt{-g}\,\mathrm{Tr}\Big(g^{MN}\partial_{M}X\partial_{N}\delta X + \{A,X\}\{A,\delta X\}\nonumber\\
+&& \left. +[V,X][V,\delta X]  + m_{X}^{2}X\delta X - 2\kappa X^{\dagger}X|X|\delta X\right).
+\label{equXvariation}
+\ea
+Taking the trace, integrating by parts, and using $|X|=\chi(z)/2+S(x,z)$, we find  the variation of the action with respect to the chiral condensate,
+\ba
+\delta\mathcal{S}_\chi =  \frac{1}{2}\left(\partial_{z}\left({\rm e}^{-\Phi}\sqrt{-g}g^{zz}\partial_{z}\chi \right) + {\rm e}^{-\Phi}\sqrt{-g}\,m_{X}^{2} \chi  + {\rm e}^{-\Phi}\sqrt{-g}\frac{\kappa}{2}\chi ^{3}\right)\delta \chi.
+\ea
+Using the AdS metric, we find that the chiral condensate $\chi(z)$ now has a nonlinear equation of motion
 \be
-\chi(z)=\alpha z+\beta \mathrm{tanh}(\gamma z^{2})\label{eq:VEV-parametrization}
+\partial_{z}\left(a^{3}e^{-\Phi}\partial_{z}\chi(z)\right)-a^{5}e^{-\Phi}\left(m_{X}^{2}\chi(z)-\frac{\kappa}{2}\chi^{3}(z)\right)=0,\label{eq:dilatonEOM}
+\ee
+which simplifies to 
+\be
+\label{eq:VEVsimple}
+\chi'' - \left(\Phi' + \frac{3}{z}\right)\chi' - m_{X}^{2} \chi + \frac{\kappa}{2}\chi^3 = 0,
+\ee
+where ($'$) denotes a derivative with respect to $z$.
+
+The higher radially excited states of mesons have parallel Regge trajectories.
+However, the eigenstates of vector $\rho$ mesons and the axial-vector $a_1$ mesons do not become degenerate at large $n$, despite having the same spin.
+This indicates that chiral symmetry is not restored for the higher excitations.
+As noted in Section \ref{sub:EOM}, the mass-splitting between the highly-excited states of the $a_1$ and $\rho$ mesons is governed by the IR behavior of the chiral condensate field $\chi$, 
+\be
+\Delta m^2 \equiv \left(m_{A_n}^2 -m_{V_n}^2\right)_{n\rightarrow \infty} = g_5^2 \frac{L^2\chi^2}{z^2} (z \rightarrow \infty).
+\label{eq:deltam}
+\ee
+Because their trajectories are parallel but not equal, we know that this $\Delta m^2$ must be a constant.
+Examining the right-hand side of (\ref{eq:deltam}), we see that this requirement implies that $\chi(z) \sim z$ for large $z$.
+To match the AdS/CFT dictionary discussed in Chapter \ref{intro_chapter}, the chiral condensate must retain the same UV asymptotic form (\ref{eq:VEV}). 
+A suitable parameterization that matches the expected UV and IR asymptotic behavior was found and justified in \cite{gherghetta-kelley}
+\be
+\chi(z)=\alpha z+\beta z \mathrm{tanh}(\gamma z^{2}),
+\label{eq:VEV-parametrization}
 \ee
 with the parameters defined as follows
-\[
-\alpha=\frac{\sqrt{3}m_{q}}{g_{5}L},\qquad\beta=\sqrt{\frac{4\lambda}{\kappa L^{2}}}-\alpha,\qquad\gamma=\frac{g_{5}\sigma}{\sqrt{3}\beta}.
-\]
- The quark mass and chiral condensate can each be taken to zero independently, and the non-restoration of chiral symmetry does not depend on eitherof these parameters. 
- Thus, the spontaneous and chiral symmetry breaking occur separately, as desired. 
-Using (\ref{eq:VEV-parametrization}) in (\ref{eq:dilatonEOM}) we can solve for the dilaton field.
+\be
+\alpha=\frac{\sqrt{3}m_{q}}{g_{5}L},\qquad\beta=\sqrt{\frac{4\lambda}{\kappa L^{2}}}-\alpha,\qquad\gamma=\frac{g_{5}\sigma}{\sqrt{3}\beta},
+\ee
+where $m_q$ is the quark mass, $\sigma$ is the chiral condensate, $\lambda$ is set by the experimental Regge trajectories, and $g_5$ is determined by (\ref{eq:g5}) as derived Section \ref{sub:EOM}.
+For convenience, we will work in units where the AdS curvature radius $L$ is unity.
+In the small-$z$ limit, the chiral field becomes
+\ba
+\chi(z\rightarrow 0) & = & \alpha z +\beta \gamma z^3 \nonumber \\
+& = & \frac{\sqrt{3}}{g_5} m_q + \frac{g_5}{\sqrt{3}} \sigma, 
+\label{eq:chiUV}
+\ea
+where $\sqrt{3}/g_5$ is a normalization factor discussed in \cite{FILL-IN}.
+It is clear that, up to normalization, (\ref{eq:chiUV}) matches the UV form required by the AdS/CFT dictionary.
+In the large-$z$ limit, the chiral field becomes 
+\ba
+\chi(z\rightarrow \infty) & = & (\alpha + \beta) z \nonumber \\
+& = & \sqrt{\frac{4\lambda}{\kappa}}z.
+\ea
+The chiral field is linear in the IR, as required, and the dimensionless parameter $\kappa$ introduced in (\ref{equAction1}) becomes the parameter that controls the axial-vector mass splitting.
 
-Equations of motion are then derived using the method of Section \ref{sec:Soft-Wall-Model}, and the equations of motion for the vector and axial fields have thesame form as \ref{eq:EOM-vector-simple} and (\ref{eq:EOM-axial-simple}), respectively. 
-Due to the more complicated forms for $v$ and $\Phi$, the eigenvalues are not analytically solvable, so a numerical shooting method is used to calculate the mass spectra for the scalar, vector,
-and axial sectors. 
+The quark mass and chiral condensate can each be taken to zero independently, and the non-restoration of chiral symmetry does not depend on either of these parameters. 
+Thus, the spontaneous and chiral symmetry breaking parameters are independent, as desired. 
+Using (\ref{eq:VEV-parametrization}) in (\ref{eq:dilatonEOM}) we can solve for the derivative of the dilaton field
+\be
+\Phi' = \frac{1}{a(z)^3 \chi'}\left(\partial_z\left(a(z)^3 \chi'\right)-a^5\left(m_X^2\chi - \frac{\kappa}{2}\chi^3\right)\right).
+\label{eq:phiprime}
+\ee
+Using (\ref{eq:VEV-parameterization}) in (\ref{eq:phiprime}), the asymptotic behavior of the dilaton is found to be
+\ba
+\Phi(z \rightarrow 0) & = & \frac{\kappa}{4} \alpha^2 z^2 + \mathcal{O}(z^6), \\
+\Phi(z \rightarrow \infty) & = & \frac{\kappa}{4} (\alpha + \beta)^2 z^2 = \lambda z^2,
+\ea
+where the boundary condition $\Phi(0) = 0$ is chosen to ensure a pure AdS metric in the UV limit.
+We can see that the desired IR dilaton behavior is recovered by this parameterization.
+
+\subsection{Meson Spectra}
+
+Using these parameterizations for the dilaton and chiral condensate fields, we can now calculate the mass eigenvalues of the scalar, vector, and axial-vector mesons.
+Equations of motion are then derived using the method of Section \ref{sec:Soft-Wall-Model}.
+Due to the more complicated forms for $\chi$ and $\Phi$, the eigenvalues are not analytically solvable, so a numerical shooting method is used to calculate the mass spectra for the scalar, vector, and axial sectors.
+For details on the shooting method, see Appendix \ref{appendix_numerical}.
+
+\subsubsection{Scalar Mesons}
+The mass spectrum of the scalar $f_0$ mesons is determined by deriving the equations of motion for the scalar field $S(x,z)$ and calculating its eigenvalues.
+The procedure is similar to that delineated in Section \ref{sub:EOM}, but the quartic term in the scalar potential in (\ref{equAction1}) causes the fluctuations of the scalar field to couple to its own vacuum expectation value.
+Using a Kaluza-Klein decomposition
+\be
+ S(x,z)=\sum_{n=0}^{\infty}{\cal S}_n(x) S_n(z), 
+\ee
+we vary the action (\ref{equAction1}) with respect to $S$, yielding
+\be
+\partial_z(a^3(z) {\rm e}^{-\Phi}\partial_{z}S_n(z))- a^5(z) {\rm e}^{-\Phi}\left(m_X^{2} -\frac{3}{2}\kappa \chi^2(z)\right) S_n(z)= -a^3(z) {\rm e}^{-\Phi} m_{S_n}^2 S_n(z), 
+\label{scalarequ}
+\ee
+The scalar equation of motion (\ref{scalarequ}) can be brought into a Schr\"{o}dinger-like form with the substitution 
+\be
+S_n(z)={\rm e}^{\omega_s/2}s_n(z), 
+\ee
+with $\omega_s$ as defined in (\ref{eq:omegaScalar}).
+The eigenvalue equation becomes
+\be
+-\partial_z^{2}s_n(z)+\left(\frac{1}{4}\omega_s'^2-\frac{1}{2}\omega_s''-\frac{3}{2}\frac{\kappa \chi^2(z)}{z^2}-\frac{3}{z^2}\right)s_n(z)=m_{S_n}^{2}s_n(z),
+\ee
+with the boundary conditions
+\be
+\lim_{z_0\rightarrow 0} s_n(z_0)=0,\quad\quad\quad \partial_z s_{n}(z\rightarrow\infty)=0.
+\ee
+
+
+
+\subsubsection{Vector Mesons}
+
+and the equations of motion for the vector and axial fields have the same form as (\ref{eq:EOM-vector-simple}) and (\ref{eq:EOM-axial-simple}), respectively. 
+
 The results for the vector mesons are shown in Figure \ref{fig:Vector}, and the scalar and axial sectors show similarly good results \cite{gherghetta-kelley}. 
 These results reproduce the linear trajectories found in the simple soft-wall model \cite{karch-katz-son-adsqcd} for large $n$, while improving the agreement of the lower excitations with data.
 
-\section{Pions in Soft-Wall AdS/QCD \label{sec:Pions}}
+\subsection{Pions in Modified Soft-Wall Model of AdS/QCD \label{sec:Pions}}
 
-The mass spectrum for the pseudoscalar mesons was not found in the original paper \cite{gherghetta-kelley} because the equations of motion are coupled, second order differential equations, and because
-of some subtleties that arise when considering the representation of the pseudoscalar field. 
-The paper \cite{sui-pion} attempted to circumvent these problems by reducing the equations of motion to a single second-order equation, solvable by the shooting method, but their results seemed to miss
-certain essential features of the pion spectrum. 
+The mass spectrum for the pseudoscalar mesons was not found in the original paper \cite{gherghetta-kelley} because the equations of motion are coupled, second order differential equations, and because of some subtleties that arise when considering the representation of the pseudoscalar field. 
+The paper \cite{sui-pion} attempted to circumvent these problems by reducing the equations of motion to a single second-order equation, solvable by the shooting method, but their results seemed to miss certain essential features of the pion spectrum. 
 The authors later address this apparent discrepancy in \cite{sui-3flavor}.
-This modified soft-wall model was later completed in the paper \cite{bartz-pions}, which clarified the discrepancies between two common representations of the pseudoscalar field, calculated the pion mass spectrum to good accuracy, and derived the Gell-Mann--Oakes--Renner relation from the model.
+This modified soft-wall model was later completed in a paper to which the author contributed, \cite{bartz-pions}, which clarified the discrepancies between two common representations of the pseudoscalar field, calculated the pion mass spectrum to good accuracy, and derived the Gell-Mann--Oakes--Renner relation from the model.
 
-\subsection{Pseudoscalar Representation\label{sub:Pseudoscalar-Representation}}
-
-As mentioned above, the field $X$ contains both the field representing the scalar mesons, $S,$ and the field representing the pseudoscalars, $\pi,$ as well as the VEV. 
+As mentioned above, the field $X$ contains both the field representing the scalar mesons, $S(x,z)$, and the field representing the pseudoscalars, $\pi(x,z)$, as well as a non-trivial $z$-dependent vacuum expectation value, $\chi(z)$. 
 There are two common ways to represent this field:
 \ba
 X_{e} &=& \left(\frac{\chi(z)}{2}+S(x,z)\right)Ie^{2i\pi_{e}(x,z)^{a}t^{a}}\\ \label{equXe}
@@ -345,26 +602,43 @@ X_{l} &=& \left(\frac{\chi(z)}{2}+S(x,z)\right)I+i\pi_{l}(x,z)^{a}t^{a}\label{eq
 \ea
 with $I$ the $N_{f}\times N_{f}$ identity matrix and $t^{a}$ the $SU(N_{f})$ generators. 
 We will refer to $X_{e}$ as the exponential representation and $X_{l}$ as the linear representation. 
-Apparent differences between the representations arise as we note that $\pi_{e}$
-and $\pi_{l}$ have different dimensionality. 
+Apparent differences between the representations arise as we note that $\pi_{e}$ and $\pi_{l}$ are of different dimension. 
 In addition, the linear representation has a quartic interaction term in the Lagrangian, in contrast to the exponential representation. 
-Equations of motion derived from each representation are shown to be equivalent.
+Despite these differences, we will show that the equations of motion derived from each representation are equivalent.
 
 \subsubsection{Exponential Representation}
 
-Let us take (\ref{equXe}) and substitute it into (\ref{equAction1}), keeping terms that include the field $\pi(\mathbf{x},z)$, as well as terms that will mix with $\pi$, 
+Let us take (\ref{equXe}) and substitute it into (\ref{equAction1}), keeping terms that include the field $\pi(x,z)$, as well as terms that will mix with $\pi$, 
 \ba
 \mathcal{L}_{e} & = & -\sqrt{-g}{\rm e}^{-\Phi(z)}\frac{1}{2}\delta^{ab}\Big(g^{MN}(\chi^{2}\,\partial_{M}\pi\partial_{N}\pi+\chi^{2}A_{M}A_{N}-2\chi^{2}\partial_{M}\pi A_{N})\nonumber \\
  &  & +\frac{g^{MP}g^{NR}}{g_{5}^{2}}(\partial_{M}A_{N}\partial_{P}A_{R}-\partial_{M}A_{N}\partial_{R}A_{P})\Big)+\dots\label{start}
 \ea
-We work in the axial gauge, $A_{z}=0$, and separate $A_{\mu}$ into its transverse and longitudinal components: $A_{\mu}=A_{\mu\perp}+\partial_{\mu}\varphi,$ where $\partial_{\mu}A_{\perp}^{\mu}=0$. 
-Separating (\ref{start}) explicitly into regular 4D components and extra-dimensional terms,
-and expressing it in terms of the longitudinal part of $A_{\mu}$ gives 
+We work in the axial gauge, $A_{z}=0$, and separate the action (\ref{start}) into four-dimensional components and $z$-dependent terms,
+\ba
+\mathcal{L}_e &=& -\frac{1}{2} {\rm e}^{-\Phi(z)}\Big[\sqrt{-g}\,g^{\mu\nu}\left(\chi ^{2}\partial_{\mu}\pi\partial_{\nu}\pi+\chi ^{2}A_{\mu}A_{\nu} - 2\chi ^{2}\partial_{\mu}\pi A_{\nu}\right)\nonumber \\
+&&+\sqrt{-g}g^{zz}\chi ^{2}\partial_{z}\pi\partial_{z}\pi\ + \frac{\sqrt{-g}g^{\mu\nu}g^{\rho\sigma}}{g_{5}^{2}}(\partial_{\mu} A_{\rho} \partial_{\nu} A_{\sigma} - \partial_{\mu} A_{\rho} \partial_{\sigma} A_{\nu}) \nonumber\\
+&&+ \frac{\sqrt{-g}g^{zz}g^{\mu\nu}}{g_{5}^{2}}(\partial_{z} A_{\mu}\partial_{z} A_{\nu})\Big].\label{equLbase}
+\ea
+We separate $A_{\mu}$ into its transverse and longitudinal components: $A_{\mu}=A_{\mu\perp}+\partial_{\mu}\varphi,$ where $\partial_{\mu}A_{\perp}^{\mu}=0$. 
+Expressing the action in terms of the longitudinal component, $\varphi$ gives 
 \ba
 \mathcal{L}_{e} & = & -\frac{1}{2}{\rm e}^{-\Phi(z)}\Big[\sqrt{-g}g^{\mu\nu}(\chi^{2}\partial_{\mu}\pi\partial_{\nu}\pi+\chi^{2}\partial_{\mu}\varphi\partial_{\nu}\varphi-2\chi^{2}\partial_{\mu}\pi\partial_{\nu}\varphi)\nonumber \\
  &  & +\sqrt{-g}g^{zz}\chi^{2}\partial_{z}\pi\partial_{z}\pi\ +\frac{\sqrt{-g}g^{zz}g^{\mu\nu}}{g_{5}^{2}}(\partial_{z}\partial_{\mu}\varphi\partial_{z}\partial_{\nu}\varphi)\Big].\label{equLproper}
 \ea
-Varying (\ref{equLproper}) with respect to $\pi$ and  performing a Kaluza-Klein decomposition, as above in (\ref{eq:vectorEOM1}), expressing the system of equations in terms of its $z$-dependent parts. 
+Varying (\ref{equLproper}) with respect to $\pi$ gives
+\be
+\delta\mathcal{L}_e = \partial_{z} {\rm e}^{-\Phi}\sqrt{-g}\,g^{zz}\chi^{2}\partial_{z}\pi \delta\pi + {\rm e}^{-\Phi}\sqrt{-g}\,\chi^{2}g^{\mu\nu}\partial_{\nu}\partial_{\mu}(\pi - \varphi)\delta\pi. \nonumber\\
+\ee
+Using a Kaluza-Klein decomposition,
+\ba
+\pi(x,z) &=& \sum_{n}\Pi_{n}(x) \pi_{n}(z) \label{equKKpi}, \\
+\varphi(x,z) &=& \sum_{n}\Phi_{n}(x)\varphi_{n}(z) \label{equKKphi},
+\ea
+and Proca's equation
+\be
+\partial^{2} \Pi_{n}(x) = m_{n}^{2}\Pi_{n}(x) \, , \quad\quad \partial^{2}\Phi_{n}(x) = m_{n}^{2}\Phi_{n}(x) \,, 
+\ee
+we can express the system of equations in terms of its $z$-dependent parts
 \be
 e^{\Phi}\partial_{z}\left(\frac{e^{-\Phi}\chi^{2}}{z^{3}}\partial_{z}\pi_{n}\right)+\frac{\chi^{2}m_{n}^{2}}{z^{3}}(\pi_{n}-\varphi_{n})=0.\label{equOne}
 \ee
@@ -374,10 +648,10 @@ Varying (\ref{equLproper}) with respect to $\varphi$ and breaking it down into K
 \ee
 As usual, we express (\ref{equOne}) and (\ref{equTwo}) in a Schr{\"o}dinger-like form,
 \ba
-\pi & = & {\rm e}^{f(z)}\tilde{\pi}\quad\quad\quad f(z)=\Phi(z)+\log{\frac{z^{3}}{\chi(z)^{2}}}\\
-\varphi & = & {\rm e}^{g(z)}\tilde{\varphi}\quad\quad\quad g(z)=\Phi(z)+\log{z}.
+\pi & \rightarrow & {\rm e}^{f(z)}\pi\quad\quad\quad f(z)=\Phi(z)+\log{\frac{z^{3}}{\chi(z)^{2}}}\\
+\varphi & \rightarrow & {\rm e}^{\omega(z)}\varphi \quad\quad\quad \omega(z)=\Phi(z)+\log{z}.
 \ea
-After reverting back to the notation $\tilde{\pi}\rightarrow\pi$ and $\tilde{\varphi}\rightarrow\varphi$ the equations of motion become
+After simplifying, the equations of motion become
 \ba
  &  & -\pi_{n}''+\left(\frac{\Phi'^{2}}{4}-\frac{\Phi''}{2}-\frac{\Phi'\chi'}{\chi}+\frac{3\Phi'}{2z}+\frac{15}{4z^{2}}-\frac{3\chi'}{\chi z}+\frac{\chi''}{\chi}-m_{n}^{2}\right)\pi_{n}=-m_{n}^{2}\frac{\chi^{2}L^{2}}{z^{2}}\varphi_{n}\label{equSchexppi}\\
  &  & -\varphi_{n}''+\left(\frac{\Phi'^{2}}{4}-\frac{\Phi''}{2}+\frac{\Phi'}{2z}+\frac{3}{4z^{2}}+\frac{g_{5}^{2}\chi^{2}L^{2}}{z^{2}}\right)\varphi_{n}=g_{5}^{2}\pi_{n}\label{equSchexpphi}
@@ -390,7 +664,7 @@ After reverting back to the notation $\tilde{\pi}\rightarrow\pi$ and $\tilde{\va
 When considering the linear representation of the pseudoscalar field (\ref{equXl}), there are terms quadratic and quartic in $\pi$ that were not present in the exponential representation. 
 After making the appropriate substitutions in the Lagrangian, it becomes 
 \ba
-\mathcal{L}_{l} & = & -\frac{1}{2}{\rm e}^{-\Phi}\sqrt{-g}\Big(g^{\mu\nu}\partial_{\mu}\pi\partial_{\nu}\pi+g^{zz}\partial_{z}\pi\partial_{z}\pi-2vg^{\mu\nu}\partial_{\mu}\pi\partial_{\nu}\varphi+m_{X}^{2}\pi^{2}-\frac{\kappa}{2}\chi^{2}\pi^{2}\nonumber \\
+\mathcal{L}_{l} & = & -\frac{1}{2}{\rm e}^{-\Phi}\sqrt{-g}\Big(g^{\mu\nu}\partial_{\mu}\pi\partial_{\nu}\pi+g^{zz}\partial_{z}\pi\partial_{z}\pi-2\chi g^{\mu\nu}\partial_{\mu}\pi\partial_{\nu}\varphi+m_{X}^{2}\pi^{2}-\frac{\kappa}{2}\chi^{2}\pi^{2}\nonumber \\
  & + & g^{\mu\nu}\chi^{2}\partial_{\mu}\varphi\partial_{\nu}\varphi+\frac{g^{\mu\nu}g^{zz}}{g_{5}^{2}}\partial_{z}\partial_{\mu}\varphi\partial_{z}\partial_{\nu}\varphi\Big).
 \ea
 Following the same procedure as above, we derive two coupled equations.
@@ -405,18 +679,19 @@ z^{3}{\rm e}^{\Phi}\partial_{z}\left(\frac{{\rm e}^{-\Phi}}{z^{3}}\partial_{z}\p
  We can express (\ref{equphi}) and (\ref{equpi}) in a Schr{\"o}dinger-like form as above %
 with the substitutions 
 \ba
-\pi_{n} & = & {\rm e}^{f}\tilde{\pi_{n}}\quad\quad\quad f=\frac{\Phi}{2}+\frac{3}{2}\log{\frac{z}{L}}\\
-\varphi_{n} & = & {\rm e}^{g}\tilde{\varphi_{n}}\quad\quad\quad g=\frac{\Phi}{2}+\frac{1}{2}\log{\frac{z}{L}}.
+\pi_{n} & \rightarrow & {\rm e}^{\omega_s/2}\pi_{n}\\
+\varphi_{n} & \rightarrow & {\rm e}^{\omega/2}\varphi_{n},
 \ea
-Simplifying the equations and reverting back to the notation $\tilde{\pi_{n}}\rightarrow\pi_{n}$ and $\tilde{\varphi_{n}}\rightarrow\varphi_{n}$ for simplicity, we find  
+where $\omega_s$ and $\omega$ are defined as in (\ref{eq:omegaScalar}) and (\ref{eq:omega}), respectively.
+Simplifying the equations , we find  
 \ba
  &  & -\varphi_{n}''+\left(\frac{\Phi'^{2}}{4}-\frac{\Phi''}{2}+\frac{3}{4z^{2}}+\frac{\Phi'}{2z}+\frac{g_{5}^{2}L^{2}\chi^{2}}{z^{2}}\right)\varphi_{n}=\frac{g_{5}^{2}L\chi}{z}\pi_{n}\label{equSchphi}\\
  &  & -\pi_{n}''+\left(\frac{\Phi'^{2}}{4}-\frac{\Phi''}{2}+\frac{3}{4z^{2}}+\frac{3\Phi'}{2z}-\frac{\kappa L^{2}\chi^{2}}{2z^{2}}-m_{n}^{2}\right)\pi_{n}=-m_{n}^{2}\frac{\chi L}{z}\varphi_{n}\label{equSchpi}
 \ea
 
-\subsection{Representation Equivalence}
+\subsubsection{Representation Equivalence}
 
-The pseudoscalar field representation should not affect the physical results obtained from the model. 
+The choice of representation for the pseudoscalar field should not affect any physical results obtained from the model. 
 It is therefore desirable to show that the equations of motion derived from the two representations are equivalent.
 
 We begin by expanding $X_{e}$ to first order in the fields 
@@ -424,7 +699,12 @@ We begin by expanding $X_{e}$ to first order in the fields
 X_{e} & = & \left(\frac{\chi}{2}+S\right)(1+2i\pi_{e}+\ldots)\nonumber \\
  & = & \frac{\chi}{2}+S+i\pi_{e}\chi.\label{equXexpand}
 \ea
-Comparing (\ref{equXexpand}) to (\ref{equXl}), we surmise that $\pi_{e}\chi(z)\rightarrow\pi_{l}$ is the relationship between the two representations. 
+Comparing (\ref{equXexpand}) to (\ref{equXl}), we infer that 
+\be
+\pi_{e}\chi(z)\rightarrow\pi_{l}
+\label{eq:relation}
+\ee
+ is the relationship between the two representations. 
 Let us substitute
 $\pi_{e}\rightarrow\pi_{l}/\chi(z)$ into the equations of motion of the exponential representation and attempt to obtain the equations of motion of the linear representation. 
 The substitution into (\ref{equTwo}) immediately yields 
@@ -432,10 +712,11 @@ The substitution into (\ref{equTwo}) immediately yields
 {\rm e}^{\Phi}\partial_{z}\left(\frac{{\rm e}^{-\Phi}}{z}\partial_{z}\varphi\right)+\frac{g_{5}^{2}\chi}{z^{3}}(\pi_{l}-\chi\varphi)=0,
 \ee
 which is equivalent to (\ref{equphi}) as expected. 
-Showing the equivalence of the other two equations requires a bit more work. 
-First we substitute for $\pi_{e}$ in (\ref{equOne}) and then simplify the expression,
+
+Demonstrating the equivalence of the other two equations requires a bit more analysis. 
+First we substitute for $\pi_{e}$ in (\ref{equOne}) and simplify the expression,
 \be
-\frac{z^{3}{\rm e}^{\Phi}}{\chi}\partial_{z}\left(\frac{{\rm e}^{-\Phi}\chi^{2}}{z^{3}}\left(\frac{\pi_{l}'}{\chi}-\frac{\pi_{l}\chi}{\chi^{2}}\right)\right)+m_{n}^{2}(\pi_{l}-\chi\varphi)=0
+\frac{z^{3}{\rm e}^{\Phi}}{\chi}\partial_{z}\left(\frac{{\rm e}^{-\Phi}\chi^{2}}{z^{3}}\left(\frac{\pi_{l}'}{\chi}-\frac{\pi_{l}\chi}{\chi^{2}}\right)\right)+m_{n}^{2}(\pi_{l}-\chi\varphi)=0,
 \ee
 which becomes
 \be
@@ -451,6 +732,99 @@ Using (\ref{equchi}) in (\ref{equOnemid}), we find
 \ee
 which is equivalent to the other equation of motion of the linear representation (\ref{equpi}). 
 The equations of motion are equivalent, confirming that physical results do not depend on the representation.
+
+\subsubsection{Pseudoscalar Mass Eigenvalues}
+The mass eigenvalues for the pions can be calculated in either the exponential or linear representation, using the numerical matrix method detailed in Appendix \ref{appendix_numerical}. 
+However, it turns out that the boundary conditions
+\ba
+\pi(z_0\rightarrow 0)  =  0   \quad\quad\quad \partial_z\pi(z\rightarrow \infty)  =  0 \\
+\varphi(z_0\rightarrow 0)  =  0   \quad\quad\quad \partial_z\varphi(z\rightarrow \infty)  =  0 
+\ea
+are easier to enforce using the linear representation (\ref{equXl}).
+This may be due to the relation (\ref{relation}) and the fact that the chiral field $\chi$ also goes to zero in the UV, making it difficult to enforce the boundary condition on $\pi_e$ simultaneously.
+The numerical results for the $\pi_l$ eigenvalues are shown in Table \ref{tblmass}.
+
+\begin{table}[htb]
+\begin{center}
+\begin{tabular}{| c || c | c | c | }
+\hline
+n & $\pi$ Data (MeV) 	& $\pi_{l}$ (MeV) 		& Large-$n$ $\pi_{l}$ 	 \\
+\hline
+\hline
+1 & 140  		& 143  				& -			\\
+\hline
+2 & 1300 $\pm$ 100 	& 1557  			& -			 \\
+\hline
+3 & 1816 $\pm$ 14 	& 1887  			& -			\\
+\hline
+4 & 2070* 		& 2095 				& - 			\\
+\hline
+5 & 2360* 		& 2298 				& 2245 			\\
+\hline
+6 &  -   		& - 				& 2403 			\\
+\hline
+7 &  -   		& -				& 2551 			\\
+\hline
+\end{tabular}
+\caption{The observed masses \cite{pdg} and calculated masses using the linear representations. 
+The large-$n$ limit solutions are valid from $n\approx 4$. 
+From that point onward, the numerical method used is increasingly inaccurate and fails to find the linear Regge trajectories expected. 
+*=Appears only in the further states of \cite{pdg}.}
+\label{tblmass}
+\end{center}
+\end{table}
+
+
+For large-$n$ excitations the numerical technique develops problems
+with the boundary conditions. As the number of oscillations in the
+eigenfunctions increase for higher $n$ modes, the routine finds eigenvalues
+that are skewed to larger values. To uncover the correct asymptotic
+behavior for large $n$, we take the large-$z$ limit of (\ref{equSchphi})
+and (\ref{equSchpi}). As $n$ increases, the eigenfunction is largely
+determined by the behavior of the effective potential at large $z$.
+At large $z$, the VEV and dilaton behave as 
+\ba
+\chi(z) & = & (\alpha+\beta)z\equiv\Gamma\frac{z}{L}\\
+\phi(z) & = & \lambda z^{2}.
+\ea
+
+
+To take the large-$z$ limit of the linear representation, we introduce a new dimensionless parameter, $\xi=\sqrt{\lambda}z$, and expand in $\xi$. 
+In the linear representation, we find that (\ref{equSchphi}) and (\ref{equSchpi}) at large $\xi$ become 
+\ba
+-\pi_{k}''+\xi^{2}\pi_{k} & = & \left(\frac{\kappa\Gamma^{2}}{2\lambda}-2+\frac{m_{k}^{2}}{\lambda}\right)\pi_{k}-\frac{m_{k}^{2}\Gamma}{\lambda}\varphi_{k}\label{equpiSHO}\\
+-\varphi_{k}''+\xi^{2}\varphi_{k} & = & \frac{g_{5}^{2}\Gamma}{\lambda}\left(\pi_{k}-\Gamma\varphi_{k}\right)\label{equphiSHO}
+\ea
+where ($'$) here indicates differentiation with respect to $\xi$.
+This set of equations has the form of coupled harmonic oscillators, the equations of motion of which are 
+\ba
+-\varphi_{k}''+\xi^{2}\varphi_{k} & = & (2k+1)\varphi{}_{k}\label{equphiSHOG}\\
+-\pi_{k}''+\xi^{2}\pi_{k} & = & (2k+1)\pi_{k}\quad\quad k=0,1,\ldots.\label{equpiSHOG}
+\ea
+We make the reasonable assumption that $\varphi_{k}=c_{k}\pi_{k}$, which ensures that (\ref{equpiSHO}), and (\ref{equphiSHO}) have solutions. 
+Using the form of (\ref{equphiSHOG}) and (\ref{equpiSHOG}) to solve for  $m_{k}^{2}$, and making use of the fact that $\Gamma^{2}=\frac{4\lambda}{\kappa}$, we find 
+\be
+m_{k}^{2}=g_{5}^{2}\Gamma^{2}+(2k+1)\lambda.
+\ee
+Until now we have not made use of the fact that, in the AdS metric, $z\geq0$. 
+Because of this, the eigenfunctions $\varphi_{n}$ and $\pi_{n}$ describe \textit{half} harmonic oscillators with half as many modes; therefore, we must take $k\rightarrow2k$. 
+The mass eigenvalues for large $n$, where $n=k+1$, in both representations then become 
+\be
+m_{n}^{2}=(4n-3)\lambda+g_{5}^{2}\Gamma^{2}\quad\quad n=4,5,\ldots\label{equMass4Both}
+\ee
+which are also listed in Table \ref{tblmass} and plotted in Figure \ref{fig:mass}. 
+Combining (\ref{equMass4Both}) and the numerical technique, we obtain all the pseudoscalar eigenvalues. 
+On inspection, we find that this method should be trusted over the numerical routine for $n\geq4$.
+
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[scale=0.42]{linear.pdf}
+\caption{The pion mass spectrum calculated in the modified AdS/QCD model is plotted along with the experimental data \cite{pdg}. 
+The eigenvalues display two important characteristics of the experimental pion spectrum: (1) light ground state and (2) a large gap between the ground state and the first excited state. 
+The large-$n$ mass trajectory clearly follows our calculated eigenvalues from $n\approx 4$ when our numerical routine inadequately follows the oscillations of the higher eigenfunctions.}
+\label{fig:mass}
+\end{center}
+\end{figure}
 
 \subsection{Gell-Mann--Oakes--Renner Relation}
 
@@ -497,8 +871,14 @@ as described in \cite{gherghetta-kelley}.
 \label{fig:GOR}
 \end{figure}
 
-%\begin{figure}
-%\center{\includegraphics[width=300pt]{quarkvspion.pdf}}
-%\caption{Plot of $m_{\pi}^{2}$ vs $m_{q}$ yields a straight line from which the pion decay constant $f_{\pi}$ is calculated using (\ref{eq:GOR}).}
-%\label{fig:GOR}
-%\end{figure}
+\section{Summary}
+In this chapter, we discussed the metric structure and field content of a soft-wall AdS/QCD model. 
+We illustrated the field content of the simplest such model that describes light mesons and their spectra.
+We discussed the vacuum expectation value of the scalar field, which is related to the chiral symmetry breaking of the theory.
+The behavior of this chiral condensate was derived, and we discussed the shortcomings apparent in the simplest soft-wall models.
+We then derived the equations of motion for the scalar, vector, and axial-vector mesons.
+
+We also discussed a modified soft-wall model that allows for the correct form of chiral symmetry breaking.
+In this model, we discussed the derivation of the pseudoscalar equations of motion, and the equivalence between the two common representations of the pseudoscalar field.
+Finally, we calculated the Gell-Mann--Oakes--Renner relation in the linear representation, showing that it is equivalent to that derived in the exponential representation.
+We confirmed the Gell-Mann--Oakes--Renner relation numerically in this model, and calculated the value of $f_\pi$, in good agreement with the accepted value.
