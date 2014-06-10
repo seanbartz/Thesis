@@ -1,0 +1,243 @@
+\chapter{Dynamical AdS/QCD}
+\label{ch:dynamical}
+
+In this chapter, we introduce the dynamical approach to soft-wall AdS/QCD, an attempt to be more rigorous than the version of the model discussed in Chapter \ref{sec:Soft-Wall-Model}.
+In the dynamical approach, the background fields including the dilaton and possibly other scalar fields are derived from a gravitational action, rather than parameterized and inserted to the model by hand.
+We will discuss the basic setup of the model including the necessary and optional terms in the gravitational action.
+There are a variety of approaches to describing the fields in the dynamical model.
+We will review the existing literature in this area and motivate the particular dynamical model that is described in detail in Chapter \ref{ch:dynamical_threefield}.
+
+\section{Gravity-Dilaton Action}
+\label{sec:gravity-dilaton}
+
+We begin in the so-called string frame, where the geometry is purely $AdS_5$, 
+\be
+ds^2 = \frac{L^2}{z^2}(-dt^2 + dx_i dx^i + dz^2),
+\label{eq:AdSmetricdynamical}
+\ee
+where $L$ is the AdS curvature radius, the index $i$ runs over the three spatial dimensions, and $z$ represents the extra dimension.
+The minimal gravitational action for a background dilaton is
+\be
+\mathcal{S} = \frac{1}{16\pi G_5}\int d^5 x \root \EXP^{-2\Phi} \left(R + \partial_M \Phi \partial^M \Phi -V(\Phi)\right),
+\label{eq:dilatonAction}
+\ee
+where $G_5$ is the five-dimensional Newton's constant, $R$ is the Ricci curvature scalar, $\Phi$ is the dilaton, and $V(\Phi)$ is some unspecified potential involving the dilaton.
+The Ricci scalar is defined in Appendix \ref{FILL-IN}. 
+For the $AdS_5$ metric, the value of the Ricci scalar is $R=-20/L^2$.
+The overall constant factor in (\ref{eq:dilatonAction}) is chosen to satisfy Einstein's equation, as discussed in Appendix \ref{FILL-IN}.
+
+To derive the equations of motion that result from the gravitational action, it is convenient to perform a conformal transformation to the so-called Einstein frame, where the Ricci scalar appears without being multiplied by the dilaton pre-factor.
+The transformation to the Einstein frame is
+\be
+g_{MN}=\EXP^{4\Phi/3}\tilde{g}_{MN},
+\label{eq:transform}
+\ee
+where the tilde distinguishes the Einstein frame. 
+
+Let us examine how the conformal transformation affects each term of the action.
+In the string frame, there is an overall factor of 
+\be
+\root  = \sqrt{-\det\left(g^{MN}\right)}=\left(\frac{1}{z}\right)^5
+\label{eq:stringfactor}
+\ee
+In the Einstein frame, the overall factor becomes
+\be
+\sqrt{-g_E} = \left(\frac{\EXP^{-2\Phi/3}}{z}\right)^5 = \frac{1}{z^5} \EXP^{-10\Phi/3}.
+\label{eq:einsteinfactor}
+\ee
+Comparing (\ref{eq:einsteinfactor}) to (\ref{eq:stringfactor}) it is evident that 
+\be
+\sqrt{-g_E} = \EXP^{-10\Phi/3}\root
+\ee
+The potential term has the simplest transformation, where the Einstein potential becomes 
+\be
+\tilde{V} = \EXP^{4\Phi/3}V.
+\label{eq:Vtrans}
+\ee
+The Ricci scalar is calculated using the same method as above, resulting in
+\be
+\tilde{R} = -20/L^2 -\frac{4}{\rt6 L^2} z \phi'  -\frac{2}{L^2} z^2 \phi'^2 - \frac{8}{\rt6 L^2}z^2 \phi''
+\ee
+
+The transformation of the dilaton kinetic term is more involved. %DO THIS
+
+The Einstein frame action becomes 
+\be
+\mathcal{S}_E=\frac{1}{16\pi G_5} \int d^5x \sqrt{-g_E} \left(\tilde{R} -\thalf\partial_M \phi \partial_N \phi -\tilde{V}(\phi)  \right),
+\label{eq:dilatonActionEinstein}
+\ee
+where the dilaton is re-scaled $\phi=\sqrt{8/3}\Phi$ for a canonical action.
+
+The energy-momentum tensor derived from this action is
+\ba
+8\pi G_5 T_{MN} & = & \thalf(\partial_M \phi \partial_N \phi -g_{MN} \mathcal{L}) \label{eq:EMtensor1}\\
+\mathcal{L} &=& \thalf \partial_\lambda \phi \partial^\lambda \phi +\tilde{V}(\phi) 
+\label{eq:EMtensor2}
+\ea
+
+Two equations of motion are found by varying the Einstein frame action (\ref{eq:dilatonActionEinstein}) with respect to the dilaton and the metric.
+\ba
+G_{MN} &=& 16\pi G_5 T_{MN} \label{eq:einstein}\\
+\square \phi & =& \frac{\partial \tilde{V}}{\partial \phi},
+\ea
+where $\square \equiv \nabla_M \nabla^M $, and $\nabla_M$ is the covariant derivative with respect to the metric.
+It is useful to write (\ref{eq:einstein}) in the following combinations
+\ba
+\tilde{g}^{tt}G_{tt}-\tilde{g}^{zz}G_{zz} &=& 8\pi G_5(\tilde{g}^{tt}T_{tt} -\tilde{g}^{zz}T_{zz}) =\thalf \tilde{g}^{zz} \phi'^2,\\
+\tilde{g}^{tt}G_{tt}+\tilde{g}^{zz}G_{zz} &=& 8\pi G_5(\tilde{g}^{tt}T_{tt} +\tilde{g}^{zz}T_{zz}) = -\tilde{V}(\phi),
+\ea
+where we have made use of the fact that $\tilde{g}^{tt} = -\tilde{g}^{zz}.$
+Using the energy-momentum tensor defined in (\ref{eq:EMtensor1}-\ref{eq:EMtensor2}) and the Einstein metric defined in (\ref{eq:AdSmetricdynamical}) and (\ref{eq:transform}), the equations of motion become
+\ba
+\frac{z^2}{\rt6}\frac{d}{dz}\left(\frac{1}{z^2}\phi' \right) &=& 0. \\
+\EXP^{2\phi/\rt6}\frac{z^2}{L^2}\left[\frac{\rt6}{2}\phi'' - \frac{3}{2}\phi'^2 -3\rt6 \phi' -\frac{12}{z^2} \right]&=&\tilde{V}(\phi) \label{eq:dilEOM1}\\
+\EXP^{2\phi/\rt6}\frac{z^2}{L^2}\left[\phi'' -3\phi'\left(\frac{1}{z} +\frac{ \phi'}{\rt6}\right) \right]&=& \frac{\partial \tilde{V}}{\partial \phi}. \label{eq:dilEOM2}
+\ea
+Noting that we can re-write (\ref{eq:Vtrans}) in terms of the re-scaled dilaton $\phi$ as $\tilde{V} = \EXP^{2\phi/\rt6} V$, we see that (\ref{eq:dilEOM1}-\ref{eq:dilEOM2}) can be re-written in terms of the string frame potential
+\ba
+\frac{z^2}{L^2}\left[\frac{\rt6}{2}\phi'' - \frac{3}{2}\phi'^2 -3\rt6 \phi' -\frac{12}{z^2} \right]&=&V (\phi) \\
+\frac{z^2}{L^2}\left[\phi'' -3\phi'\left(\frac{1}{z} +\frac{ \phi'}{\rt6}\right) \right]&=& \frac{\partial V}{\partial \phi}. 
+\ea
+
+An obvious limitation of this system is the inability to describe chiral symmetry breaking.
+
+\section{Gravity-Dilaton-Tachyon Action}
+A simple extension of the action in (\ref{eq:dilatonAction}) is simply to include another scalar field in the action.
+It is hoped that with judicious choices for the behavior of this field, it may be possible to identify it as the chiral condensate field.
+We add a tachyonic field to the string frame action
+\be
+\mathcal{S} = \frac{1}{16\pi G_5}\int d^5 x \root \EXP^{-2\Phi} \left(R + \partial_M \Phi \partial^M \Phi -\partial_M\chi\partial^M\chi-V(\Phi,\chi)\right).
+\label{eq:tachyonAction}
+\ee
+With the same conformal transformation (\ref{eq:transform}), we can write the action (\ref{eq:tachyonAction}) with the Einstein frame metric defined by (\ref{eq:transform}).
+The Ricci scalar, dilaton kinetic term, and potential all transform in the same manner shown in Section \ref{sec:gravity-dilaton}.
+The transformation of the tachyon field is as follows
+\ba 
+\root \EXP^{-2\Phi} \partial_M \chi \partial^M \chi &= & \root \EXP^{-2\Phi} g^{MN}\partial_M \chi \partial_N \chi\nonumber \\
+&=& \root \EXP^{-2\Phi}\left( \EXP^{-4\Phi/3} \tilde{g}^{MN}\right)\partial_M \chi \partial_N \chi \nonumber \\
+&=& \left(\EXP^{10\Phi/3}\right)\sqrt{-g_E}\EXP^{-2\Phi}\left(\EXP^{-4\Phi/3} \tilde{g}^{MN} \right)  \partial_M \chi \partial_N \chi \nonumber \\
+&=& \sqrt{-g_E}\partial_M \chi \partial^M \chi
+\ea
+The gravity-dilaton-tachyon action in the Einstein frame becomes
+\be
+\mathcal{S}_E=\frac{1}{16\pi G_5}\int d^5x \sqrt{-g_E} \left(\tilde{R} -\thalf\partial_M \phi \partial^M \phi -\thalf\partial_M\chi \partial^M \chi - \tilde{V}(\phi,\chi)  \right),
+\label{eq:dilatonActionEinstein}
+\ee
+where again $\tilde{V} = \EXP^{4\Phi/3}V$, and the dilaton is re-scaled $\phi=\sqrt{8/3}\Phi$ for a canonical action.
+
+The energy-momentum tensor derived from this action is similar to that found in (\ref{eq:EMtensor1}-\ref{eq:EMtensor2}), with the addition of the tachyon field
+\ba
+8\pi G_5 T_{MN} & = & \thalf(\partial_M \phi \partial_N \phi +\partial_M \chi \partial_N \chi -g_{MN} \mathcal{L}) \\
+\mathcal{L} &=& \thalf \partial_\lambda \phi \partial^\lambda \phi +\thalf \partial_\lambda \chi \partial^\lambda \chi +\tilde{V}(\phi,\chi). 
+\ea
+Because of the presence of the additional tachyonic field, there is an additional equation of motion in comparison to the model in Section \ref{sec:gravity-dilaton},
+\ba
+\tilde{g}^{tt}G_{tt}-\tilde{g}^{zz}G_{zz} &=& 8\pi G_5(\tilde{g}^{tt}T_{tt} -\tilde{g}^{zz}T_{zz}) =\thalf \tilde{g}^{zz} (\phi'^2+\chi'^2),\\
+\tilde{g}^{tt}G_{tt}+\tilde{g}^{zz}G_{zz} &=& 8\pi G_5(\tilde{g}^{tt}T_{tt} +\tilde{g}^{zz}T_{zz}) = -\tilde{V}(\phi) \\
+\square \phi & =& \frac{\partial \tilde{V}}{\partial \phi} \\
+\square \chi & =& \frac{\partial \tilde{V}}{\partial \chi}.
+\ea
+Expanding these equations and writing in terms of the string frame potential $V(\phi,\chi)$ yields
+\ba
+\frac{z^2}{\rt6}\frac{d}{dz}\left(\frac{1}{z^2}\phi' \right) &=& \chi'^2 \label{eq:EOMnoV}\\
+\frac{z^2}{L^2}\left[\frac{\rt6}{2}\phi'' - \frac{3}{2}\phi'^2 -3\rt6 \phi' -\frac{12}{z^2} \right]&=&V (\phi,\chi) \\
+\frac{z^2}{L^2}\left[\phi'' -3\phi'\left(\frac{1}{z} +\frac{ \phi'}{\rt6}\right) \right]&=& \frac{\partial V}{\partial \phi} \label{eq:EOMdphi}\\
+\frac{z^2}{L^2}\left[\chi'' -3\chi'\left(\frac{1}{z} +\frac{ \phi'}{\rt6}\right) \right]&=& \frac{\partial V}{\partial \chi} . \label{eq:EOMdchi}
+\ea
+These equations are not all independent, however. 
+Because the potential does not depend explicitly on the coordinate $z$, but only through the fields, the total derivative becomes
+\be
+\frac{d}{dz}V(\phi,\chi) = \frac{\partial V}{\partial \phi}\phi'(z) +\frac{\partial V}{\partial \chi}\chi'(z).
+\ee
+This allows for the elimination of one of (\ref{eq:EOMdphi}) or (\ref{eq:EOMdchi}).
+
+Let us examine the behavior of this model when the fields obey a power-law behavior.
+We make the ansatz
+\be
+\chi(z) =\chi_0 z^n
+\ee
+for the behavior of the tachyonic field. 
+Inserting this ansatz into (\ref{eq:EOMnoV}) with the Dirichlet boundary condition $\phi(0)=0$ gives the solution for $\phi$,
+\be
+\phi(z) = \frac{n\rt6}{12(1+2n)} \chi_0^2 z^{2n}.
+\ee
+It was shown in \cite{Springer2009, Batell2008, Afonin2009} that such power-law behavior for the tachyonic field with $n=3$ or $n=1$ results in a mass term for $\chi$ that implies $m_\chi^2 L^2 = -3$. 
+This is the correct mass for the chiral condensate field that is dual to $\langle\bar{q}q\rangle$. 
+In addition this power-law behavior is exactly the asymptotic behavior that it was argued the chiral field should assume.
+That is, $\chi \sim z^3$ in the UV limit (in the limit of zero quark mass) and $\chi(z) \sim z$ in the IR limit.
+This suggests that the tachyonic field can be identified as the chiral condensate.
+
+However, this identification is of limited utility in the gravity-dilaton-tachyon model, as we can see by exploring the IR limit.
+Letting $n=1$, we can see that the IR behavior of the dilaton is 
+\be
+\phi(z) =\frac{1}{6\rt6} \chi_0^2 z^2.
+\ee
+The string frame dilaton is given by $\Phi = \lambda z^2$ in the IR limit, so the re-scaled dilaton becomes $\phi = \sqrt{8/3}\lambda z^2$.
+We see that the coefficient for the chiral field is determined
+\be
+\chi_0 = 2\rt6 \sqrt{\lambda}
+\ee
+and the axial-vector mass splitting in this model is set by the equation given in Section \ref{sec:soft-wall} %put eqn number
+\be
+\Delta m^2 = \frac{g_5^2 \chi^2}{z^2}(z\rightarrow \infty) = g_5^2 \chi_0^2 .
+\ee
+When the phenomenologically determined value for $\lambda$ is inserted into this equation, the value that is calculated for $\Delta m^2$ is too large by an order of magnitude. 
+
+Thus, we see that this gravity-dilaton-tachyon system fails because it does not allow separate parameters for the slope of the Regge trajectories and for the axial-vector mass splitting.
+Further, because (\ref{eq:EOMnoV}) does not involve the scalar potential, there is no choice for the potential that will rectify this shortcoming of this model. 
+
+\subsection{Alternative Approach to Chiral Symmetry Breaking in Dynamical AdS/QCD}
+
+A different approach to including chiral symmetry breaking can be found in \cite{FILL-IN}. 
+Rather than placing a tachyon in the bulk (closed-string sector), this model keeps the gravity-dilaton action separate from the matter (open-string) sector of the action.
+In the string frame, the gravity-dilaton action is written the same as \ref{eq:dilatonAction}
+\be
+\mathcal{S}_G= \frac{1}{16\pi G_5} \int d^5x \root \EXP^{-2\Phi} \left(R +4\partial_M\partial^M -V(\Phi)\right), 
+\label{eq:altGravAction}
+\ee
+while the matter action is written
+\be
+\mathcal{S}_M  = -\int d^5x \root \EXP^{-\Phi} \mathrm{Tr} \left[ |DX|^2 +\frac{1}{2 g_5^2}(F_A^2 +F_V^2) +V_M(|X|^2,\Phi)\right],
+\label{eq:altMatterAction}
+\ee
+where $V_M(|X|^2,\Phi)$ is some potential that could in principle involve both the scalar meson field and the dilaton.
+The scalar meson field $X$ is a charged field, so it must  appear in the potential only with an even exponent.
+Note the difference in the overall exponential dilaton factor between the two sectors (\ref{eq:altGravAction}) and (\ref{eq:altMatterAction}).
+This difference is due to the fact that (\ref{eq:altGravAction}) governs fields that exist in the bulk, where the strings are closed, and thus have two factors of the string coupling $\lambda^2 \sim \EXP^{-2\Phi}$. 
+The matter sector is governed by open strings that attach to the $N_c$ D-branes, so have only one factor of the string coupling \cite{FILL-IN}. 
+
+For the background dynamics, we must take the vacuum expectation value of both sectors and add them
+\be
+\mathcal{S} = \langle\mathcal{S}_G\rangle +\frac{N_f}{N_c} \langle\mathcal{S}_M \rangle.
+\ee
+The factor of $N_f/Nc$ included above is due to the dynamics of the $N_f$ flavor branes and the $N_c$ color branes. %probably explain more here
+The vacuum expectation value of $\mathcal{S}_G$ is unchanged from (\ref{eq:altGravAction}), and 
+\be
+\langle \mathcal{S}_M \rangle= -\int d^5x \root \EXP^{-\Phi} \left(\thalf \partial_M\chi\partial^M \chi +V_C(\chi,\Phi)\right),
+\ee
+where we have defined $V_C = \mathrm{Tr} V_M$.
+
+\section{Summary}
+In this chapter, we have introduced dynamical AdS/QCD, an approach intended to put AdS/QCD models on more consistent theoretical footing by deriving the background fields from a potential.
+We began by developing a simple gravity-dilaton action and showing how to transform between the string and Einstein frames.
+The equations of motion were derived in the Einstein frame.
+We also discussed the limitations of a gravity-dilaton model, namely the inability to model chiral symmetry breaking.
+
+We then introduced two models that attempt to include chiral dynamics into a dynamical AdS/QCD model. 
+The first model introduces a tachyon into the bulk, producing a gravity-dilaton-tachyon action. 
+The asymptotic behavior and mass of this tachyonic field are appropriate for that of the chiral condensate field.
+However, we showed that under this assumption, it is not possible to include a separate parameter for the axial-vector mass splitting, so this model fails to produce the correct axial-vector meson spectrum, irrespective of the choice of scalar potential.
+
+Finally, we introduced a model that introduces the chiral condensate in the open-string sector of the theory. 
+We derived the equations of motion and showed that it is possible to get the correct axial-vector mass splitting if one allows the metric to deviate from anti-de Sitter space in the IR.
+However, previous work on this model has used a parameterization for the dilaton and chiral condensate fields, and the full scalar potential for this model has not been determined.
+
+In the next chapter, we will introduce a dynamical model of AdS/QCD that includes three background fields in the bulk.
+This will allow for the correct form of chiral symmetry breaking, and the calculation of all meson spectra. 
+A full expression for the scalar potential will also be derived.
+
+
+
+
+
+
