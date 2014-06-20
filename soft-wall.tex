@@ -14,7 +14,7 @@ Two alternative representations for the pseudoscalar field are presented and sho
 We then calculate the meson spectrum for the pions and show that this model satisfies the Gell-Mann--Oakes--Renner relation.
 
 \section{Minimal Soft-Wall Model}
-The soft-wall model of AdS/QCD was introduced by Karch, \emph{et al} \cite{FILL-IN} and studied further by \cite{FILL-IN}.
+The soft-wall model of AdS/QCD was introduced by Karch, \emph{et al} \cite{karch-katz-son-adsqcd} and studied further by \cite{karch-dilaton-sign,Evans:2006ea,Grigoryan:2007my,kwee-lebed-pion,Cherman2009,colangelo2008,Huang:2007fv}.
 This work showed that the behavior of highly-excited mesons is controlled by the infrared behavior of the AdS/CFT dual theory. 
 They argued to replace the simple cut-off of the hard-wall model with a field known as the \emph{dilaton} whose IR behavior would act as a smooth cut-off to the AdS space.
 In this section, we will describe the set-up and field content of such a simple model and compare the resulting behavior to that of a hard-wall model.
@@ -37,7 +37,7 @@ The Minkowski metric is given by
 \ee
 The coordinate $z$ has a range $0\le z < \infty$.
 
-The bulk coordinate $z$ is associated with inverse energy scales, with the ultraviolet limit of QCD represented by fields at $z\rightarrow0$\cite{kwee-lebed-pion}. 
+The bulk coordinate $z$ is associated with inverse energy scales, with the ultraviolet limit of QCD represented by fields at $z\rightarrow0$ \cite{kwee-lebed-pion}. 
 The AdS/CFT dictionary \cite{maldacena,klebanov-witten} states that each operator $\mathcal{O}(x)$ in the 4D conformal field theory is associated with a bulk field $\psi(x,z)$. 
 The values of the bulk fields at the UV boundary act as sources for the corresponding
 4D currents. 
@@ -74,7 +74,7 @@ we can write this equation in momentum space
 \be
 z^5\partial_{z}\left(z^{-3}\partial_{z}\phi\right) + \left(m^{2} - k^{2} z^{2}\right)\phi=0.
 \ee
-Near the $z=0$ boundary, the $k^{2}$ term is neglected, and the asymptotic field behavior becomes \cite{Maldacena:1997re, Witten:1998qj}
+Near the $z=0$ boundary, the $k^{2}$ term is neglected, and the asymptotic field behavior becomes \cite{maldacena, Witten:1998qj}
 \be\label{equstandardform}
 \phi \approx \phi^{0}z^{\Delta_{-}} + \langle\mathcal{O}\rangle z^{\Delta_{+}},
 \ee
@@ -126,7 +126,7 @@ For our AdS/QCD model, the field content of the five-dimensonal gravitational du
 The gauge fields $L_{\mu},\, R_{\mu}$ correspond to the left- and right-handed currents of the $SU(N_{f})_{L}\times SU(N_{f})_{R}$ chiral symmetry, where $N_{f}$ is the number of quark flavors in
 the model. 
 The scalar field $X$ is associated with the chiral operator $\bar{q}q$ \cite{stephanov-katz-son}. 
-The masses of the bulk fields are set by the AdS/CFT relation \cite{colangelo-light-scalar-mesons} 
+The masses of the bulk fields are set by the AdS/CFT relation \cite{colangelo2008} 
 \be
 m_{5}^{2}L^{2}=(\Delta-p)(\Delta+p-4), 
 \ee
@@ -257,14 +257,14 @@ c_{2} &\sim& \langle q\bar{q}\rangle \equiv \sigma.
 \ea
 Here $m_{q}$ is the quark mass and $\sigma=\langle\bar{q}q\rangle$ is the chiral condensate, the variation of the vacuum energy with respect to $m_{q}$. 
 
-In the simplest soft-wall model, it has been shown \cite{FILL-IN} that the solution to (\ref{equVEVfullsimple}) is given by 
+In the simplest soft-wall model, it has been shown \cite{karch-katz-son-adsqcd,colangelo2008} that the solution to (\ref{equVEVfullsimple}) is given by 
 \be
 \chi_{sw}(z)= \frac{m_q}{L} z \,\Gamma\left(\frac{3}{2}\right) U\left(\frac{1}{2},0,\lambda z^{2}\right),
 \label{eq:ChiSW}
 \ee
 where $U(a,b,y)$ is the Tricomi confluent hypergeometric function. 
 (There is also another solution that disregarded because it leads to an action that is not finite in the IR.)
-In the small-$z$ limit, (\ref{eq:ChiSW}) expands to \cite{Colangelo:2008us}
+In the small-$z$ limit, (\ref{eq:ChiSW}) expands to \cite{colangelo2008}
 \be
 \label{equvevswsolexp}
 \chi_{sw}(z)\rightarrow \frac{m_{q}}{L}z - \frac{\lambda m_{q}}{2L}z^{3}\left(1-2\gamma_{E} - 2 \log(\sqrt{\lambda} z) - \psi\left(\frac{3}{2}\right)\right),
@@ -277,7 +277,7 @@ As we will see, the IR behavior of the chiral field governs the behavior of the 
 More generally, we can see that this issue is caused because the equation (\ref{equVEVfullsimple}) is linear in $\chi$.
 With only one normalizable solution, only one constant survives the application of boundary conditions.
 As a result, $m_q$ and $\sigma$ cannot be independent.
-To remedy this, it was suggested \cite{Karch} to examine higher-order terms in the scalar potential. 
+To remedy this, it was suggested \cite{karch-katz-son-adsqcd} to examine higher-order terms in the scalar potential. 
 A particular example of this will be examined in Section \ref{sec:ModifiedSW}, and a more general approach will be discussed in Chapter \ref{ch:dynamical}.
 
 \subsubsection{Scalar Sector}
@@ -377,8 +377,8 @@ The eigenvalues for this equation are $m_{n}^{2}=\lambda(4n+4)$ for $n=0,1,2,3,\
 The parameter $\lambda$ is set by matching this trajectory to experimental data. 
 
 We can also determine the value of the 5D coupling constant $g_5$ used in the action (\ref{eq:SimpleAction}) by analyzing the vector sector.
-This is done by matching the vector two-point function $\Pi_{V}(q^{2})$ calculated from this model to the calculation from the operator product expansion of QCD \cite{Cherman:2008eh},
-As shown in \cite{Erlich:2005qh, Kim:2008ff}, we calculate the two-point function near the UV boundary.
+This is done by matching the vector two-point function $\Pi_{V}(q^{2})$ calculated from this model to the calculation from the operator product expansion of QCD \cite{Cherman2009}.
+As shown in \cite{stephanov-katz-son, Kim:2008ff}, we calculate the two-point function near the UV boundary.
 We begin by re-writing (\ref{equVectorStep}) in the hard-wall case $\Phi' = 0$, 
 \be
 \partial_z\left(\frac{1}{z}\partial_z V\mu(q,z)\right)+\frac{q^2}{z} V_\mu(q,z) = 0,
@@ -536,7 +536,7 @@ In the small-$z$ limit, the chiral field becomes
 & = & \frac{\sqrt{3}}{g_5} m_q + \frac{g_5}{\sqrt{3}} \sigma, 
 \label{eq:chiUV}
 \ea
-where $\sqrt{3}/g_5$ is a normalization factor discussed in \cite{FILL-IN}.
+where $\sqrt{3}/g_5$ is a normalization factor discussed in \cite{Cherman2009}.
 It is clear that, up to normalization, (\ref{eq:chiUV}) matches the UV form required by the AdS/CFT dictionary.
 In the large-$z$ limit, the chiral field becomes 
 \ba
@@ -785,10 +785,10 @@ n & $\pi$ Data (MeV) 	& $\pi_{l}$ (MeV) 		& Large-$n$ $\pi_{l}$ 	 \\
 7 &  -   		& -				& 2551 			\\
 \hline
 \end{tabular}
-\caption{The observed masses \cite{pdg} and calculated masses using the linear representations. 
+\caption{The observed masses \cite{PDG} and calculated masses using the linear representations. 
 The large-$n$ limit solutions are valid from $n\approx 4$. 
 From that point onward, the numerical method used is increasingly inaccurate and fails to find the linear Regge trajectories expected. 
-*=Appears only in the further states of \cite{pdg}.}
+*=Appears only in the further states of \cite{PDG}.}
 \label{tblmass}
 \end{center}
 \end{table}
@@ -838,7 +838,7 @@ On inspection, we find that this method should be trusted over the numerical rou
 \begin{figure}[htb]
 \begin{center}
 \includegraphics[scale=0.42]{linear.pdf}
-\caption{The pion mass spectrum calculated in the modified AdS/QCD model is plotted along with the experimental data \cite{pdg}. 
+\caption{The pion mass spectrum calculated in the modified AdS/QCD model is plotted along with the experimental data \cite{PDG}. 
 The eigenvalues display two important characteristics of the experimental pion spectrum: (1) light ground state and (2) a large gap between the ground state and the first excited state. 
 The large-$n$ mass trajectory clearly follows our calculated eigenvalues from $n\approx 4$ when our numerical routine inadequately follows the oscillations of the higher eigenfunctions.}
 \label{fig:mass}
@@ -858,7 +858,7 @@ The resulting particles are known as Goldstone bosons, or, if the symmetry is al
  \ee
  Thus, the vacuum mixes the two quark helicities, causing the light quarks to acquire an effective mass as they move through and interact with the vacuum.
  
- We can explore the relationship of spontaneous chiral symmetry breaking to the pion by parameterizing the matrix element of the axial current $j^{\mu5}(x)$ between the vacuum and a pion \cite{peskin}
+ We can explore the relationship of spontaneous chiral symmetry breaking to the pion by parameterizing the matrix element of the axial current $j^{\mu5}(x)$ between the vacuum and a pion \cite{Peskin:qft}
  \be
  \langle0|j^{\mu5}(x)|\pi(p)\rangle = -i p^\mu f_\pi \EXP^{-ip\dot x},
  \label{eq:pidecay}

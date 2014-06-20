@@ -1,0 +1,66 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis.aux
+The style file: hunsrt.bst
+A level-1 auxiliary file: title.aux
+A level-1 auxiliary file: intro.aux
+A level-1 auxiliary file: background.aux
+A level-1 auxiliary file: soft-wall.aux
+A level-1 auxiliary file: dynamical.aux
+A level-1 auxiliary file: dynamical_threefield.aux
+A level-1 auxiliary file: meson_spectra.aux
+A level-1 auxiliary file: scalar.aux
+A level-1 auxiliary file: conclusion.aux
+A level-1 auxiliary file: appendix_numerical.aux
+Database file #1: all_refs.bib
+Warning--I didn't find a database entry for "FILL-IN"
+Warning--empty journal in Ramallo2013
+Warning--empty journal in Horowitz:1991cd
+Warning--empty journal in Huang:2007fv
+Warning--empty booktitle in Li:2013xpa
+Warning--empty journal in Wang2012
+Warning--empty journal in karch-dilaton-sign
+Warning--empty journal in Peskin:qft
+Warning--empty school in Springer:thesis
+You've used 43 entries,
+            1829 wiz_defined-function locations,
+            764 strings with 13084 characters,
+and the built_in function-call counts, 12316 in all, are:
+= -- 856
+> -- 963
+< -- 4
++ -- 338
+- -- 295
+* -- 1200
+:= -- 2132
+add.period$ -- 129
+call.type$ -- 43
+change.case$ -- 42
+chr.to.int$ -- 0
+cite$ -- 51
+duplicate$ -- 443
+empty$ -- 1014
+format.name$ -- 295
+if$ -- 2535
+int.to.chr$ -- 0
+int.to.str$ -- 43
+missing$ -- 42
+newline$ -- 218
+num.names$ -- 43
+pop$ -- 87
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 160
+stack$ -- 0
+substring$ -- 675
+swap$ -- 53
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 8
+while$ -- 96
+width$ -- 45
+write$ -- 501
+(There were 9 warnings)

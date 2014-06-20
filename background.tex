@@ -3,7 +3,7 @@
 
 In this chapter, we cover the background of gauge/gravity dualities and the AdS/CFT correspondence.
 Our focus is on the phenomenological applications of these models, so many of the technical details of the correspondence will not be presented here.
-A variety of review articles cover the topic in more mathematical detail \cite{FILL-IN}.
+A variety of review articles cover the topic in more mathematical detail \cite{Ramallo2013,Zaffaroni2000,Kim2012,Erdmenger:2007cm,FILL-IN}.
 Once we have motivated the AdS/CFT correspondence, we will review the applications of the duality to hadronic physics. 
 We discuss the two major approaches to alter the conformal field theory to more closely resemble quantum chromodynamics.
 We also introduce a scheme to put these models on a more consistent theoretical basis.
@@ -49,7 +49,7 @@ The classical metric that solves the supergravity equations is
  \label{equSGmetric}
 ds^{2} = \frac{1}{\sqrt{1+\frac{L^{4}}{r^{4}}}}\left( -dt^{2} + d\vec{x}^{2}\right) + \sqrt{1+\frac{L^{4}}{r^{4}}}(dr^{2}+r^2 d\Omega_5),
 \ee
-where the curvature radius $L$ sets the scale and is given by\cite{FILL-IN}
+where the curvature radius $L$ sets the scale and is given by\cite{Witten:1995im,Horowitz:1991cd}
 \be
 L^{4} = 4 \pi g_{s}N \alpha'^{2}.
 \label{eq:L4}
@@ -128,11 +128,11 @@ Despite these differences, there are a variety of approaches to adapt the AdS/CF
 
 One approach, known as the top-down approach, consists of modifying the string theory in some way in an attempt to produce a gauge theory that more accurately models QCD.
 Models that break conformal symmetry can study confinement \cite{FILL-IN}.
-The pure gauge theory with $N$ D3 branes consists of only gluons, leading to the insertion of D7 ``flavor branes" in the bulk to include quarks in the theory. \cite{FILL-IN}
+The pure gauge theory with $N$ D3 branes consists of only gluons, leading to the insertion of D7 ``flavor branes" in the bulk to include quarks in the theory. \cite{Karch2002}
 Strings that begin and end on the D7 branes represent quark/anti-quark pairs.
 These strings lack color indices and are therefore color singlets because they do not begin and end on the D3 branes.
 The excitations of this system corresponds to hadronic states.
-A prominent example that adds flavor and chiral symmetry breaking to the confining models is the Sakai-Sugimoto model \cite{FILL-IN}.
+A prominent example that adds flavor and chiral symmetry breaking to the confining models is the Sakai-Sugimoto model \cite{Sakai2005, Sakai2005a}.
 
 \section{Bottom-Up Approach}
 
@@ -154,7 +154,7 @@ There are two major approaches to AdS/QCD, distinguished by the means used to br
 
 \subsubsection{The Hard Wall}
 The simplest way to break the conformal symmetry of the gauge theory is to impose a hard cutoff in the conformal ($z$) dimension.
-The model was proposed by \cite{FILL-IN} and further explored by \cite{FILL-IN}
+The model was proposed by \cite{stephanov-katz-son} and further explored by \cite{DaRold:2005zs,DaRold:2005vr}
 These so-called hard-wall AdS/QCD models insert both a UV brane located at $z\rightarrow 0$ and an IR brane at 
 \be
 z_1 = \frac{1}{\Lambda_{QCD}}.
@@ -168,7 +168,8 @@ It is well established experimentally that these excited states scale as $m_n^2 
 Hard-wall models produce a spectrum with a $m_n \sim n$ scaling, in conflict with experiment.
 
 \subsubsection{The Soft Wall}
-Instead of cutting off the metric, soft-wall models insert a $z$-dependent scalar dilaton field that breaks the conformal symmetry by acting as an effective cutoff. 
+Instead of cutting off the metric, soft-wall models insert a $z$-dependent scalar dilaton field that breaks the conformal symmetry by acting as an effective cutoff.
+This model was proposed in \cite{karch-katz-son-adsqcd} and further explored in \cite{Evans:2006ea,Grigoryan:2007my,kwee-lebed-pion,Cherman2009,colangelo2008,Huang:2007fv}. 
 The dilaton multiplies the Lagrangian
 \be
 \mathcal{S} = \int d^5x \mathrm{e}^{-2\Phi} \root  \mathcal{L},
@@ -179,23 +180,23 @@ A common and simple choice for the dilaton's behavior is a power-law,
 \Phi = (\mu z)^\nu,
 \ee
 where $\mu$ introduces an energy scale into the model on the order of $\Lambda_{QCD}$.
-It was shown by Karch, \emph{et al} \cite{FILL-IN} that a quadratic dilaton field
+It was shown by Karch, \emph{et al} \cite{karch-katz-son-adsqcd} that a quadratic dilaton field
 \be
 \Phi \sim z^2
 \ee
 yields meson spectra with the desired $m_n^2 \sim n$ behavior.
 Because these linear Regge trajectories apply only when $n$ becomes large, the power-law behavior is necessary strictly when $z$ becomes large.
 Improved predictions for the lower meson states can be obtained by modifying the UV behavior of the dilaton field.
-Such modifications to this model were explored in \cite{FILL-IN}.
+Such modifications to this model were explored in \cite{gherghetta-kelley}.
 The details of past work on soft-wall models will be explored further in Chapter \ref{sec:Soft-Wall-Model}.
 
 \section{Dynamical AdS/QCD}
 The early AdS/QCD models rely on parameterizations for the background fields such as the dilaton.
-A power law is the simplest choice for the dilaton's behavior, and was suggested in \cite{FILL-IN}.
-Later models including \cite{FILL-IN} improved phenomenology by modifying the dilaton in the UV limit.
+A power law is the simplest choice for the dilaton's behavior, and was suggested in \cite{karch-katz-son-adsqcd}.
+Later models including \cite{gherghetta-kelley} improved phenomenology by modifying the dilaton in the UV limit.
 However, the models rely on \emph{ad hoc} choices for the parameterization of the background fields and do not examine the dynamics of these fields.
 
-So-called dynamical AdS/QCD models attempt a more rigorous examination of the vacuum dynamics of the dual model, as an attempt to remedy some of the shortcomings of the bottom-up approach discussed above. 
+So-called dynamical AdS/QCD models attempt a more rigorous examination of the vacuum dynamics of the dual model, as an attempt to remedy some of the shortcomings of the bottom-up approach discussed above \cite{Batell2008,Li:2013xpa,Li2013,DePaula2009,DePaula2010,Wang2012,Li2013a}. 
 These models examine terms in the Lagrangian involving the dilaton field as well as a tachyonic field that may be related to the chiral symmetry breaking of the model.
 Previous work examines the construction of the potential terms in the Lagrangian that will give rise to the desired behavior of the background fields.
 There has also been some work on examining meson spectra in dynamical AdS/QCD models, with some success.
