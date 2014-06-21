@@ -1,5 +1,7 @@
 \chapter{Meson Spectra}
-\section{Vector and Axial-Vector Spectra}
+
+In this chapter, we calculate the meson spectra for the vector, axial-vector, and pseudoscalar mesons from the dynamical three-field model of AdS/QCD introduced in the preceding chapter.
+The analysis is much the same as that presented in Chapter \ref{sec:Soft-Wall}.
 
 To calculate the spectra of the radial excitations of the mesons, we examine the relevant terms from the string frame action (\ref{eqStringAction}),
 \be
@@ -12,55 +14,32 @@ We will use the exponential representation for the scalar field discussed in \ci
 X_e = \left( S(x,z)+\frac{\chi(z)}{2}\right)I \, e^{2i\pi^a_e(x,z)t^a},
 \ee
 where $I$ is the $2\times2$ identity matrix.
+The scalar potential $V_m$ does not contribute to the equations of motion for the vector, axial-vector, or pseudoscalar mesons, although terms from the background potential $U(\phi,\chi, G)$ will be useful in the pseudoscalar analysis.
 
-We find the equations of motion for the various meson fields by varying the meson action.
-For the vector and axial-vector fields, we  assume that the Kaluza-Klein modes are separable from the 4D parts of the fields.
-The equation of motion in the axial gauge $\Psi_5=0$  is given by
+\section{Vector Sector}
+We find the equations of motion for the various meson fields by varying the meson action and performing a Kaluza-Klein decomposition.
+For the vector sector, the equation of motion takes the following form,
 \be
--\partial_z^2\Psi_n+\omega'\partial_z\Psi_n +M_\Psi^2(z) \Psi_n=m^2_{\Psi_n}\Psi_n \, ,
+-\partial_{z}^{2}V_{n}+\omega'\partial_{z}V_{n}=m_{V_{n}}^{2}V_{n},
 \ee
-where $\omega=2\Phi(z)+\ln z$. 
-The $z$-dependent mass term coefficient $M^2_V=0$  for the vector field, and 
+where we have again defined $\omega \equiv \Phi(z)+\log z.$
+We can eliminate the first derivative of the field, bringing the equation of motion into Schr{\"o}dinger-like form, using the substitution 
 \be
-M^2_A=\frac{g_5^2L^2\chi^2}{z^2}
+V_{n}(z)=e^{\omega/2}v_{n}(z).
 \ee
-for the axial-vector field.
-The equation can be put in the Schr{\"o}dinger form with the substitution $\Psi_n=e^{\omega/2}\psi_n$, resulting in
+The equation of motion is now
 \be
--\partial^2_z\psi_n+\left(\oneqt \omega^{'2}-\thalf\omega^{''}+M_\psi^2\right)\psi_n=m^2_{\Psi_n}\psi_n \, .
+-v_{n}^{''}+\left(\frac{1}{4}\omega^{'2}-\frac{1}{2}\omega^{''}\right)v_{n}=m_{V_{n}}^{2}v_{n}
 \ee
-These equations are analytically solvable in the IR limit, but full analysis requires the use of a numerical shooting method to find the mass eigenvalues.
+These equations are analytically solvable in the IR limit, giving the same result found in Section \ref{sec:Soft-Wall-Model}, but full analysis requires the use of a numerical shooting method to find the mass eigenvalues.
 This model finds a better phenomenological fit than the results presented in \cite{gherghetta-kelley}, particularly for the ground state $\rho$ meson, as shown in Figure \ref{figRho}. 
-The scalar mesons are expected to mix with the scalar glueball field of this model; that analysis is deferred to a future publication. 
 
-\begin{figure}[htb]
-\center{\includegraphics[width=300pt]{axial.eps}}
-\caption{Comparison of the predicted mass eigenvalues for the axial-vector sector with the experimental $a_1$ meson spectrum \cite{PDG}.}
-\end{figure}
-\nopagebreak
 \begin{figure}[htb]
 \center{\includegraphics[width=300pt]{rho.eps}}
 \caption{Comparison of the predicted mass eigenvalues for the vector sector with the experimental $\rho$ meson spectrum \cite{PDG}.}
 \label{figRho}
 \end{figure}
 
-
-\begin{table}[htb]
-\center
-\begin{tabular}{| c || c | c  |}
-\hline
-n & $a_1$ experimental (MeV) & $a_1$ model \\
-\hline
-1 & 1230$\pm$ 40 &	    	1280	 \\
-2 & 1647 $\pm$ 22 & 	1723	 \\
-3 & 1930  $^{+30}_{-70}$ & 1904\\
-4 & 2096 $\pm$ 122 &      2078	 \\ 
-5 & 2270 $^{+55}_{-40}$  & 2254\\
-\hline
-\end{tabular}
-\caption{The experimental \cite{PDG} and predicted values for the masses of the axial-vector mesons.}
-\label{tabAxial}
-\end{table}
 
 \begin{table}[htb]
 \center
@@ -79,6 +58,50 @@ n & $\rho$ experimental (MeV) & $\rho$ model \\
 \end{tabular}
 \caption{The experimental \cite{PDG} and predicted values for the masses of the vector mesons.}
 \label{tabRho}
+\end{table}
+
+\section{Axial-Vector Sector}
+Varying the action with respect to the axial vector field and performing a KK decomposition,the equation of motion becomes
+\be
+-\partial_z^2 A_{n}+\omega'\partial_zA_{n} +\frac{g_5^2 \chi(z)^2}{z^2}= m_{A_{n}}^{2}A_{n}.
+\ee
+To put the equation of motion in Schr{\"o}dinger form, we make the substitution
+\be
+A_n = \mathrm{e}^{\omega/2} a_n,
+\ee
+yielding
+\be
+-a_{n}^{''}+\left(\frac{1}{4}\omega^{'2}-\frac{1}{2}\omega^{''}+g_{5}^{2}\frac{L^{2}}{z^{2}}\chi^{2}(z)\right)a_{n}=m_{V_{n}}^{2}a_{n}.
+\ee
+
+The results are plotted in Figure \ref{fig:axial3}. 
+The model fits the experimental data well, with the  large-n states following the linear trajectory, and the ``bend" in the $a_1$ spectrum at $n=2$, which is controlled by the $\beta_2$ parameter that was fit to this data in Section \ref{sec:numerical_solution}.
+
+
+\begin{figure}[htb]
+\center{\includegraphics[width=300pt]{axial.eps}}
+\caption{Comparison of the predicted mass eigenvalues for the axial-vector sector with the experimental $a_1$ meson spectrum \cite{PDG}.}
+\label{fig:axial3}
+\end{figure}
+
+
+
+
+\begin{table}[htb]
+\center
+\begin{tabular}{| c || c | c  |}
+\hline
+n & $a_1$ experimental (MeV) & $a_1$ model \\
+\hline
+1 & 1230$\pm$ 40 &	    	1280	 \\
+2 & 1647 $\pm$ 22 & 	1723	 \\
+3 & 1930  $^{+30}_{-70}$ & 1904\\
+4 & 2096 $\pm$ 122 &      2078	 \\ 
+5 & 2270 $^{+55}_{-40}$  & 2254\\
+\hline
+\end{tabular}
+\caption{The experimental \cite{PDG} and predicted values for the masses of the axial-vector mesons.}
+\label{tabAxial}
 \end{table}
 
 \section{Pseudoscalar Sector}
@@ -172,3 +195,19 @@ The states marked with an * appear only in the further states of the PDG.
 The state marked with a $\dagger$ is an unconfirmed resonance X(2210) with unknown quantum numbers.  Whether it really represents the $n=5$ state is pure speculation.}
 \label{tabPion}
 \end{table}
+
+\section{Summary}
+In this chapter, we calculated the meson spectra for the vector, axial-vector, and pseudoscalar mesons from the dynamical three-field AdS/QCD model discussed in Chapter \ref{ch:dynamical_threefield}. 
+Portions of the vector and axial-vector spectra were used as inputs for the parameters used in the determination of the potential.
+While acknowledging theses inputs, the overall goodness of fit is notable.
+
+The pseudoscalar spectrum was not used to set any of the parameters in the model, so it can be regarded as a true prediction. 
+The overall fit to the pion spectrum is quite good.
+The ground state pion is massless because the quark mass in this model is zero.
+We have speculatively identified the unconfirmed X(2210) state with unknown quantum numbers as the $n=5$ pion state.
+With this identification, and identifying the pion states from the ``further states" section of the PDG as the $n=4$ and $n=6$ states, the fit to the higher pion states is excellent.
+However, nothing in the analysis depends on this extremely tenuous identification.
+
+The $f_0$ meson spectrum is found by analyzing the fluctuations of the scalar field. 
+However, the scalar field mixes with the glueball field, leading to a more complicated analysis.
+This analysis will be completed in the following chapter.
