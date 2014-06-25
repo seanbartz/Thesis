@@ -38,6 +38,26 @@ J.~Beringer, J.~F. Arguin, R.~M. Barnett, K.~Copic, O.~Dahl, D.~E. Groom, C.~J.
 \newblock {Review of Particle Physics}.
 \newblock {\em Physical Review D}, 86(1):010001, July 2012.
 
+\bibitem{Hyakutake2013}
+Yoshifumi Hyakutake.
+\newblock {Quantum Near Horizon Geometry of Black 0-Brane}.
+\newblock page~34, November 2013, 1311.7526.
+
+\bibitem{Hanada2013}
+Masanori Hanada, Yoshifumi Hyakutake, Goro Ishiki, and Jun Nishimura.
+\newblock {Holographic description of quantum black hole on a computer}.
+\newblock page~14, November 2013, 1311.5607.
+
+\bibitem{bartz-pions}
+Thomas~M. Kelley, Sean~P. Bartz, and Joseph~I. Kapusta.
+\newblock {Pseudoscalar mass spectrum in a soft-wall model of AdS/QCD}.
+\newblock {\em Physical Review D}, 83(1):016002, January 2011, 1009.3009.
+
+\bibitem{Bartz2014}
+Sean~P. Bartz and Joseph~I. Kapusta.
+\newblock {A Dynamical Three-Field AdS/QCD Model}.
+\newblock page~17, June 2014, 1406.3859.
+
 \bibitem{Ramallo2013}
 Alfonso~V. Ramallo.
 \newblock {Introduction to the AdS/CFT correspondence}.
@@ -240,11 +260,6 @@ Yan-Qin Sui, Yue-Liang Wu, and Yi-Bo Yang.
 \newblock {Predictive AdS/QCD Model for Mass Spectra of Mesons with Three
   Flavors}.
 \newblock {\em Physical Review D}, 83(6):065030, March 2011, 1012.3518.
-
-\bibitem{bartz-pions}
-Thomas~M. Kelley, Sean~P. Bartz, and Joseph~I. Kapusta.
-\newblock {Pseudoscalar mass spectrum in a soft-wall model of AdS/QCD}.
-\newblock {\em Physical Review D}, 83(1):016002, January 2011, 1009.3009.
 
 \bibitem{Peskin:qft}
 D.~{Peskin, M. and Schroeder}.

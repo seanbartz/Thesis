@@ -14,50 +14,53 @@ A level-1 auxiliary file: conclusion.aux
 A level-1 auxiliary file: appendix_numerical.aux
 Database file #1: all_refs.bib
 Warning--I didn't find a database entry for "FILL-IN"
+Warning--empty journal in Hyakutake2013
+Warning--empty journal in Hanada2013
+Warning--empty journal in Bartz2014
 Warning--empty journal in Ramallo2013
 Warning--empty journal in Huang:2007fv
 Warning--empty booktitle in Li:2013xpa
 Warning--empty journal in Wang2012
 Warning--empty journal in Peskin:qft
-You've used 43 entries,
+You've used 46 entries,
             1829 wiz_defined-function locations,
-            769 strings with 13091 characters,
-and the built_in function-call counts, 12448 in all, are:
-= -- 874
-> -- 963
-< -- 4
-+ -- 338
-- -- 295
-* -- 1222
-:= -- 2149
-add.period$ -- 129
-call.type$ -- 43
-change.case$ -- 43
+            787 strings with 13472 characters,
+and the built_in function-call counts, 13125 in all, are:
+= -- 930
+> -- 989
+< -- 7
++ -- 348
+- -- 302
+* -- 1258
+:= -- 2248
+add.period$ -- 138
+call.type$ -- 46
+change.case$ -- 46
 chr.to.int$ -- 0
-cite$ -- 48
-duplicate$ -- 445
-empty$ -- 1029
-format.name$ -- 295
-if$ -- 2566
+cite$ -- 54
+duplicate$ -- 490
+empty$ -- 1092
+format.name$ -- 302
+if$ -- 2728
 int.to.chr$ -- 0
-int.to.str$ -- 43
-missing$ -- 42
-newline$ -- 218
-num.names$ -- 43
-pop$ -- 79
+int.to.str$ -- 46
+missing$ -- 45
+newline$ -- 233
+num.names$ -- 46
+pop$ -- 97
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 159
+skip$ -- 184
 stack$ -- 0
-substring$ -- 706
-swap$ -- 55
-text.length$ -- 4
+substring$ -- 718
+swap$ -- 70
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 5
-while$ -- 99
-width$ -- 45
-write$ -- 506
-(There were 6 warnings)
+warning$ -- 8
+while$ -- 105
+width$ -- 48
+write$ -- 539
+(There were 9 warnings)
