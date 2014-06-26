@@ -1,0 +1,101 @@
+\chapter{General Relativity Reference}
+\label{app_GR}
+
+This appendix contains the relevant general relativity calculations necessary for the dynamical AdS/QCD models in Chapters \ref{ch:dynamical} and \ref{ch:dynamical_threefield}. The conventions used here are those from \cite{Carroll}.
+
+From a given metric $g_{MN}$, we must calculate the Riemann tensor, the Ricci scalar, and the Einstein tensor. This appendix will provide the relevant definitions and include the results for the $AdS_5$ metric 
+\be
+g_{MN}= \frac{1}{z^2}\left( \begin{array}{cccc} 
+ -1 & 0 & 0 & 0\\
+  0 & 1 & 0 & 0\\
+  0 & 0 & 1 & 0\\
+  0 & 0 & 0 & 1
+\end{array} \right).
+\ee
+
+\section{Covariant Derivative and Christoffel Symbols}
+When working in curved spacetime, we must define the appropriate derivative operator for that coordinate system, known as the covariant derivative.
+The covariant derivative has differing expressions depending on what object it is acting on; for simplicity we will define it for a vector,
+\be
+\nabla_M V^N= \partial_M V^N \Gamma^N_{ML} V^L,
+\ee
+where capital Latin letters indicate any of the five spacetime coordinates. The symbol $\Gamma^N_{ML}$ is a matrix known as the connection coefficients.
+There are a variety of choices for these connection coefficients, but we will use the Christoffel connection, which is commonly used in the study of general relativity.
+The Christoffel connection is defined as
+\be
+\Gamma^P_{MN} = \thalf g^{PR}(\partial_M g_{NR} + \partial_N g_{RM} - \partial_R g_{M N}).
+\ee
+In the $AdS_5$ metric, the non-trivial Christoffel symbols are
+\ba
+\Gamma^\mu_{z\mu} &=& -\frac{1}{z} \\
+\Gamma^z_{\mu\mu} &=& \frac{1}{z} \\
+\Gamma^z_{zz} &=& -\frac{1}{z},
+\ea
+where Greek indices run over the 4D spacetime coordinates $t,\vec{x}$, and no sum is implied over repeated indices.
+
+\section{Ricci Tensor and Ricci Scalar}
+
+The Ricci tensor is needed to calculate the Ricci scalar, and also appears in the Einstein equation, which is needed to calculate some of the equations of motion for the background fields from the dynamical action.
+The Ricci tensor can be calculated from the Riemann tensor, but because we have no need for the Riemann tensor, we calculate the Ricci tensor directly:
+\be
+R_{MN}=\partial_N\Gamma^L_{MN} +\Gamma^N_{ML}\Gamma^L_{NR} - \Gamma^R_{MN}\Gamma^L_{LR},
+\ee
+where summation over the repeated indices is implied.
+
+The non-trivial components of the Ricci tensor for the AdS metric are
+\ba
+R_{tt} &=& \frac{4}{z^2}, \\
+R_{ii} &=& -\frac{4}{z^2}, \\
+R_{zz} &=& -\frac{4}{z^2},
+\ea
+where the lower-case Latin index $i$ represents the spatial coordinates $\vec{x}$, and no summation is implied over repeated indices.
+
+The Ricci scalar is defined as
+\be
+g^{MN}R_{MN},
+\ee
+and is calculated to be $R=-20$ in the $AdS_5$ geometry.
+
+\section{Equations of Motion}
+The equations of motion for a gravitational field theory come from the Einstein equation, which relates the spacetime curvature to the energy content of the theory, as well as by varying the action with respect to the scalar fields in the theory.
+The Einstein tensor $G_{MN}$ is defined in terms of the Ricci tensor and Ricci scalar as
+\be
+G_{MN}=R_{MN}-\thalf g_{MN}R.
+\ee
+In the $AdS_5$ geometry, the non-trivial components of the Einstein tensor are
+\ba
+G_{tt} &=& -\frac{6}{z^2}, \\
+G_{ii} &=& \frac{6}{z^2}, \\
+G_{zz} &=& \frac{6}{z^2},
+\ea
+where again the lower-case Latin index $i$ represents the spatial coordinates $\vec{x}$, and no summation is implied over repeated indices.
+%The Einstein tensor can be written more compactly as
+%\be
+%G_{MN}=6 g_{MN}.
+%\ee
+The Einstein equation relates the Einstein tensor to the energy-momentum tensor,
+\be
+G_{MN} = 8\pi G_5 T_{MN},
+\label{eq:pure_einstein}
+\ee
+where $G_5$ is the five-dimensional gravitational constant.
+
+
+Given a gravitational-scalar action of the standard form,
+\be
+\mathcal{S} = \int d^d x \left(R-\thalf\partial_\mu \phi \partial^\mu \phi -V(\phi) \right),
+\ee
+we vary the action with respect to the scalar field $\phi$.
+The equation of motion that results is
+\be
+\square \phi = -\frac{\partial V}{\partial \phi},
+\label{eq:square}
+\ee
+where the D'Alambertian operator $\square$ is defined in terms of the covariant derivative, 
+\be
+\square = \nabla_\mu \nabla^{\mu}.
+\ee
+The equations of motion for the dynamical AdS/QCD are all of the form \ref{eq:pure_einstein} or \ref{eq:square}.
+
+
+
