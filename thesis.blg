@@ -12,27 +12,29 @@ A level-1 auxiliary file: meson_spectra.aux
 A level-1 auxiliary file: scalar.aux
 A level-1 auxiliary file: conclusion.aux
 A level-1 auxiliary file: appendix_numerical.aux
+A level-1 auxiliary file: appendix_GR.aux
 Database file #1: all_refs.bib
 Warning--I didn't find a database entry for "FILL-IN"
+Warning--I didn't find a database entry for "Carroll"
 Warning--empty journal in Hyakutake2013
 Warning--empty journal in Hanada2013
 Warning--empty journal in Bartz2014
 Warning--empty journal in Ramallo2013
-Warning--there's a number but no series in Edelstein:2009iv
+Warning--can't use both volume and number fields in Edelstein:2009iv
 Warning--empty journal in Huang:2007fv
 Warning--empty booktitle in Li:2013xpa
 Warning--empty journal in Wang2012
 Warning--empty journal in Peskin:qft
 You've used 49 entries,
             1829 wiz_defined-function locations,
-            811 strings with 14000 characters,
-and the built_in function-call counts, 13964 in all, are:
-= -- 1014
+            815 strings with 14033 characters,
+and the built_in function-call counts, 13966 in all, are:
+= -- 1013
 > -- 1012
 < -- 9
 + -- 357
 - -- 308
-* -- 1322
+* -- 1324
 := -- 2366
 add.period$ -- 148
 call.type$ -- 49
@@ -42,7 +44,7 @@ cite$ -- 58
 duplicate$ -- 532
 empty$ -- 1179
 format.name$ -- 308
-if$ -- 2925
+if$ -- 2924
 int.to.chr$ -- 0
 int.to.str$ -- 49
 missing$ -- 48
@@ -52,10 +54,10 @@ pop$ -- 102
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 206
+skip$ -- 207
 stack$ -- 0
 substring$ -- 781
-swap$ -- 84
+swap$ -- 85
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
@@ -64,4 +66,4 @@ warning$ -- 9
 while$ -- 114
 width$ -- 51
 write$ -- 577
-(There were 10 warnings)
+(There were 11 warnings)
