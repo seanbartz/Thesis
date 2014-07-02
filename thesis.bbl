@@ -281,10 +281,20 @@ Yan-Qin Sui, Yue-Liang Wu, and Yi-Bo Yang.
   Flavors}.
 \newblock {\em Physical Review D}, 83(6):065030, March 2011, 1012.3518.
 
+\bibitem{GMOR}
+Murray Gell-Mann, R.J. Oakes, and B.~Renner.
+\newblock {Behavior of Current Divergences under SU\_\{3\}×SU\_\{3\}}.
+\newblock {\em Physical Review}, 175(5):2195--2199, November 1968.
+
 \bibitem{Peskin:qft}
 D.~{Peskin, M. and Schroeder}.
 \newblock {An Introduction to Quantum Field Theory}.
 \newblock 1995.
+
+\bibitem{Greiner}
+Walter Greiner, Stefan Schramm, and Eckart Stein.
+\newblock {\em {No Title}}.
+\newblock Springer, Berlin, 3rd edition, 2007.
 
 \bibitem{Springer:thesis}
 Todd Springer.

@@ -855,6 +855,8 @@ The large-$n$ mass trajectory clearly follows our calculated eigenvalues from $n
 The mass of the ground-state pion is related to the spontaneous breaking of chiral symmetry.
 Whenever a continuous symmetry is spontaneously broken, a massless particle appears -- this result is known as Goldstone's Theorem.
 The resulting particles are known as Goldstone bosons, or, if the symmetry is also broken explicitly, they are called pseudo-Goldstone bosons because they are not truly massless.
+The ground-state pion is the pseudo-Goldstone boson of chiral symmetry, which is the reason for its small mass in comparison to the other meson ground states.
+The Gell-Mann--Oakes--Renner relation is a formula relating the mass of the pion to the quark mass and the chiral condensate \cite{GMOR}.
  
  A quark-antiquark pair may spontaneously appear from the vacuum, in keeping with Heisenberg's Uncertainty Principle. 
  This pair will have zero total momentum and angular momentum, resulting that a left-handed quark will be paired with a right-handed antiquark, and vice versa, resulting in a nonzero net chirality.
@@ -864,26 +866,33 @@ The resulting particles are known as Goldstone bosons, or, if the symmetry is al
  \ee
  Thus, the vacuum mixes the two quark helicities, causing the light quarks to acquire an effective mass as they move through and interact with the vacuum.
  
- We can explore the relationship of spontaneous chiral symmetry breaking to the pion by parameterizing the matrix element of the axial current $j^{\mu5}(x)$ between the vacuum and a pion \cite{Peskin:qft}
+ We can explore the relationship of spontaneous chiral symmetry breaking to the pion by parameterizing the matrix element of the axial current
+  \be
+  j^{\mu5a}(x)=\bar{q}\gamma^\mu\gamma5\tau^a q
+  \ee
+   between the vacuum and a pion \cite{Peskin:qft}
  \be
- \langle0|j^{\mu5}(x)|\pi(p)\rangle = -i p^\mu f_\pi \EXP^{-ip\dot x},
+ \langle0|j^{\mu5a}(x)|\pi^b(p)\rangle = -i p^\mu f_\pi \delta^{ab} \EXP^{-ip\cdot x},
  \label{eq:pidecay}
  \ee
  where $f_\pi$ is known as the \emph{pion decay constant} and has dimensions of mass.
- In the limit of zero quark mass, the axial current is exactly conserved, i.e. $\partial_\mu j^{\mu5}(x)=0$. 
  Taking the derivative $\partial_\mu$ of the left-hand side of (\ref{eq:pidecay}) is equivalent to contracting the right-hand side with $p_\mu$, yielding
- \be
-  \langle0|\partial_\mu j^{\mu5}(x)|\pi(p)\rangle = -p_\mu(i p^\mu f_\pi \EXP^{-ip\dot x}) = -ip^2  f_\pi \EXP^{-ip\dot x} = 0,
-  \label{eq:axialCurrent}
-  \ee
-  implying that $p^2=0$ for the on-shell pion.
-  This can only be true if the pion is massless, as required by Goldstone's theorem.
+\be
+\langle0|\partial_\mu j^{\mu5a}(x)|\pi^b(p)\rangle = -p_\mu(i p^\mu f_\pi \delta^{ab}\EXP^{-ip\cdot x}) = -ip^2  f_\pi \delta^{ab}\EXP^{-ip\cdot x}.
+\label{eq:axialCurrent}
+\ee
+Taking $x=0$, and making the substitution $p^2 = m_\pi^2 $ for an on-shell pion, we obtain the so-called partially conserved axial current (PCAC) relation
+\be
+\partial_\mu j^{\mu5a} = f_\pi m_\pi^2 \pi^a.
+\label{eq:PCAC}
+\ee
+In the limit of zero quark mass, the axial current is exactly conserved, i.e. $\partial_\mu j^{\mu5}(x)=0$, implying that $m_\pi^2=0$, and the pion is massless, as required by Goldstone's theorem.
   
 When the quark masses are not equal to zero, the chiral symmetry is said to be broken explicitly. 
-This is because the QCD Lagrangian contains terms of the form $  m_q \bar{q}q = m_q (\bar{q}_L q_R + \bar{q}_R q_L$, which requires a mixing of the chiral components.
+This is because the QCD Lagrangian contains terms of the form $  m_q \bar{q}q = m_q (\bar{q}_L q_R + \bar{q}_R q_L)$, which requires a mixing of the chiral components.
 The axial field is no longer exactly conserved, becoming
 \be
-\partial_\mu j^{\mu5}(x) = i\bar{q}\{M,\tau^a\}\gamma^5 q,
+\partial_\mu j^{\mu5a}(x) = i\bar{q}\{M,\tau^a\}\gamma^5 q,
 \ee
 where M is the mass matrix
 \be
@@ -894,17 +903,33 @@ m_u&0 \\
 \ee
 Using this equation with \ref{eq:axialCurrent}, we find
 \be
- \langle0|\partial_\mu j^{\mu5}(0)|\pi(p)\rangle = -p^2 f_\pi \delta^{ab} = \langle 0| i \bar{q}\{M,\tau^a\}\gamma^5 q | \pi^b(p)\rangle.
+ \langle0|\partial_\mu j^{\mu5a}(0)|\pi^v(p)\rangle = -p^2 f_\pi \delta^{ab} = \langle 0| i \bar{q}\{M,\tau^a\}\gamma^5 q | \pi^b(p)\rangle.
  \ee
+ 
+ We derive the Gell-Mann--Oakes--Renner relation using the argument presented in \cite{Greiner}.
+ We calculate the quantity
+ \be
+ I=\int d^4 x e^{-ip\cdot x} \left \langle 0 \left | \mathrm{Tr} \left(\partial^\mu j^{5a}_\mu(0) \partial^\nu j^{5b}_\nu(x)\right)\right |0\right\rangle.
+ \ee
+ Using the PCAC relation (\ref{eq:PCAC}), we can substitute the pion operators and reduce the expression to the pion propagator,
+ \ba
+ I &=& f_\pi^2 m_pi^4 \int d^4x e^{-ip\cdot x} \left \langle 0 \left | \mathrm{Tr} \left(\pi^a(0) \pi^b(x) \right)\right |0\right\rangle \\
+ &=& f_\pi^2 m_pi^4 \delta^{ab} i D_\pi(p).
+ \ea
+ Taking the limit $p\rightarrow0$, the propagator becomes $D_\pi=-1/m_\pi^2$, and the expression for $I$ reduces to 
+ \be
+ I = -i f_\pi^2 m_\pi^2.
+ \ee
+ Alternatively, we can calculate the quantity $I$ by integrating by parts, 
  
  NEED TO FINISH GMOR.
 
 
 
-
+\subsubsection{The Gell-Mann--Oakes--Renner Relation in Soft-Wall AdS/QCD}
 
 We now explore the Gell-Mann--Oakes--Renner relation in the soft-wall AdS/QCD model numerically.
-Inserting the established equivalence between the exponential and linear representations, $\pi_{e}=\pi_{l}/\chi(z)$, into (\ref{equOnemid}), we obtain 
+Inserting the established equivalence between the exponential and linear representations, $\pi_{e}=\pi_{l}/\chi(z)$, into the pion equation of motion (\ref{equOnemid}), we obtain 
 \be
 \frac{g_{5}^{2}L^{2}\chi^{2}}{z^{2}}\partial_{z}\left(\frac{\pi_{l}}{\chi}\right)=m_{\pi}^{2}\partial_{z}\varphi\,.\label{eq:EOM-Modified}
 \ee
