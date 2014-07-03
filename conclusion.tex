@@ -51,7 +51,7 @@ After deriving the background equations of motion for this three-field model, we
 The infrared behavior of the background fields is determined by the confining behavior of the meson spectra, namely, the linear trajectories of the higher radial excitations and the constant mass-splitting between the higher radial excitations of the axial-vector and vector mesons.
 The ultraviolet asymptotics for the chiral and glueball condensates are set by the AdS/CFT dictionary (\ref{equstandardform}) in relation to their corresponding field theory operator.
 We have set the UV behavior for the dilaton field by using the background equation that does not depend on the potential (\ref{C}), rather than by identifying the dilaton with a particular field theory operator. 
-By examining the behavior of the equations of motion in the UV and IR limits, we are able to construct an \emph{ansatz} for the potential that includes all allowed combinations of the background fields.
+By examining the behavior of the equations of motion in the UV and IR limits, we construct an \emph{ansatz} for the potential that includes all allowed combinations of the background fields.
 
 We then parameterize solutions for the background fields that result from the equations of motion including the full potential.
 Physical parameters are fit to the meson spectra, while the other free parameters are solved through a numerical minimization procedure that minimizes the error in the background equations.
@@ -64,6 +64,33 @@ The fit to all of the experimental data is quite good, as shown in Figures \ref{
 No additional parameters were used to fit the pion spectrum, which also showed good agreement, as seen in Figure \ref{figPion}.
 The ground state pion is massless, which is expected in a model where the quark mass is zero, as discussed in Section \ref{sub:GMOR}.
 Within this model, the equation of motion for the scalar $f_0$ mesons mixes with the equation of motion for the scalar glueballs, as explored in Chapter \ref{ch:scalar}.
+The mass spectra for the $f_0$ mesons should be calculated and compared to experiment, while the scalar glueball spectrum can be compared to results from lattice QCD and other AdS/QCD models.
 An obvious improvement to this model would be to include a nonzero quark mass, which would allow for the calculation of the physical pion mass, and may alter other phenomenological results.
 A nonzero quark mass would change the UV asymptotics of the chiral condensate by adding a linear term, which would then affect the derivation of the potential.
+
+This model can be extended to study QCD at finite temperature. 
+It has been established experimentally that QCD matter changes phase at a critical temperature $T_c$, becoming a strongly-interacting plasma of freely associated quarks and gluons, rather than the bound states of hadrons \cite{qgp,qgp3,phases}.
+Introducing a black hole into the gravitational side of the AdS/CFT correspondence allows for the calculation of thermodynamic quantities of the field theory using the established black hole thermodynamic relations \cite{Kovtun2005,Son:2007vk,Herzog:2006ra,BallonBayona:2007vp}.
+The temperature at which the black hole solution becomes energetically favored corresponds to $T_c$.
+
+To analyze the thermodynamics of an AdS/CFT model, the string frame metric must be changed to an AdS-Schwarzschild metric,
+\be
+ds^2 = \frac{L^2}{z^2}\left(-f(z) dt^2 +d\vec{x}^2+\frac{dz^2}{f(z)}\right), 
+\ee
+where $f(z)$ is a function to be determined that sets the location of the horizon of the black hole.
+The presence of this metric function will modify the equations of motion (\ref{C}-\ref{G}), and must be solved for using these new background equations.
+The potential found in Section \ref{sec:potential} can be used as a starting point for this analysis, and was part of the motivation for constructing such a potential.
+
+With this finite-temperature AdS/CFT model in hand, it will be possible to study a variety of aspects of the deconfined phase of QCD matter, including the entropy, speed of sound, and free energy.
+In addition, similar models have been used to study other phenomena relevant to heavy ion collisions, such as jet quenching.
+There have been other AdS/CFT models that analyze the finite temperature behavior, but these models suffer from inconsistencies with the zero-temperature meson spectra that the model in Chapter \ref{ch:dynamical_threefield} was designed to address.
+A model that correctly describes the meson spectra and zero-temperature chiral symmetry breaking while also allowing for the investigation of finite-temperature effects would be an improvement upon existing work in the field.
+
+In the research described in this thesis, we extended and improved upon the relatively simple AdS/QCD soft-wall model originally proposed in \cite{karch-katz-son-adsqcd} and modified in \cite{gherghetta-kelley}.
+We constructed a dynamical model with good phenomenological results for the mass spectra of mesons that is now ripe for extension into finite temperature.
+ AdS/QCD is not yet a precision tool for the study of QCD, and a dual model that captures the full complexity of strongly-coupled QCD will require much further work and will likely necessitate the inclusion of stringy effects.
+However, we have found that a relatively simple model can give rich results for strongly coupled gauge theories. 
+
+
+
 

@@ -293,7 +293,7 @@ D.~{Peskin, M. and Schroeder}.
 
 \bibitem{Greiner}
 Walter Greiner, Stefan Schramm, and Eckart Stein.
-\newblock {\em {No Title}}.
+\newblock {\em {Quantum Chromodynamics}}.
 \newblock Springer, Berlin, 3rd edition, 2007.
 
 \bibitem{Springer:thesis}
@@ -319,5 +319,42 @@ M.~Shifman and A.~Vainshtein.
 \newblock {Highly excited mesons, linear Regge trajectories, and the pattern of
   the chiral symmetry realization}.
 \newblock {\em Physical Review D}, 77(3):034002, February 2008, 0710.0863.
+
+\bibitem{qgp}
+Joseph~I. Kapusta, Berndt M$\backslash$\{"u\}ller, and J.~Rafelski.
+\newblock {Quark-Gluon Plasma: Theoretical Foundations}.
+\newblock 2003.
+
+\bibitem{qgp3}
+R.C. Hwa and X.-N. Wang.
+\newblock {Quark-Gluon Plasma 3}.
+\newblock 2004.
+
+\bibitem{phases}
+B.~Kogut and Mikhail~A Stephanov.
+\newblock {The Phases of Quantum Chromodynamics}.
+\newblock 2004.
+
+\bibitem{Kovtun2005}
+P.~Kovtun, D.~Son, and A.~Starinets.
+\newblock {Viscosity in Strongly Interacting Quantum Field Theories from Black
+  Hole Physics}.
+\newblock {\em Physical Review Letters}, 94(11):111601, March 2005, 0405231.
+
+\bibitem{Son:2007vk}
+Dam~T. Son and Andrei~O. Starinets.
+\newblock {Viscosity, Black Holes, and Quantum Field Theory}.
+\newblock {\em Annual Review of Nuclear and Particle Science}, 57(1):95--118,
+  November 2007, 0704.0240.
+
+\bibitem{Herzog:2006ra}
+Christopher Herzog.
+\newblock {Holographic Prediction for the Deconfinement Temperature}.
+\newblock {\em Physical Review Letters}, 98(9):091601, February 2007, 0608151.
+
+\bibitem{BallonBayona:2007vp}
+C.~Bayona, Henrique Boschi-Filho, Nelson Braga, and Leopoldo Zayas.
+\newblock {On a holographic model for confinement/deconfinement}.
+\newblock {\em Physical Review D}, 77(4):046002, February 2008, 0705.1529.
 
 \end{thebibliography}

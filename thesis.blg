@@ -25,45 +25,48 @@ Warning--empty journal in Huang:2007fv
 Warning--empty booktitle in Li:2013xpa
 Warning--empty journal in Wang2012
 Warning--empty journal in Peskin:qft
-You've used 51 entries,
+Warning--empty journal in qgp
+Warning--empty journal in qgp3
+Warning--empty journal in phases
+You've used 58 entries,
             1829 wiz_defined-function locations,
-            830 strings with 14275 characters,
-and the built_in function-call counts, 14440 in all, are:
-= -- 1055
-> -- 1034
+            872 strings with 15190 characters,
+and the built_in function-call counts, 15863 in all, are:
+= -- 1171
+> -- 1098
 < -- 9
-+ -- 365
-- -- 314
-* -- 1361
-:= -- 2439
-add.period$ -- 154
-call.type$ -- 51
-change.case$ -- 51
++ -- 389
+- -- 331
+* -- 1466
+:= -- 2671
+add.period$ -- 175
+call.type$ -- 58
+change.case$ -- 58
 chr.to.int$ -- 0
-cite$ -- 60
-duplicate$ -- 553
-empty$ -- 1228
-format.name$ -- 314
-if$ -- 3030
+cite$ -- 70
+duplicate$ -- 620
+empty$ -- 1376
+format.name$ -- 331
+if$ -- 3339
 int.to.chr$ -- 0
-int.to.str$ -- 51
-missing$ -- 51
-newline$ -- 258
-num.names$ -- 51
-pop$ -- 110
+int.to.str$ -- 58
+missing$ -- 58
+newline$ -- 293
+num.names$ -- 58
+pop$ -- 132
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 212
+skip$ -- 236
 stack$ -- 0
-substring$ -- 812
-swap$ -- 87
+substring$ -- 888
+swap$ -- 91
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 9
-while$ -- 118
-width$ -- 53
-write$ -- 600
-(There were 11 warnings)
+warning$ -- 12
+while$ -- 130
+width$ -- 60
+write$ -- 675
+(There were 14 warnings)
