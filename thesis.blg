@@ -28,45 +28,45 @@ Warning--empty journal in Peskin:qft
 Warning--empty journal in qgp
 Warning--empty journal in qgp3
 Warning--empty journal in phases
-You've used 58 entries,
+You've used 62 entries,
             1829 wiz_defined-function locations,
-            872 strings with 15190 characters,
-and the built_in function-call counts, 15863 in all, are:
-= -- 1171
-> -- 1098
+            897 strings with 15758 characters,
+and the built_in function-call counts, 16801 in all, are:
+= -- 1253
+> -- 1138
 < -- 9
-+ -- 389
-- -- 331
-* -- 1466
-:= -- 2671
-add.period$ -- 175
-call.type$ -- 58
-change.case$ -- 58
++ -- 404
+- -- 342
+* -- 1543
+:= -- 2818
+add.period$ -- 187
+call.type$ -- 62
+change.case$ -- 61
 chr.to.int$ -- 0
-cite$ -- 70
-duplicate$ -- 620
-empty$ -- 1376
-format.name$ -- 331
-if$ -- 3339
+cite$ -- 74
+duplicate$ -- 661
+empty$ -- 1474
+format.name$ -- 342
+if$ -- 3545
 int.to.chr$ -- 0
-int.to.str$ -- 58
-missing$ -- 58
-newline$ -- 293
-num.names$ -- 58
-pop$ -- 132
+int.to.str$ -- 62
+missing$ -- 63
+newline$ -- 313
+num.names$ -- 62
+pop$ -- 143
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 236
+skip$ -- 248
 stack$ -- 0
-substring$ -- 888
-swap$ -- 91
+substring$ -- 956
+swap$ -- 95
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 12
-while$ -- 130
-width$ -- 60
-write$ -- 675
+while$ -- 139
+width$ -- 64
+write$ -- 721
 (There were 14 warnings)

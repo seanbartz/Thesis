@@ -296,6 +296,30 @@ Walter Greiner, Stefan Schramm, and Eckart Stein.
 \newblock {\em {Quantum Chromodynamics}}.
 \newblock Springer, Berlin, 3rd edition, 2007.
 
+\bibitem{Csaki:2006ji}
+Csaba Cs\'{a}ki and Matthew Reece.
+\newblock {Toward a systematic holographic QCD: a braneless approach}.
+\newblock {\em Journal of High Energy Physics}, 2007(05):062--062, May 2007,
+  0608266.
+
+\bibitem{Springer2010}
+J.~I. Kapusta and T.~Springer.
+\newblock {Potentials for soft-wall AdS/QCD}.
+\newblock {\em Physical Review D}, 81(8):086009, April 2010, 1001.4799.
+
+\bibitem{Gursoy:2008bu}
+Umut G\"{u}rsoy, Elias Kiritsis, Liuba Mazzanti, and Francesco Nitti.
+\newblock {Deconfinement and Gluon Plasma Dynamics in Improved Holographic
+  QCD}.
+\newblock {\em Physical Review Letters}, 101(18):181601, October 2008,
+  0804.0899.
+
+\bibitem{Gursoy:2008za}
+U~G\"{u}rsoy, E.~Kiritsis, L.~Mazzanti, and F.~Nitti.
+\newblock {Holography and thermodynamics of 5D dilaton-gravity}.
+\newblock {\em Journal of High Energy Physics}, 2009(05):033--033, May 2009,
+  0812.0792.
+
 \bibitem{Springer:thesis}
 Todd Springer.
 \newblock {\em {Hydrodynamics of strongly coupled non-conformal fluids from
@@ -309,10 +333,10 @@ S.~S. Afonin.
 \newblock {\em International Journal of Modern Physics A}, 25(31):33, January
   2010, 1001.3105.
 
-\bibitem{Springer2010}
-J.~I. Kapusta and T.~Springer.
-\newblock {Potentials for soft-wall AdS/QCD}.
-\newblock {\em Physical Review D}, 81(8):086009, April 2010, 1001.4799.
+\bibitem{stringnutshell}
+Elias Kiritsis.
+\newblock {\em {String Theory in a Nutshell}}.
+\newblock Princeton University Press, 2011.
 
 \bibitem{Shifman-2008}
 M.~Shifman and A.~Vainshtein.
