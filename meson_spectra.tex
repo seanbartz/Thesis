@@ -205,6 +205,87 @@ The state marked with a $\dagger$ is an unconfirmed resonance X(2210) with unkno
 \label{tabPion}
 \end{table}
 
+\section{Scalar and Glueball Sectors}
+\label{ch:scalar}
+
+The scalar $f_0$ mesons and the scalar glueballs have the same quantum numbers, so we expect these states to mix.
+We find that the fluctuations of the scalar field $X$, which we label $S(x,z)$, do in fact couple to the fluctuations of the glueball field $\mathcal{G}$, which we label $H(x,z)$.
+This coupling results in a set of coupled eigenvalue equations, with two sets of mass eigenvalues.
+
+The terms of the action relevant for the scalar meson and glueball fields have the form 
+\be
+\cS =-\frac{1}{16\pi G_5} \int d^5x \sqrt{-g} e^{-2\Phi}  \mathrm{Tr} \left[ |DX|^2  +\partial_M \mathcal{G} \partial^M \mathcal{G} +V_m(\Phi,X^2, \mathcal{G}) \right].
+\ee
+Here, we are using the exponential representation for the scalar field,
+\be
+X=\left(S(x,z)+\frac{\chi(z)}{2}\right)e^{2i\pi(x,z)},
+\ee
+where $S(x,z)$ is the scalar field fluctuations and $\chi(z)$ is the chiral condensate.
+The glueball field $\mathcal{G}$ also has a condensate, written as
+\be
+\mathcal{G} = \left(H(x,z) +\frac{G(z)}{2}\right),
+\ee
+where $H(x,z)$ are the fluctuations of the glueball field and $G(z)$ is the glueball condensate.
+
+The potential $V_m$ is defined in such a way that $\langle \mathrm{Tr} V_m \rangle= V $, where $V$ is the potential for the background fields in the string frame,
+\be
+V=-12+4\rt6 \phi + a_0 \phi^2 +\frac{m_X^2}{2} \chi^2 +U +\Delta U,
+\ee
+where $\phi$ is the re-scaled version of the dilaton, $\phi =\sqrt{8/3} \Phi$.
+Here, $U$ is more than quadratic in the fields,
+\be
+U=a_1 \phi \chi^2 +a_2 \phi G^2 + a_3 \chi^4 + a_4 G^4 + a_5 \chi^2 G^2 +a_6 G^2 \tanh(\phi),
+\ee
+and $\Delta U$ is assumed to be a function of $\phi$ only.
+
+The terms of $\mathrm{Tr} V_m$  that are relevant for the analysis of the scalar sector are those terms involving $X$ and $\mathcal{G}$:
+\be
+\mathrm{Tr} V_m \sim m_X^2 X^2 + 2 a_1 \phi X^2 + 2 a_2 \phi \mathcal{G}^2 +8 a_3 X^4 +8 a_4 \mathcal{G}^4 + 8 a_5 X^2 \mathcal{G}^2 +2 a_6\mathcal{G}^2 \tanh{g\phi}.
+\ee
+Expanding and keeping only terms that are quadratic in the fields $S$ and $ H$, we obtain
+\ba
+\mathrm{Tr} V_m &\sim &\left(m_X^2 + 2 a_1 \phi + 12  a_3 \chi^2 +2 a_5 G^2\right)S^2 \\
+&+& \left(2a_2 \phi +12 a_4 G^2 + 2a_5 \chi^2 + 2 \tanh(g\phi)\right)H^2 + 4 a_5 G\chi H S.
+\ea
+We can simplify the expression by collecting some of the terms and writing them as derivatives of $U$ with respect to the scalar and glueball fields,
+\be
+\mathrm{Tr} V_m \sim \left(m_X^2 +\frac{\partial^2 U}{\partial \chi^2}\right)S^2 + \frac{\partial^2 U}{\partial G^2} H^2 +4a_5 G \chi H S,
+\label{eq:traceV}
+\ee
+where the derivative terms are calculated to be
+\ba
+\frac{\partial^2 U}{\partial \chi^2} &=& 2a_1 \phi \chi + 4 a_3 \chi^3 +2a_5 \chi G^2,\\
+\frac{\partial^2 U}{\partial G^2} &=& 2a_2 \phi G +4 a_4 G^3 +2a_5 \chi^2 G+ 2a_6 G \tanh(g\phi).
+\ea
+We see the advantage of solving the background equations (\ref{C} - \ref{G}) in such a way that $\Delta U$ is a function of the dilaton only, as (\ref{eq:traceV}) does not depend on $\Delta U$, and the equations of motion will not depend upon this numerically-derived term.
+
+The equations of motion are calculated in the usual way.
+Varying with respect to $S$ gives the equation of motion
+\be 
+\partial_z(z^{-3}e^{-2\Phi}S')-z^{-5}e^{-2\Phi}\left(m_X^2 + \frac{\partial^2 U}{\partial \chi^2}\right)S -4a_5 z^5 e^{-2\Phi} G\chi H = -z^3 e^{-3} m_S^2 S.
+\ee
+Varying with respect to $H$ yields the equation of motion
+\be
+\partial_z(z^{-3}e^{-2\Phi}H')-z^{-5}e^{-2\Phi} \frac{\partial^2 U}{\partial G^2}H -4a_5 z^5 e^{-2\Phi} G\chi S = -z^3 e^{-3} m_S^2 H.
+\ee
+The equations of motion are coupled by the mixing term $a_5 X^2 \mathcal{G}^2$ in the scalar potential.
+If the coefficient $a_5$ were set to zero, the equations of motion for the scalar and glueball fluctuations would decouple completely.
+
+To put the equations of motion in Schr{\"o}dinger form, we make the substitutions 
+\ba
+S&\rightarrow&e^{\omega_s/2}S ,\\ 
+H&\rightarrow&e^{\omega_s/2}H,
+\ea
+where $\omega_s=2\Phi+3\log z$.
+This reduces the equations of motion to
+\ba
+-S''+\left(\oneqt \omega_s'^2-\thalf \omega_s''+m_X^2 -\frac{\partial^2 U}{\partial\chi^2}\right)S +4a_5 G\chi H &=& m_S^2 S , \\
+-H'' +\left(\oneqt \omega_s'^2-\thalf \omega_s'' -\frac{\partial^2 U}{\partial G^2}\right)H +4a_5 G\chi S &=& m_H^2 H .
+\ea
+These equations must be solved simultaneously for the eigenvalues $m_S^2$, $m_H^2$.
+This numerical analysis will be completed in a later work.
+
+
 \section{Summary}
 In this chapter, we calculated the meson spectra for the vector, axial-vector, and pseudoscalar mesons from the dynamical three-field AdS/QCD model discussed in Chapter \ref{ch:dynamical_threefield}. 
 Portions of the vector and axial-vector spectra were used as inputs for the parameters used in the determination of the potential.
@@ -219,4 +300,4 @@ However, nothing in the analysis depends on this extremely tenuous identificatio
 
 The $f_0$ meson spectrum is found by analyzing the fluctuations of the scalar field. 
 However, the scalar field mixes with the glueball field, leading to a more complicated analysis.
-This analysis will be completed in the following chapter.
+This analysis will be completed in a later work.
