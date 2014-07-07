@@ -1,0 +1,106 @@
+\chapter{Gell-Mann--Oakes--Renner Derivation}
+\label{app_GMOR}
+
+ A quark-antiquark pair may spontaneously appear from the vacuum, in keeping with Heisenberg's Uncertainty Principle. 
+ This pair will have zero total momentum and angular momentum, resulting that a left-handed quark will be paired with a right-handed antiquark, and vice versa, resulting in a nonzero net chirality.
+ The QCD vacuum contains a condensate of these chiral quark-antiquark states, resulting in a nonzero vacuum expectation value for the chiral operator
+ \be
+ \langle\bar{q}q\rangle = \langle \bar{q}_L q_R +\bar{q}_R q_L \rangle \neq 0.
+ \ee
+ Thus, the vacuum mixes the two quark helicities, causing the light quarks to acquire an effective mass as they move through and interact with the vacuum.
+ 
+ We can explore the relationship of spontaneous chiral symmetry breaking to the pion by parameterizing the matrix element of the axial current
+  \be
+  j^{\mu5a}(x)=\bar{q}\gamma^\mu\gamma5\tau^a q
+  \ee
+   between the vacuum and a pion \cite{Peskin:qft}
+ \be
+ \langle0|j^{\mu5a}(x)|\pi^b(p)\rangle = -i p^\mu f_\pi \delta^{ab} \EXP^{-ip\cdot x},
+ \label{eq:pidecay}
+ \ee
+ where $f_\pi$ is known as the \emph{pion decay constant} and has dimensions of mass.
+ Taking the derivative $\partial_\mu$ of the left-hand side of (\ref{eq:pidecay}) is equivalent to contracting the right-hand side with $p_\mu$, yielding
+\be
+\langle0|\partial_\mu j^{\mu5a}(x)|\pi^b(p)\rangle = -p_\mu(i p^\mu f_\pi \delta^{ab}\EXP^{-ip\cdot x}) = -ip^2  f_\pi \delta^{ab}\EXP^{-ip\cdot x}.
+\label{eq:axialCurrent}
+\ee
+Taking $x=0$, and making the substitution $p^2 = m_\pi^2 $ for an on-shell pion, we obtain the so-called partially conserved axial current (PCAC) relation
+\be
+\partial_\mu j^{\mu5a} = f_\pi m_\pi^2 \pi^a.
+\label{eq:PCAC}
+\ee
+In the limit of zero quark mass, the axial current is exactly conserved, i.e. $\partial_\mu j^{\mu5}(x)=0$, implying that $m_\pi^2=0$, and the pion is massless, as required by Goldstone's theorem.
+  
+When the quark masses are not equal to zero, the chiral symmetry is said to be broken explicitly. 
+This is because the QCD Lagrangian contains terms of the form $  m_q \bar{q}q = m_q (\bar{q}_L q_R + \bar{q}_R q_L)$, which requires a mixing of the chiral components.
+The axial field is no longer exactly conserved, becoming
+\be
+\partial_\mu j^{\mu5a}(x) = i\bar{q}\{M,\tau^a\}\gamma^5 q,
+\ee
+where M is the mass matrix
+\be
+M=\left( \begin{array} {cc}
+m_u&0 \\
+0 &m_d 
+\end{array}\right) \,.
+\ee
+Using this equation with \ref{eq:axialCurrent}, we find
+\be
+ \langle0|\partial_\mu j^{\mu5a}(0)|\pi^v(p)\rangle = -p^2 f_\pi \delta^{ab} = \langle 0| i \bar{q}\{M,\tau^a\}\gamma^5 q | \pi^b(p)\rangle.
+ \ee
+ 
+ We derive the Gell-Mann--Oakes--Renner relation using the argument presented in \cite{Greiner}.
+ We calculate the quantity
+ \be
+ I=\int d^4 x e^{-ip\cdot x} \left \langle 0 \left | \mathrm{Tr} \left(\partial^\mu j^{5a}_\mu(0) \partial^\nu j^{5b}_\nu(x)\right)\right |0\right\rangle.
+ \ee
+ Using the PCAC relation (\ref{eq:PCAC}), we can substitute the pion operators and reduce the expression to the pion propagator,
+ \ba
+ I &=& f_\pi^2 m_pi^4 \int d^4x e^{-ip\cdot x} \left \langle 0 \left | \mathrm{Tr} \left(\pi^a(0) \pi^b(x) \right)\right |0\right\rangle \\
+ &=& f_\pi^2 m_pi^4 \delta^{ab} i D_\pi(p).
+ \ea
+ Taking the limit $p\rightarrow0$, the propagator becomes $D_\pi=-1/m_\pi^2$, and the expression for $I$ reduces to 
+ \be
+ I = -i f_\pi^2 m_\pi^2.
+ \label{eq:I1}
+ \ee
+ Alternatively, we can calculate the quantity $I$ by integrating by parts, 
+ \ba
+ I&=&\int d^4x \left(-\partial^\nu e^{-ip\cdot x} \right) \left \langle 0 \left | \mathrm{Tr} \left(\partial^\mu j_\mu^{5a}(0) j_\nu ^{5b}(x)\right)\right | 0 \right \rangle \nonumber \\
+ &-&\int d^4x \, e^{-ip\cdot x} \big \langle 0 \big | \big ( \partial^\nu \Theta(t) j_\nu^{5b}(x)\partial^\mu j_\mu^{5a} (0) \nonumber \\
+ &+& \partial^\nu \Theta(-t) \partial^\mu j_\mu^{5a}(0) j_\nu^{5b} (x) \big) \big | 0 \big \rangle,
+ \ea
+ where $\Theta$ is the Heaviside step function.
+ In the limit $p\rightarrow 0$, the first term vanishes.
+ We can write the second and third terms as a commutator, and the Heaviside function becomes a Dirac delta,
+ \be
+ I = \int d^4 x \, \delta(t) \left \langle0\left | \left[ j^{5b}_0(x),\partial^\mu j_\mu^{5a}\right ] \right | 0  \right\rangle.
+ \ee
+ Integrating over the delta function, we obtain
+ \be
+ I=\int d^3x \, \left \langle 0 \left | \left [ j_0^{5b}(0,\vec{x}),\partial^0 j_0^{5a}(0,0) \right ]  \right | 0 \right \rangle.
+ \ee
+ 
+ Because the axial current $j_0^{5a}$ is not explicitly time-dependent, the time derivative can be re-written as a commutator with the Hamiltonian,
+ \be
+ I = i \int d^3x \, \left \langle 0 \left | \left [ j_0^{5b}(0,\vec{x}), [j_0^{5a}(0,0),H(0) ] \right] \right | 0 \right \rangle .
+ \ee
+Using the mass term from the Hamiltonian,
+\be
+H(0) = m_u \bar{u}(0,\vec{x})u(0,\vec{x}) + m_d \bar{d}(0,\vec{x})d(0,\vec{x}),
+\ee
+and the commutation relation for the quark states
+\be
+[q_a^\dagger(\vec{x},t),q_b(\vec{y},t)] = \delta_{ab} \delta^3(\vec{x}-\vec{y}),
+\ee
+the quantity $I$ becomes
+ \be
+ I = (m_u+m_d) \left \langle 0 \left | (\bar{u}u +\bar{d}d) \right | 0 \right \rangle.
+ \label{eq:I2}
+ \ee
+ The quark condensate is defined $\sigma = \left \langle 0 \left | (\bar{u}u +\bar{d}d) \right | 0 \right \rangle$.
+ In this thesis, we assume that $m_u=m_d \equiv m_q$.
+ We compare the two expressions for $I$,\ref{eq:I1} and \ref{eq:I2}, finding the Gell-Mann--Oakes--Renner relation to be
+ \be
+ 2 m_q \sigma = f_\pi^2 m_\pi^2.
+ \ee

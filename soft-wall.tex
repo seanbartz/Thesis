@@ -52,7 +52,7 @@ The generating functional of gauge-invariant operators of the gauge theory is du
 On the boundary, the supergravity fields must coincide with the sources of the gauge theory \cite{Gubser:1998bc,Erdmenger:2007cm}. 
 That is, 
 \be
-\langle {\rm e}^{\int_{\partial AdS} d^{4}x\,\phi^{0}(\vec{x})\mathcal{O}(\vec{x)}}\rangle_{{\rm CFT}}  =  {\rm e}^{i S_{{\rm SUGRA}}(\phi)}|_{\phi=\phi_{0}}~,
+\langle e^{\int_{\partial AdS} d^{4}x\,\phi^{0}(\vec{x})\mathcal{O}(\vec{x)}}\rangle_{{\rm CFT}}  =  e^{i S_{{\rm SUGRA}}(\phi)}|_{\phi=\phi_{0}}~,
 \ee
 where $\phi^{0}$ is a source term on the boundary of the five-dimensional supergravity (SUGRA) model. 
 The gauge theory exists on the boundary, $\partial AdS$, of the dual gravitational theory. 
@@ -86,7 +86,7 @@ Near the $z=0$ boundary, the $k^{2}$ term is neglected, and the asymptotic field
 where the two solutions are
 \be
 \label{eq:RootsDelta}
-\Delta_{\pm} = \frac{d}{2}\pm \sqrt{\frac{d^{2}}{4}+m^{2}R^{2}}.
+\Delta_{\pm} = \frac{d}{2}\pm \sqrt{\frac{d^{2}}{4}+m^{2}L^{2}}.
 \ee
 The mass is determined by the spatial dimension $d$ and the operator dimension $\Delta$
 \be
@@ -116,13 +116,13 @@ are allowed.
 The symmetries of the gauge field are also included in the gravitational dual through a prescription provided by the correspondence dictionary.
 A global symmetry of the gauge theory is represented represented by invariance under a transformation 
 \be
-U = {\rm e}^{i \eta},
+U = e^{i \eta},
 \ee 
 with $\eta$ constant.
 This means that $\eta$ should remain constant on the boundary of the gravity dual, but in the bulk, nothing prevents $\eta$ from becoming a function of spacetime coordinates, $x$ and $z$.  
 The symmetry in the gravity dual is then represented by the transformation
 \be
-U = {\rm e}^{i \eta(x,z)}.
+U = e^{i \eta(x,z)}.
 \ee 
 In this way, the global symmetry of the gauge theory is represented by a local symmetry of the gravitational theory. 
 A  gauge field is inserted into the gravity dual for each relevant global symmetry. 
@@ -233,10 +233,10 @@ By varying the action (\ref{eq:SimpleAction}), one obtains the equations of moti
 
 Substituting the chiral field into the Lagrangian using (\ref{eq:ExpRep}), we vary the Lagrangian with respect to $\chi(z)$,
 \ba
-\delta \mathcal{L}_{VEV} &=& -\delta\left({\rm e}^{-\Phi}\sqrt{-g}\,{\rm Tr}\left[\frac{g^{zz}}{4}\partial_{z}\chi\partial_{z}\chi + m_{X}^{2}\frac{\chi^{2}}{4}\right]\right)\nonumber \\
-&=& -\delta\left(\frac{1}{2}{\rm e}^{-\Phi}a(z)^{5}\left(a(z)^{-2}\partial_{z}\chi\partial_{z}\chi +m_{X}^{2} \chi^{2} \right)\right)\nonumber\\
-&=&  -{\rm e}^{-\Phi}a(z)^{3}\partial_{z}\chi\delta\partial_{z} \chi - {\rm e}^{-\Phi} a(z)^{5} m_{X}^{2} \chi \delta \chi \nonumber\\
-&=& \left(\partial_{z}\left({\rm e}^{-\Phi}a^{3}\partial_{z}\chi\right) - {\rm e}^{-\Phi}a^{5}m_{X}^{2} \chi\right) \delta \chi,
+\delta \mathcal{L}_{VEV} &=& -\delta\left(e^{-\Phi}\sqrt{-g}\,{\rm Tr}\left[\frac{g^{zz}}{4}\partial_{z}\chi\partial_{z}\chi + m_{X}^{2}\frac{\chi^{2}}{4}\right]\right)\nonumber \\
+&=& -\delta\left(\frac{1}{2}e^{-\Phi}a(z)^{5}\left(a(z)^{-2}\partial_{z}\chi\partial_{z}\chi +m_{X}^{2} \chi^{2} \right)\right)\nonumber\\
+&=&  -e^{-\Phi}a(z)^{3}\partial_{z}\chi\delta\partial_{z} \chi - e^{-\Phi} a(z)^{5} m_{X}^{2} \chi \delta \chi \nonumber\\
+&=& \left(\partial_{z}\left(e^{-\Phi}a^{3}\partial_{z}\chi\right) - e^{-\Phi}a^{5}m_{X}^{2} \chi\right) \delta \chi,
 \ea
 The equation of motion becomes
 \be
@@ -293,15 +293,15 @@ X(x,z)= \left(S(x,z) +\frac{\chi(z)}{2}\right)\mathrm{e}^{2i\pi(x,z)}.
 \ee
 To obtain the equations of motion, we vary the action with respect to the scalar field $S(x,z)$,
 \ba
-\delta \mathcal{L}_{S} &=& \delta\left({\rm e}^{-\Phi}\sqrt{-g} \,{\rm Tr}\left[g^{MN}\partial_{M}S(x,z)\partial_{N}S(x,z) + m_{X}^{2}S(x,z)^{2}\right]\right)\nonumber\\
-&=& \delta\left({\rm e}^{-\Phi}\sqrt{-g}\,{\rm Tr}(t^{a}t^{b})\left(g^{\mu\nu}\partial_{\mu}S\partial_{\nu}S + g^{zz}\partial_{z}S\partial_{z}S + m_{X}^{2} S^{2}\right) \right)\nonumber\\
-&=& {\rm e}^{-\Phi}a(z)^{3}\eta^{\mu\nu}\partial_{\mu}S\, \delta \partial_{\nu}S + {\rm e}^{-\Phi}a(z)^{3}\partial_{z}S \,\delta \partial_{z}S + {\rm e}^{-\Phi} a(z)^5 m_X^2 S\, \delta S\nonumber\\
-&=& \left(-{\rm e}^{-\Phi} a(z)^{3} \partial_{\mu}\partial^{\mu}S - \partial_{z}\left({\rm e}^{-\Phi}a(z)^{3}\partial_{z}S\right) + {\rm e}^{-\Phi}a(z)^5 m_X^2 S\right)\delta S, \label{equlastS}
+\delta \mathcal{L}_{S} &=& \delta\left(e^{-\Phi}\sqrt{-g} \,{\rm Tr}\left[g^{MN}\partial_{M}S(x,z)\partial_{N}S(x,z) + m_{X}^{2}S(x,z)^{2}\right]\right)\nonumber\\
+&=& \delta\left(e^{-\Phi}\sqrt{-g}\,{\rm Tr}(t^{a}t^{b})\left(g^{\mu\nu}\partial_{\mu}S\partial_{\nu}S + g^{zz}\partial_{z}S\partial_{z}S + m_{X}^{2} S^{2}\right) \right)\nonumber\\
+&=& e^{-\Phi}a(z)^{3}\eta^{\mu\nu}\partial_{\mu}S\, \delta \partial_{\nu}S + e^{-\Phi}a(z)^{3}\partial_{z}S \,\delta \partial_{z}S + e^{-\Phi} a(z)^5 m_X^2 S\, \delta S\nonumber\\
+&=& \left(-e^{-\Phi} a(z)^{3} \partial_{\mu}\partial^{\mu}S - \partial_{z}\left(e^{-\Phi}a(z)^{3}\partial_{z}S\right) + e^{-\Phi}a(z)^5 m_X^2 S\right)\delta S, \label{equlastS}
 \ea
 leaving the equation of motion,
 \be
 \label{equScalargenEOM}
-{\rm e}^{\Phi}a^{-3}\partial_{z}\left({\rm e}^{-\Phi}a^3\partial_{z}S\right) + \partial_{\mu}\partial^{\mu}S - a^{2}m_{X}^{2}S = 0.
+e^{\Phi}a^{-3}\partial_{z}\left(e^{-\Phi}a^3\partial_{z}S\right) + \partial_{\mu}\partial^{\mu}S - a^{2}m_{X}^{2}S = 0.
 \ee
 We separate the $z$-dependent part of the field by using Kaluza-Klein decomposition,
 \be
@@ -344,10 +344,10 @@ The various issues involved in analyzing the pseudoscalar sector are discussed i
 We can derive the mass spectrum of the vector $\rho$ mesons by varying the vector field and using the axial gauge condition $V_{z}=0.$ 
 Varying the action, we find that 
 \ba
-\delta \mathcal{S}_{V} &=& -\delta\left({\rm e}^{-\Phi}\sqrt{-g}g^{\mu\rho}g^{\nu\sigma}\left(\partial_{\mu}V_{\nu}\partial_{\rho}V_{\sigma} - \partial_{\mu}V_{\nu}\partial_{\sigma}V_{\rho}\right)+{\rm e}^{-\Phi}\sqrt{-g}g^{zz}g^{\mu\nu}\partial_{z}V_{\mu}\partial_{z}V_{\nu}\right) \nonumber\\
-&=& -{\rm e}^{-\Phi}\sqrt{-g}g^{\mu\rho}g^{\nu\sigma}\left(\partial_{\mu}V_{\nu}\delta\partial_{\rho}V_{\sigma} - \partial_{\mu}V_{\nu}\delta\partial_{\sigma}V_{\rho}\right) - {\rm e}^{-\Phi}\sqrt{-g}g^{zz}g^{\mu\nu}\partial_{z}V_{\mu}\delta\partial_{z}V_{\nu}\nonumber\\
-&=& {\rm e}^{-\Phi}a(z) (\partial^{2}V_{\mu}\delta V^{\mu} - \partial_{\mu}\partial^{\nu}V_{\nu}\delta V^{\mu}) + \partial_{z}\left({\rm e}^{-\Phi} a(z)\partial_{z} V_{\mu}\right)\delta V^{\mu}\nonumber\\
-&=& \left({\rm e}^{-\Phi} a(z) \partial_{\nu}\partial^{\nu}V_{\mu} + \partial_{z}\left({\rm e}^{-\Phi} a(z)\partial_{z} V_{\mu}\right)\right)\delta V^{\mu},\label{equVectorStep}
+\delta \mathcal{S}_{V} &=& -\delta\left(e^{-\Phi}\sqrt{-g}g^{\mu\rho}g^{\nu\sigma}\left(\partial_{\mu}V_{\nu}\partial_{\rho}V_{\sigma} - \partial_{\mu}V_{\nu}\partial_{\sigma}V_{\rho}\right)+e^{-\Phi}\sqrt{-g}g^{zz}g^{\mu\nu}\partial_{z}V_{\mu}\partial_{z}V_{\nu}\right) \nonumber\\
+&=& -e^{-\Phi}\sqrt{-g}g^{\mu\rho}g^{\nu\sigma}\left(\partial_{\mu}V_{\nu}\delta\partial_{\rho}V_{\sigma} - \partial_{\mu}V_{\nu}\delta\partial_{\sigma}V_{\rho}\right) - e^{-\Phi}\sqrt{-g}g^{zz}g^{\mu\nu}\partial_{z}V_{\mu}\delta\partial_{z}V_{\nu}\nonumber\\
+&=& e^{-\Phi}a(z) (\partial^{2}V_{\mu}\delta V^{\mu} - \partial_{\mu}\partial^{\nu}V_{\nu}\delta V^{\mu}) + \partial_{z}\left(e^{-\Phi} a(z)\partial_{z} V_{\mu}\right)\delta V^{\mu}\nonumber\\
+&=& \left(e^{-\Phi} a(z) \partial_{\nu}\partial^{\nu}V_{\mu} + \partial_{z}\left(e^{-\Phi} a(z)\partial_{z} V_{\mu}\right)\right)\delta V^{\mu},\label{equVectorStep}
 \ea
  
 We can separate out the $z-$dependence of the field using Kaluza-Klein (KK) decomposition 
@@ -443,7 +443,7 @@ In this work, we take $N_c = 3$, and assume that this value is large enough for 
 The equation of motion for the axial sector is derived using the same method.
 Varying the action with respect to $A_\mu$ and using the axial gauge $A_z=0$, we get an equation of similar form to (\ref{equVectorStep}), but with an additional chiral symmetry-breaking term $\chi^2 A_\mu$,
 \be
-\delta\mathcal{S}_{A} = \left({\rm e}^{-\Phi} a(z) \partial^{2}A_{\mu} + \partial_{z}\left({\rm e}^{-\Phi} a(z)\partial_{z} A_{\mu}\right)+ {\rm e}^{-\Phi}g_{5}^{2}a(z)^{3}v^{2}A_{\mu}\right)\delta A^{\mu}. 
+\delta\mathcal{S}_{A} = \left(e^{-\Phi} a(z) \partial^{2}A_{\mu} + \partial_{z}\left(e^{-\Phi} a(z)\partial_{z} A_{\mu}\right)+ e^{-\Phi}g_{5}^{2}a(z)^{3}v^{2}A_{\mu}\right)\delta A^{\mu}. 
 \ee
 After KK decomposition, 
 \be
@@ -495,13 +495,13 @@ where $\lambda$ sets an energy scale for the model that is related to the slope 
 The chiral symmetry breaking of the model is examined by deriving the equation of motion for the vacuum expectation value of the scalar field $X$.
 Varying (\ref{equAction1}) with respect to $X$, we find
  \ba
-\delta \mathcal{S}_X&=& -2{\rm e}^{-\Phi}\sqrt{-g}\,\mathrm{Tr}\Big(g^{MN}\partial_{M}X\partial_{N}\delta X + \{A,X\}\{A,\delta X\}\nonumber\\
+\delta \mathcal{S}_X&=& -2e^{-\Phi}\sqrt{-g}\,\mathrm{Tr}\Big(g^{MN}\partial_{M}X\partial_{N}\delta X + \{A,X\}\{A,\delta X\}\nonumber\\
 && \left. +[V,X][V,\delta X]  + m_{X}^{2}X\delta X - 2\kappa X^{\dagger}X|X|\delta X\right).
 \label{equXvariation}
 \ea
 Taking the trace, integrating by parts, and using $|X|=\chi(z)/2+S(x,z)$, we find  the variation of the action with respect to the chiral condensate,
 \ba
-\delta\mathcal{S}_\chi =  \frac{1}{2}\left(\partial_{z}\left({\rm e}^{-\Phi}\sqrt{-g}g^{zz}\partial_{z}\chi \right) + {\rm e}^{-\Phi}\sqrt{-g}\,m_{X}^{2} \chi  + {\rm e}^{-\Phi}\sqrt{-g}\frac{\kappa}{2}\chi ^{3}\right)\delta \chi.
+\delta\mathcal{S}_\chi =  \frac{1}{2}\left(\partial_{z}\left(e^{-\Phi}\sqrt{-g}g^{zz}\partial_{z}\chi \right) + e^{-\Phi}\sqrt{-g}\,m_{X}^{2} \chi  + e^{-\Phi}\sqrt{-g}\frac{\kappa}{2}\chi ^{3}\right)\delta \chi.
 \ea
 Using the AdS metric, we find that the chiral condensate $\chi(z)$ now has a nonlinear equation of motion
 \be
@@ -582,13 +582,14 @@ Using a Kaluza-Klein decomposition
  S(x,z)=\sum_{n=0}^{\infty}{\cal S}_n(x) S_n(z), 
 \ee
 we vary the action (\ref{equAction1}) with respect to $S$, yielding
-\be
-\partial_z(a^3(z) {\rm e}^{-\Phi}\partial_{z}S_n(z))- a^5(z) {\rm e}^{-\Phi}\left(m_X^{2} -\frac{3}{2}\kappa \chi^2(z)\right) S_n(z)= -a^3(z) {\rm e}^{-\Phi} m_{S_n}^2 S_n(z), 
+\ba
+\partial_z(a^3(z) e^{-\Phi}\partial_{z}S_n(z))- a^5(z) e^{-\Phi}\left(m_X^{2} -\frac{3}{2}\kappa \chi^2(z)\right) S_n(z)= \nonumber \\
+ -a^3(z) e^{-\Phi} m_{S_n}^2 S_n(z), 
 \label{scalarequ}
-\ee
+\ea
 The scalar equation of motion (\ref{scalarequ}) can be brought into a Schr\"{o}dinger-like form with the substitution 
 \be
-S_n(z)={\rm e}^{\omega_s/2}s_n(z), 
+S_n(z)=e^{\omega_s/2}s_n(z), 
 \ee
 with $\omega_s$ as defined in (\ref{eq:omegaScalar}).
 The eigenvalue equation becomes
@@ -635,24 +636,24 @@ Despite these differences, we will show that the equations of motion derived fro
 
 Let us take (\ref{equXe}) and substitute it into (\ref{equAction1}), keeping terms that include the field $\pi(x,z)$, as well as terms that will mix with $\pi$, 
 \ba
-\mathcal{L}_{e} & = & -\sqrt{-g}{\rm e}^{-\Phi(z)}\frac{1}{2}\delta^{ab}\Big(g^{MN}(\chi^{2}\,\partial_{M}\pi\partial_{N}\pi+\chi^{2}A_{M}A_{N}-2\chi^{2}\partial_{M}\pi A_{N})\nonumber \\
+\mathcal{L}_{e} & = & -\sqrt{-g}e^{-\Phi(z)}\frac{1}{2}\delta^{ab}\Big(g^{MN}(\chi^{2}\,\partial_{M}\pi\partial_{N}\pi+\chi^{2}A_{M}A_{N}-2\chi^{2}\partial_{M}\pi A_{N})\nonumber \\
  &  & +\frac{g^{MP}g^{NR}}{g_{5}^{2}}(\partial_{M}A_{N}\partial_{P}A_{R}-\partial_{M}A_{N}\partial_{R}A_{P})\Big)+\dots\label{start}
 \ea
 We work in the axial gauge, $A_{z}=0$, and separate the action (\ref{start}) into four-dimensional components and $z$-dependent terms,
 \ba
-\mathcal{L}_e &=& -\frac{1}{2} {\rm e}^{-\Phi(z)}\Big[\sqrt{-g}\,g^{\mu\nu}\left(\chi ^{2}\partial_{\mu}\pi\partial_{\nu}\pi+\chi ^{2}A_{\mu}A_{\nu} - 2\chi ^{2}\partial_{\mu}\pi A_{\nu}\right)\nonumber \\
+\mathcal{L}_e &=& -\frac{1}{2} e^{-\Phi(z)}\Big[\sqrt{-g}\,g^{\mu\nu}\left(\chi ^{2}\partial_{\mu}\pi\partial_{\nu}\pi+\chi ^{2}A_{\mu}A_{\nu} - 2\chi ^{2}\partial_{\mu}\pi A_{\nu}\right)\nonumber \\
 &&+\sqrt{-g}g^{zz}\chi ^{2}\partial_{z}\pi\partial_{z}\pi\ + \frac{\sqrt{-g}g^{\mu\nu}g^{\rho\sigma}}{g_{5}^{2}}(\partial_{\mu} A_{\rho} \partial_{\nu} A_{\sigma} - \partial_{\mu} A_{\rho} \partial_{\sigma} A_{\nu}) \nonumber\\
 &&+ \frac{\sqrt{-g}g^{zz}g^{\mu\nu}}{g_{5}^{2}}(\partial_{z} A_{\mu}\partial_{z} A_{\nu})\Big].\label{equLbase}
 \ea
 We separate $A_{\mu}$ into its transverse and longitudinal components: $A_{\mu}=A_{\mu\perp}+\partial_{\mu}\varphi,$ where $\partial_{\mu}A_{\perp}^{\mu}=0$. 
 Expressing the action in terms of the longitudinal component, $\varphi$ gives 
 \ba
-\mathcal{L}_{e} & = & -\frac{1}{2}{\rm e}^{-\Phi(z)}\Big[\sqrt{-g}g^{\mu\nu}(\chi^{2}\partial_{\mu}\pi\partial_{\nu}\pi+\chi^{2}\partial_{\mu}\varphi\partial_{\nu}\varphi-2\chi^{2}\partial_{\mu}\pi\partial_{\nu}\varphi)\nonumber \\
+\mathcal{L}_{e} & = & -\frac{1}{2}e^{-\Phi(z)}\Big[\sqrt{-g}g^{\mu\nu}(\chi^{2}\partial_{\mu}\pi\partial_{\nu}\pi+\chi^{2}\partial_{\mu}\varphi\partial_{\nu}\varphi-2\chi^{2}\partial_{\mu}\pi\partial_{\nu}\varphi)\nonumber \\
  &  & +\sqrt{-g}g^{zz}\chi^{2}\partial_{z}\pi\partial_{z}\pi\ +\frac{\sqrt{-g}g^{zz}g^{\mu\nu}}{g_{5}^{2}}(\partial_{z}\partial_{\mu}\varphi\partial_{z}\partial_{\nu}\varphi)\Big].\label{equLproper}
 \ea
 Varying (\ref{equLproper}) with respect to $\pi$ gives
 \be
-\delta\mathcal{L}_e = \partial_{z} {\rm e}^{-\Phi}\sqrt{-g}\,g^{zz}\chi^{2}\partial_{z}\pi \delta\pi + {\rm e}^{-\Phi}\sqrt{-g}\,\chi^{2}g^{\mu\nu}\partial_{\nu}\partial_{\mu}(\pi - \varphi)\delta\pi. \nonumber\\
+\delta\mathcal{L}_e = \partial_{z} e^{-\Phi}\sqrt{-g}\,g^{zz}\chi^{2}\partial_{z}\pi \delta\pi + e^{-\Phi}\sqrt{-g}\,\chi^{2}g^{\mu\nu}\partial_{\nu}\partial_{\mu}(\pi - \varphi)\delta\pi. \nonumber\\
 \ee
 Using a Kaluza-Klein decomposition,
 \ba
@@ -669,16 +670,17 @@ e^{\Phi}\partial_{z}\left(\frac{e^{-\Phi}\chi^{2}}{z^{3}}\partial_{z}\pi_{n}\rig
 \ee
 Varying (\ref{equLproper}) with respect to $\varphi$ and breaking it down into KK modes gives the second equation of motion 
 \be
-{\rm e}^{\Phi}\partial_{z}\left(\frac{{\rm e}^{-\Phi}}{z}\partial_{z}\varphi{}_{n}\right)+\frac{g_{5}^{2}L^{2}\chi^{2}}{z^{3}}(\pi_{n}-\varphi_{n})=0.\label{equTwo}
+e^{\Phi}\partial_{z}\left(\frac{e^{-\Phi}}{z}\partial_{z}\varphi{}_{n}\right)+\frac{g_{5}^{2}L^{2}\chi^{2}}{z^{3}}(\pi_{n}-\varphi_{n})=0.\label{equTwo}
 \ee
 As usual, we express (\ref{equOne}) and (\ref{equTwo}) in a Schr{\"o}dinger-like form,
 \ba
-\pi & \rightarrow & {\rm e}^{f(z)}\pi\quad\quad\quad f(z)=\Phi(z)+\log{\frac{z^{3}}{\chi(z)^{2}}}\\
-\varphi & \rightarrow & {\rm e}^{\omega(z)}\varphi \quad\quad\quad \omega(z)=\Phi(z)+\log{z}.
+\pi & \rightarrow & e^{f(z)}\pi\quad\quad\quad f(z)=\Phi(z)+\log{\frac{z^{3}}{\chi(z)^{2}}}\\
+\varphi & \rightarrow & e^{\omega(z)}\varphi \quad\quad\quad \omega(z)=\Phi(z)+\log{z}.
 \ea
 After simplifying, the equations of motion become
 \ba
- &  & -\pi_{n}''+\left(\frac{\Phi'^{2}}{4}-\frac{\Phi''}{2}-\frac{\Phi'\chi'}{\chi}+\frac{3\Phi'}{2z}+\frac{15}{4z^{2}}-\frac{3\chi'}{\chi z}+\frac{\chi''}{\chi}-m_{n}^{2}\right)\pi_{n}=-m_{n}^{2}\frac{\chi^{2}L^{2}}{z^{2}}\varphi_{n}\label{equSchexppi}\\
+&&  -\pi_{n}''+\left(\frac{\Phi'^{2}}{4}-\frac{\Phi''}{2}-\frac{\Phi'\chi'}{\chi}+\frac{3\Phi'}{2z}+\frac{15}{4z^{2}}-\frac{3\chi'}{\chi z}+\frac{\chi''}{\chi}-m_{n}^{2}\right)\pi_{n}\nonumber \\
+ &&=-m_{n}^{2}\frac{\chi^{2}L^{2}}{z^{2}}\varphi_{n}\label{equSchexppi}\\
  &  & -\varphi_{n}''+\left(\frac{\Phi'^{2}}{4}-\frac{\Phi''}{2}+\frac{\Phi'}{2z}+\frac{3}{4z^{2}}+\frac{g_{5}^{2}\chi^{2}L^{2}}{z^{2}}\right)\varphi_{n}=g_{5}^{2}\pi_{n}\label{equSchexpphi}
 \ea
 
@@ -689,29 +691,30 @@ After simplifying, the equations of motion become
 When considering the linear representation of the pseudoscalar field (\ref{equXl}), there are terms quadratic and quartic in $\pi$ that were not present in the exponential representation. 
 After making the appropriate substitutions in the Lagrangian, it becomes 
 \ba
-\mathcal{L}_{l} & = & -\frac{1}{2}{\rm e}^{-\Phi}\sqrt{-g}\Big(g^{\mu\nu}\partial_{\mu}\pi\partial_{\nu}\pi+g^{zz}\partial_{z}\pi\partial_{z}\pi-2\chi g^{\mu\nu}\partial_{\mu}\pi\partial_{\nu}\varphi+m_{X}^{2}\pi^{2}-\frac{\kappa}{2}\chi^{2}\pi^{2}\nonumber \\
- & + & g^{\mu\nu}\chi^{2}\partial_{\mu}\varphi\partial_{\nu}\varphi+\frac{g^{\mu\nu}g^{zz}}{g_{5}^{2}}\partial_{z}\partial_{\mu}\varphi\partial_{z}\partial_{\nu}\varphi\Big).
+\mathcal{L}_{l} & = & -\frac{1}{2}e^{-\Phi}\sqrt{-g}\Big(g^{\mu\nu}\partial_{\mu}\pi\partial_{\nu}\pi+g^{zz}\partial_{z}\pi\partial_{z}\pi-2\chi g^{\mu\nu}\partial_{\mu}\pi\partial_{\nu}\varphi+m_{X}^{2}\pi^{2}\nonumber \\
+ & - & \frac{\kappa}{2}\chi^{2}\pi^{2}+g^{\mu\nu}\chi^{2}\partial_{\mu}\varphi\partial_{\nu}\varphi+\frac{g^{\mu\nu}g^{zz}}{g_{5}^{2}}\partial_{z}\partial_{\mu}\varphi\partial_{z}\partial_{\nu}\varphi\Big).
 \ea
 Following the same procedure as above, we derive two coupled equations.
 Varying with respect to $\varphi$ produces 
 \be
-{\rm e}^{\Phi}\partial_{z}\left(\frac{{\rm e}^{-\Phi}}{z}\partial_{z}\varphi_{n}\right)+\frac{g_{5}^{2}L^{2}\chi}{z^{3}}\left(\pi_{n}-\chi\varphi_{n}\right)=0.\label{equphi}
+e^{\Phi}\partial_{z}\left(\frac{e^{-\Phi}}{z}\partial_{z}\varphi_{n}\right)+\frac{g_{5}^{2}L^{2}\chi}{z^{3}}\left(\pi_{n}-\chi\varphi_{n}\right)=0.\label{equphi}
 \ee
 Varying with respect to $\pi$ gives the second equation of the linear representation 
 \be
-z^{3}{\rm e}^{\Phi}\partial_{z}\left(\frac{{\rm e}^{-\Phi}}{z^{3}}\partial_{z}\pi_{n}\right)-\left(\frac{m_{X}^{2}}{z^{2}}-\frac{\kappa L^{2}\chi^{2}}{2z^{2}}\right)\pi_{n}+m_{n}^{2}\pi_{n}=m_{n}^{2}\chi\varphi_{n}.\label{equpi}
+z^{3}e^{\Phi}\partial_{z}\left(\frac{e^{-\Phi}}{z^{3}}\partial_{z}\pi_{n}\right)-\left(\frac{m_{X}^{2}}{z^{2}}-\frac{\kappa L^{2}\chi^{2}}{2z^{2}}\right)\pi_{n}+m_{n}^{2}\pi_{n}=m_{n}^{2}\chi\varphi_{n}.\label{equpi}
 \ee
  We can express (\ref{equphi}) and (\ref{equpi}) in a Schr{\"o}dinger-like form as above %
 with the substitutions 
 \ba
-\pi_{n} & \rightarrow & {\rm e}^{\omega_s/2}\pi_{n}\\
-\varphi_{n} & \rightarrow & {\rm e}^{\omega/2}\varphi_{n},
+\pi_{n} & \rightarrow & e^{\omega_s/2}\pi_{n}\\
+\varphi_{n} & \rightarrow & e^{\omega/2}\varphi_{n},
 \ea
 where $\omega_s$ and $\omega$ are defined as in (\ref{eq:omegaScalar}) and (\ref{eq:omega}), respectively.
 Simplifying the equations , we find  
 \ba
  &  & -\varphi_{n}''+\left(\frac{\Phi'^{2}}{4}-\frac{\Phi''}{2}+\frac{3}{4z^{2}}+\frac{\Phi'}{2z}+\frac{g_{5}^{2}L^{2}\chi^{2}}{z^{2}}\right)\varphi_{n}=\frac{g_{5}^{2}L\chi}{z}\pi_{n}\label{equSchphi}\\
- &  & -\pi_{n}''+\left(\frac{\Phi'^{2}}{4}-\frac{\Phi''}{2}+\frac{3}{4z^{2}}+\frac{3\Phi'}{2z}-\frac{\kappa L^{2}\chi^{2}}{2z^{2}}-m_{n}^{2}\right)\pi_{n}=-m_{n}^{2}\frac{\chi L}{z}\varphi_{n}\label{equSchpi}
+ &  & -\pi_{n}''+\left(\frac{\Phi'^{2}}{4}-\frac{\Phi''}{2}+\frac{3}{4z^{2}}+\frac{3\Phi'}{2z}-\frac{\kappa L^{2}\chi^{2}}{2z^{2}}-m_{n}^{2}\right)\pi_{n}=\nonumber\\
+ &&-m_{n}^{2}\frac{\chi L}{z}\varphi_{n}\label{equSchpi}
 \ea
 
 \subsubsection{Representation Equivalence}
@@ -734,14 +737,14 @@ Let us substitute
 $\pi_{e}\rightarrow\pi_{l}/\chi(z)$ into the equations of motion of the exponential representation and attempt to obtain the equations of motion of the linear representation. 
 The substitution into (\ref{equTwo}) immediately yields 
 \be
-{\rm e}^{\Phi}\partial_{z}\left(\frac{{\rm e}^{-\Phi}}{z}\partial_{z}\varphi\right)+\frac{g_{5}^{2}\chi}{z^{3}}(\pi_{l}-\chi\varphi)=0,
+e^{\Phi}\partial_{z}\left(\frac{e^{-\Phi}}{z}\partial_{z}\varphi\right)+\frac{g_{5}^{2}\chi}{z^{3}}(\pi_{l}-\chi\varphi)=0,
 \ee
 which is equivalent to (\ref{equphi}) as expected. 
 
 Demonstrating the equivalence of the other two equations requires a bit more analysis. 
 First we substitute for $\pi_{e}$ in (\ref{equOne}) and simplify the expression,
 \be
-\frac{z^{3}{\rm e}^{\Phi}}{\chi}\partial_{z}\left(\frac{{\rm e}^{-\Phi}\chi^{2}}{z^{3}}\left(\frac{\pi_{l}'}{\chi}-\frac{\pi_{l}\chi}{\chi^{2}}\right)\right)+m_{n}^{2}(\pi_{l}-\chi\varphi)=0,
+\frac{z^{3}e^{\Phi}}{\chi}\partial_{z}\left(\frac{e^{-\Phi}\chi^{2}}{z^{3}}\left(\frac{\pi_{l}'}{\chi}-\frac{\pi_{l}\chi}{\chi^{2}}\right)\right)+m_{n}^{2}(\pi_{l}-\chi\varphi)=0,
 \ee
 which becomes
 \be
@@ -766,7 +769,7 @@ However, it turns out that the boundary conditions
 \varphi(z_0\rightarrow 0)  =  0   \quad\quad\quad \partial_z\varphi(z\rightarrow \infty)  =  0 
 \ea
 are easier to enforce using the linear representation (\ref{equXl}).
-This may be due to the relation (\ref{relation}) and the fact that the chiral field $\chi$ also goes to zero in the UV, making it difficult to enforce the boundary condition on $\pi_e$ simultaneously.
+This may be due to the relation (\ref{eq:relation}) and the fact that the chiral field $\chi$ also goes to zero in the UV, making it difficult to enforce the boundary condition on $\pi_e$ simultaneously.
 The numerical results for the $\pi_l$ eigenvalues are shown in Table \ref{tblmass}.
 
 \begin{table}[htb]
@@ -858,74 +861,12 @@ Whenever a continuous symmetry is spontaneously broken, a massless particle appe
 The resulting particles are known as Goldstone bosons, or, if the symmetry is also broken explicitly, they are called pseudo-Goldstone bosons because they are not truly massless.
 The ground-state pion is the pseudo-Goldstone boson of chiral symmetry, which is the reason for its small mass in comparison to the other meson ground states.
 The Gell-Mann--Oakes--Renner relation is a formula relating the mass of the pion to the quark mass and the chiral condensate \cite{GMOR}.
- 
- A quark-antiquark pair may spontaneously appear from the vacuum, in keeping with Heisenberg's Uncertainty Principle. 
- This pair will have zero total momentum and angular momentum, resulting that a left-handed quark will be paired with a right-handed antiquark, and vice versa, resulting in a nonzero net chirality.
- The QCD vacuum contains a condensate of these chiral quark-antiquark states, resulting in a nonzero vacuum expectation value for the chiral operator
- \be
- \langle\bar{q}q\rangle = \langle \bar{q}_L q_R +\bar{q}_R q_L \rangle \neq 0.
- \ee
- Thus, the vacuum mixes the two quark helicities, causing the light quarks to acquire an effective mass as they move through and interact with the vacuum.
- 
- We can explore the relationship of spontaneous chiral symmetry breaking to the pion by parameterizing the matrix element of the axial current
-  \be
-  j^{\mu5a}(x)=\bar{q}\gamma^\mu\gamma5\tau^a q
-  \ee
-   between the vacuum and a pion \cite{Peskin:qft}
- \be
- \langle0|j^{\mu5a}(x)|\pi^b(p)\rangle = -i p^\mu f_\pi \delta^{ab} \EXP^{-ip\cdot x},
- \label{eq:pidecay}
- \ee
- where $f_\pi$ is known as the \emph{pion decay constant} and has dimensions of mass.
- Taking the derivative $\partial_\mu$ of the left-hand side of (\ref{eq:pidecay}) is equivalent to contracting the right-hand side with $p_\mu$, yielding
+The relation takes the form
 \be
-\langle0|\partial_\mu j^{\mu5a}(x)|\pi^b(p)\rangle = -p_\mu(i p^\mu f_\pi \delta^{ab}\EXP^{-ip\cdot x}) = -ip^2  f_\pi \delta^{ab}\EXP^{-ip\cdot x}.
-\label{eq:axialCurrent}
+2m_{q}\sigma=m_{\pi}^{2}f_{\pi}^{2}\, ,
 \ee
-Taking $x=0$, and making the substitution $p^2 = m_\pi^2 $ for an on-shell pion, we obtain the so-called partially conserved axial current (PCAC) relation
-\be
-\partial_\mu j^{\mu5a} = f_\pi m_\pi^2 \pi^a.
-\label{eq:PCAC}
-\ee
-In the limit of zero quark mass, the axial current is exactly conserved, i.e. $\partial_\mu j^{\mu5}(x)=0$, implying that $m_\pi^2=0$, and the pion is massless, as required by Goldstone's theorem.
-  
-When the quark masses are not equal to zero, the chiral symmetry is said to be broken explicitly. 
-This is because the QCD Lagrangian contains terms of the form $  m_q \bar{q}q = m_q (\bar{q}_L q_R + \bar{q}_R q_L)$, which requires a mixing of the chiral components.
-The axial field is no longer exactly conserved, becoming
-\be
-\partial_\mu j^{\mu5a}(x) = i\bar{q}\{M,\tau^a\}\gamma^5 q,
-\ee
-where M is the mass matrix
-\be
-M=\left( \begin{array} {cc}
-m_u&0 \\
-0 &m_d 
-\end{array}\right) \,.
-\ee
-Using this equation with \ref{eq:axialCurrent}, we find
-\be
- \langle0|\partial_\mu j^{\mu5a}(0)|\pi^v(p)\rangle = -p^2 f_\pi \delta^{ab} = \langle 0| i \bar{q}\{M,\tau^a\}\gamma^5 q | \pi^b(p)\rangle.
- \ee
- 
- We derive the Gell-Mann--Oakes--Renner relation using the argument presented in \cite{Greiner}.
- We calculate the quantity
- \be
- I=\int d^4 x e^{-ip\cdot x} \left \langle 0 \left | \mathrm{Tr} \left(\partial^\mu j^{5a}_\mu(0) \partial^\nu j^{5b}_\nu(x)\right)\right |0\right\rangle.
- \ee
- Using the PCAC relation (\ref{eq:PCAC}), we can substitute the pion operators and reduce the expression to the pion propagator,
- \ba
- I &=& f_\pi^2 m_pi^4 \int d^4x e^{-ip\cdot x} \left \langle 0 \left | \mathrm{Tr} \left(\pi^a(0) \pi^b(x) \right)\right |0\right\rangle \\
- &=& f_\pi^2 m_pi^4 \delta^{ab} i D_\pi(p).
- \ea
- Taking the limit $p\rightarrow0$, the propagator becomes $D_\pi=-1/m_\pi^2$, and the expression for $I$ reduces to 
- \be
- I = -i f_\pi^2 m_\pi^2.
- \ee
- Alternatively, we can calculate the quantity $I$ by integrating by parts, 
- 
- NEED TO FINISH GMOR.
-
-
+ where $f_\pi$ is known as the \emph{pion decay constant} and has dimensions of mass, $\sigma$ is the quark condensate, with dimensions of $\mathrm{mass}^3$, and $m_q$ is the average of the up and down quark masses.
+ This relation is explored further and derived in Appendix \ref{app_GMOR}.
 
 \subsubsection{The Gell-Mann--Oakes--Renner Relation in Soft-Wall AdS/QCD}
 
@@ -948,7 +889,7 @@ The function $u^{3}/\chi^{2}(u)$ has significant support only at small values of
 \ee
 We find that letting $\pi_{l}=-\chi(z)$ solves the axial-vector field's equation of motion 
 \be
-{\rm e}^{\Phi}\partial_{z}\left(\frac{{\rm e}^{-\Phi}}{z}\partial_{z}A_{\mu}(q,z)\right)-\frac{q^{2}}{z}A_{\mu}(q,z)-\frac{g_{5}^{2}L^{2}\chi^{2}}{z^{3}}A_{\mu}(q,z)=0
+e^{\Phi}\partial_{z}\left(\frac{e^{-\Phi}}{z}\partial_{z}A_{\mu}(q,z)\right)-\frac{q^{2}}{z}A_{\mu}(q,z)-\frac{g_{5}^{2}L^{2}\chi^{2}}{z^{3}}A_{\mu}(q,z)=0
 \ee
  in the region of small $z$ and as $q\rightarrow0$. 
  As a result, (\ref{equPreGOR}) becomes the expected Gell-Mann--Oakes--Renner (GOR)

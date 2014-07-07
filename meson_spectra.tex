@@ -13,10 +13,11 @@ In this chapter, we calculate the meson spectra for the vector, axial-vector, an
 The analysis is much the same as that presented in Chapter \ref{sec:Soft-Wall-Model}.
 
 To calculate the spectra of the radial excitations of the mesons, we examine the relevant terms from the string frame action (\ref{eqStringAction}),
-\be
-\cS_{{\rm meson}}=-\frac{1}{16\pi G_5} \int d^5x \sqrt{-g} e^{-2\Phi}\mathrm{Tr}\left[ \left|DX\right|^2+V_m(\Phi,X^2,\mathcal{G})+\frac{1}{2g_5^2}\left(F_A^2 +F_V^2\right) \right] \, .
+\ba
+\cS_{{\rm meson}}=-\frac{1}{16\pi G_5} \int d^5x \sqrt{-g} e^{-2\Phi}\mathrm{Tr}\left[ \left|DX\right|^2+V_m(\Phi,X^2,\mathcal{G}) \right. \nonumber\\
+\left.+\frac{1}{2g_5^2}\left(F_A^2 +F_V^2\right) \right] \, .
 \label{eqMesonL}
-\ee
+\ea
 The $2 \times 2$ field $X$ contains the scalar and pseudoscalar fields $(S,\pi)$, as well as the VEV.
 We will use the exponential representation for the scalar field discussed in \cite{bartz-pions},
 \be
@@ -126,9 +127,10 @@ For convenience, we begin by deriving the equations of motion in the exponential
 Working in the axial gauge $A_z = 0$, we rewrite the axial meson field in terms of its perpendicular and longitudinal components: $A_\mu = A_{\mu\perp} +\partial_\mu \varphi$.
 Only the longitudinal component of the axial field, $\varphi$, contributes to the pion equations of motion.
 We use (\ref{eqMesonL}), keeping only the relevant terms
-\be
-\cL = e^{-2\Phi} \sqrt{-g} \left[ \chi^2 (\partial_\mu \pi_e \partial^\mu \pi_e +  \partial_\mu \varphi \partial^\mu \varphi - 2 \partial_\mu \pi \partial^\mu \varphi +  \partial_z \pi_e \partial^z \pi_e)  + \frac{1}{g_5^2}\partial_z \partial_\mu \varphi \partial^z\partial^\mu \varphi \right] \, .
-\ee
+\ba
+\cL = e^{-2\Phi} \sqrt{-g} \Bigg[ \chi^2 (\partial_\mu \pi_e \partial^\mu \pi_e +  \partial_\mu \varphi \partial^\mu \varphi - 2 \partial_\mu \pi \partial^\mu \varphi +  \partial_z \pi_e \partial^z \pi_e)   \nonumber \\
++ \frac{1}{g_5^2}\partial_z \partial_\mu \varphi \partial^z\partial^\mu \varphi \Bigg] \, .
+\ea
 Varying with respect to $\varphi$ yields
 \be
 e^{2\Phi} \partial_z \left(\frac{e^{-2\Phi}}{z}\partial_z \varphi \right) + \frac{g_5^2 \chi^2}{z^3}(\pi_e-\varphi)=0 \, ,
@@ -239,12 +241,13 @@ U=a_1 \phi \chi^2 +a_2 \phi G^2 + a_3 \chi^4 + a_4 G^4 + a_5 \chi^2 G^2 +a_6 G^2
 and $\Delta U$ is assumed to be a function of $\phi$ only.
 
 The terms of $\mathrm{Tr} V_m$  that are relevant for the analysis of the scalar sector are those terms involving $X$ and $\mathcal{G}$:
-\be
-\mathrm{Tr} V_m \sim m_X^2 X^2 + 2 a_1 \phi X^2 + 2 a_2 \phi \mathcal{G}^2 +8 a_3 X^4 +8 a_4 \mathcal{G}^4 + 8 a_5 X^2 \mathcal{G}^2 +2 a_6\mathcal{G}^2 \tanh{g\phi}.
-\ee
+\ba
+\mathrm{Tr} V_m \sim m_X^2 X^2 + 2 a_1 \phi X^2 + 2 a_2 \phi \mathcal{G}^2 +8 a_3 X^4 +8 a_4 \mathcal{G}^4 \nonumber \\
++ 8 a_5 X^2 \mathcal{G}^2 +2 a_6\mathcal{G}^2 \tanh{g\phi}.
+\ea
 Expanding and keeping only terms that are quadratic in the fields $S$ and $ H$, we obtain
 \ba
-\mathrm{Tr} V_m &\sim &\left(m_X^2 + 2 a_1 \phi + 12  a_3 \chi^2 +2 a_5 G^2\right)S^2 \\
+\mathrm{Tr} V_m &\sim &\left(m_X^2 + 2 a_1 \phi + 12  a_3 \chi^2 +2 a_5 G^2\right)S^2 \nonumber \\
 &+& \left(2a_2 \phi +12 a_4 G^2 + 2a_5 \chi^2 + 2 \tanh(g\phi)\right)H^2 + 4 a_5 G\chi H S.
 \ea
 We can simplify the expression by collecting some of the terms and writing them as derivatives of $U$ with respect to the scalar and glueball fields,

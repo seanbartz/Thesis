@@ -1,384 +1,514 @@
-\begin{thebibliography}{10}
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
 
 \bibitem{PDG}
-J.~Beringer, J.~F. Arguin, R.~M. Barnett, K.~Copic, O.~Dahl, D.~E. Groom, C.~J.
-  Lin, J.~Lys, H.~Murayama, C.~G. Wohl, W.~M. Yao, P.~A. Zyla, C.~Amsler,
-  M.~Antonelli, D.~M. Asner, H.~Baer, H.~R. Band, T.~Basaglia, C.~W. Bauer,
-  J.~J. Beatty, V.~I. Belousov, E.~Bergren, G.~Bernardi, W.~Bertl, S.~Bethke,
-  H.~Bichsel, O.~Biebel, E.~Blucher, S.~Blusk, G.~Brooijmans, O.~Buchmueller,
-  R.~N. Cahn, M.~Carena, A.~Ceccucci, D.~Chakraborty, M.~C. Chen, R.~S.
-  Chivukula, G.~Cowan, G.~D'Ambrosio, T.~Damour, D.~de~Florian,
-  A.~de~Gouv\^{e}a, T.~DeGrand, P.~de~Jong, G.~Dissertori, B.~Dobrescu,
-  M.~Doser, M.~Drees, D.~A. Edwards, S.~Eidelman, J.~Erler, V.~V. Ezhela,
-  W.~Fetscher, B.~D. Fields, B.~Foster, T.~K. Gaisser, L.~Garren, H.~J. Gerber,
-  G.~Gerbier, T.~Gherghetta, S.~Golwala, M.~Goodman, C.~Grab, A.~V. Gritsan,
-  J.~F. Grivaz, M.~Gr\"{u}newald, A.~Gurtu, T.~Gutsche, H.~E. Haber,
-  K.~Hagiwara, C.~Hagmann, C.~Hanhart, S.~Hashimoto, K.~G. Hayes, M.~Heffner,
-  B.~Heltsley, J.~J. Hern\'{a}ndez-Rey, K.~Hikasa, A.~H\"{o}cker, J.~Holder,
-  A.~Holtkamp, J.~Huston, J.~D. Jackson, K.~F. Johnson, T.~Junk, D.~Karlen,
-  D.~Kirkby, S.~R. Klein, E.~Klempt, R.~V. Kowalewski, F.~Krauss, M.~Kreps,
-  B.~Krusche, Yu.~V. Kuyanov, Y.~Kwon, O.~Lahav, J.~Laiho, P.~Langacker,
-  A.~Liddle, Z.~Ligeti, T.~M. Liss, L.~Littenberg, K.~S. Lugovsky, S.~B.
-  Lugovsky, T.~Mannel, A.~V. Manohar, W.~J. Marciano, A.~D. Martin, A.~Masoni,
-  J.~Matthews, D.~Milstead, R.~Miquel, K.~M\"{o}nig, F.~Moortgat, K.~Nakamura,
-  M.~Narain, P.~Nason, S.~Navas, M.~Neubert, P.~Nevski, Y.~Nir, K.~A. Olive,
-  L.~Pape, J.~Parsons, C.~Patrignani, J.~A. Peacock, S.~T. Petcov, A.~Piepke,
-  A.~Pomarol, G.~Punzi, A.~Quadt, S.~Raby, G.~Raffelt, B.~N. Ratcliff,
-  P.~Richardson, S.~Roesler, S.~Rolli, A.~Romaniouk, L.~J. Rosenberg, J.~L.
-  Rosner, C.~T. Sachrajda, Y.~Sakai, G.~P. Salam, S.~Sarkar, F.~Sauli,
-  O.~Schneider, K.~Scholberg, D.~Scott, W.~G. Seligman, M.~H. Shaevitz, S.~R.
-  Sharpe, M.~Silari, T.~Sj\"{o}strand, P.~Skands, J.~G. Smith, G.~F. Smoot,
-  S.~Spanier, H.~Spieler, A.~Stahl, T.~Stanev, S.~L. Stone, T.~Sumiyoshi, M.~J.
-  Syphers, F.~Takahashi, M.~Tanabashi, J.~Terning, M.~Titov, N.~P. Tkachenko,
-  N.~A. T\"{o}rnqvist, D.~Tovey, G.~Valencia, K.~van Bibber, G.~Venanzoni,
-  M.~G. Vincter, P.~Vogel, A.~Vogt, W.~Walkowiak, C.~W. Walter, D.~R. Ward,
-  T.~Watari, G.~Weiglein, E.~J. Weinberg, L.~R. Wiencke, L.~Wolfenstein,
-  J.~Womersley, C.~L. Woody, R.~L. Workman, A.~Yamamoto, G.~P. Zeller, O.~V.
-  Zenin, J.~Zhang, R.~Y. Zhu, G.~Harper, V.~S. Lugovsky, and P.~Schaffner.
-\newblock {Review of Particle Physics}.
-\newblock {\em Physical Review D}, 86(1):010001, July 2012.
+J.~Beringer, \emph{et al},
+  ``{Review of Particle Physics},''
+  \href{%http://dx.doi.org/10.1103/PhysRevD.86.010001}{{\em Physical Review D}
+  {\bfseries 86} no.~1, (July, 2012) 010001}.
+  %%\url{%http://link.aps.org/doi/10.1103/PhysRevD.86.010001}.
 
 \bibitem{Hyakutake2013}
-Yoshifumi Hyakutake.
-\newblock {Quantum Near Horizon Geometry of Black 0-Brane}.
-\newblock page~34, November 2013, 1311.7526.
+Y.~Hyakutake, ``{Quantum Near Horizon Geometry of Black 0-Brane},''
+  \href{%http://arxiv.org/abs/1311.7526}{{\ttfamily arXiv:1311.7526}}.
+  %%\url{%http://arxiv.org/abs/1311.7526}.
 
 \bibitem{Hanada2013}
-Masanori Hanada, Yoshifumi Hyakutake, Goro Ishiki, and Jun Nishimura.
-\newblock {Holographic description of quantum black hole on a computer}.
-\newblock page~14, November 2013, 1311.5607.
+M.~Hanada, Y.~Hyakutake, G.~Ishiki, and J.~Nishimura, ``{Holographic
+  description of quantum black hole on a computer},''
+  \href{%http://arxiv.org/abs/1311.5607}{{\ttfamily arXiv:1311.5607}}.
+  %%\url{%http://arxiv.org/abs/1311.5607}.
 
 \bibitem{bartz-pions}
-Thomas~M. Kelley, Sean~P. Bartz, and Joseph~I. Kapusta.
-\newblock {Pseudoscalar mass spectrum in a soft-wall model of AdS/QCD}.
-\newblock {\em Physical Review D}, 83(1):016002, January 2011, 1009.3009.
+T.~M. Kelley, S.~P. Bartz, and J.~I. Kapusta, ``{Pseudoscalar mass spectrum in
+  a soft-wall model of AdS/QCD},''
+  \href{%http://dx.doi.org/10.1103/PhysRevD.83.016002}{{\em Physical Review D}
+  {\bfseries 83} no.~1, (Jan., 2011) 016002},
+  \href{%http://arxiv.org/abs/1009.3009}{{\ttfamily arXiv:1009.3009}}.
+  %%\url{%http://arxiv.org/abs/1009.3009
+ % %http://link.aps.org/doi/10.1103/PhysRevD.83.016002}.
 
 \bibitem{Bartz2014}
-Sean~P. Bartz and Joseph~I. Kapusta.
-\newblock {A Dynamical Three-Field AdS/QCD Model}.
-\newblock page~17, June 2014, 1406.3859.
+S.~P. Bartz and J.~I. Kapusta, ``{A Dynamical Three-Field AdS/QCD Model},''
+  \href{%http://arxiv.org/abs/1406.3859}{{\ttfamily arXiv:1406.3859}}.
+  %\url{%http://arxiv.org/abs/1406.3859}.
 
 \bibitem{Ramallo2013}
-Alfonso~V. Ramallo.
-\newblock {Introduction to the AdS/CFT correspondence}.
-\newblock page~64, October 2013, 1310.4319.
+A.~V. Ramallo, ``{Introduction to the AdS/CFT correspondence},''
+  \href{%http://arxiv.org/abs/1310.4319}{{\ttfamily arXiv:1310.4319}}.
+  %\url{%http://arxiv.org/abs/1310.4319}.
 
 \bibitem{Zaffaroni2000}
-a~Zaffaroni.
-\newblock {Introduction to the AdS-CFT correspondence}.
-\newblock {\em Classical and Quantum Gravity}, 17(17):3571--3597, September
-  2000.
+a.~Zaffaroni, ``{Introduction to the AdS-CFT correspondence},''
+  \href{%http://dx.doi.org/10.1088/0264-9381/17/17/306}{{\em Classical and
+  Quantum Gravity} {\bfseries 17} no.~17, (Sept., 2000) 3571--3597}.
+  %\url{%http://stacks.iop.org/0264-9381/17/i=17/a=306?key=crossref.8da56e795bf0f9fe11838da874573d05}.
 
 \bibitem{Kim2012}
-Youngman Kim, Ik~Jae Shin, and Takuya Tsukioka.
-\newblock {Holographic QCD: Past, Present, and Future}.
-\newblock {\em Progress in Particle and Nuclear Physics}, page~80, May 2012,
-  1205.4852.
+Y.~Kim, I.~J. Shin, and T.~Tsukioka, ``{Holographic QCD: Past, Present, and
+  Future},'' {\em Progress in Particle and Nuclear Physics} (May, 2012) 80,
+  \href{%http://arxiv.org/abs/1205.4852}{{\ttfamily arXiv:1205.4852}}.
+  %\url{%http://arxiv.org/abs/1205.4852
+  %http://www.sciencedirect.com/science/article/pii/S0146641012001111}.
 
 \bibitem{Erdmenger:2007cm}
-J.~Erdmenger, N.~Evans, I.~Kirsch, and E.~J. Threlfall.
-\newblock {Mesons in gauge/gravity duals}.
-\newblock {\em The European Physical Journal A}, 35(1):81--133, February 2008,
-  0711.4467.
+J.~Erdmenger, N.~Evans, I.~Kirsch, and E.~J. Threlfall, ``{Mesons in
+  gauge/gravity duals},''
+  \href{%http://dx.doi.org/10.1140/epja/i2007-10540-1}{{\em The European
+  Physical Journal A} {\bfseries 35} no.~1, (Feb., 2008) 81--133},
+  \href{%http://arxiv.org/abs/0711.4467}{{\ttfamily arXiv:0711.4467}}.
+  %\url{%http://www.springerlink.com/index/10.1140/epja/i2007-10540-1}.
 
 \bibitem{Edelstein:2009iv}
-José~D. Edelstein, Jonathan~P. Shock, and Dimitrios Zoakos.
-\newblock {The AdS∕CFT Correspondence and Non-perturbative QCD}.
-\newblock In {\em PARTICLES AND FIELDS: Proceedings of the XIII Mexican School
-  of Particles and Fields}, volume 1116, pages 265--284. ASCE, January 2009,
-  0901.2534.
+J.~D. Edelstein, J.~P. Shock, and D.~Zoakos, ``{The AdS∕CFT Correspondence
+  and Non-perturbative QCD},'' \href{%http://dx.doi.org/10.1063/1.3131566}{{\em
+  PARTICLES AND FIELDS: Proceedings of the XIII Mexican School of Particles and
+  Fields} {\bfseries 1116} no.~October, (Jan., 2009) 265--284},
+  \href{%http://arxiv.org/abs/0901.2534}{{\ttfamily arXiv:0901.2534}}.
+  %\url{%http://arxiv.org/abs/0901.2534
+  %http://scitation.aip.org/content/aip/proceeding/aipcp/10.1063/1.3131566}.
 
 \bibitem{KLEBANOV2006}
-Igor~R. Klebanov.
-\newblock {QCD and String Theory}.
-\newblock {\em International Journal of Modern Physics A}, 21(08n09):12,
-  September 2005, 0509087.
+I.~R. Klebanov, ``{QCD and String Theory},''
+  \href{%http://dx.doi.org/10.1142/S0217751X06032794}{{\em International Journal
+  of Modern Physics A} {\bfseries 21} no.~08n09, (Sept., 2005) 12},
+  \href{%http://arxiv.org/abs/0509087}{{\ttfamily arXiv:0509087 [hep-ph]}}.
+  %\url{%http://arxiv.org/abs/hep-ph/0509087
+  %http://www.worldscientific.com/doi/abs/10.1142/S0217751X06032794}.
 
 \bibitem{Gubser2009}
-Steven~S. Gubser and Andreas Karch.
-\newblock {From Gauge-String Duality to Strong Interactions:A Pedestrian's
-  Guide}.
-\newblock {\em Annual Review of Nuclear and Particle Science}, 59(1):145--168,
-  November 2009, 0901.0935.
+S.~S. Gubser and A.~Karch, ``{From Gauge-String Duality to Strong
+  Interactions:A Pedestrian's Guide},''
+  \href{%http://dx.doi.org/10.1146/annurev.nucl.010909.083602}{{\em Annual
+  Review of Nuclear and Particle Science} {\bfseries 59} no.~1, (Nov., 2009)
+  145--168}, \href{%http://arxiv.org/abs/0901.0935}{{\ttfamily
+  arXiv:0901.0935}}. %\url{%http://arxiv.org/abs/0901.0935
+  %http://www.annualreviews.org/doi/abs/10.1146/annurev.nucl.010909.083602}.
 
 \bibitem{Witten:1995im}
-Edward Witten.
-\newblock {Bound states of strings and p-branes}.
-\newblock {\em Nuclear Physics B}, 460(2):335--350, February 1996, 9510135.
+E.~Witten, ``{Bound states of strings and p-branes},''
+  \href{%http://dx.doi.org/10.1016/0550-3213(95)00610-9}{{\em Nuclear Physics B}
+  {\bfseries 460} no.~2, (Feb., 1996) 335--350},
+  \href{%http://arxiv.org/abs/9510135}{{\ttfamily arXiv:9510135 [hep-th]}}.
+  %\url{%http://arxiv.org/abs/hep-th/9510135
+  %http://linkinghub.elsevier.com/retrieve/pii/0550321395006109}.
 
 \bibitem{Horowitz:1991cd}
-Gary~T. Horowitz and Andrew Strominger.
-\newblock {Black strings and p-branes}.
-\newblock {\em Nuclear Physics B}, 360(1):197--209, August 1991.
+G.~T. Horowitz and A.~Strominger, ``{Black strings and p-branes},''
+  \href{%http://dx.doi.org/10.1016/0550-3213(91)90440-9}{{\em Nuclear Physics B}
+  {\bfseries 360} no.~1, (Aug., 1991) 197--209}.
+  %\url{%http://linkinghub.elsevier.com/retrieve/pii/0550321391904409}.
+
+\bibitem{Babington2004}
+J.~Babington, J.~Erdmenger, N.~Evans, Z.~Guralnik, and I.~Kirsch, ``{Chiral
+  symmetry breaking and pions in nonsupersymmetric gauge/gravity duals},''
+  \href{%http://dx.doi.org/10.1103/PhysRevD.69.066007}{{\em Physical Review D}
+  {\bfseries 69} no.~6, (Mar., 2004) 066007},
+  \href{%http://arxiv.org/abs/0306018}{{\ttfamily arXiv:0306018 [hep-th]}}.
+  %\url{%http://arxiv.org/abs/hep-th/0306018}.
+
+\bibitem{Ghoroku2004}
+K.~Ghoroku and M.~Yahiro, ``{Chiral symmetry breaking driven by dilaton},''
+  \href{%http://dx.doi.org/10.1016/j.physletb.2004.10.048}{{\em Physics Letters
+  B} {\bfseries 604} no.~3-4, (Dec., 2004) 235--241},
+  \href{%http://arxiv.org/abs/0408040}{{\ttfamily arXiv:0408040 [hep-th]}}.
+  %\url{%http://arxiv.org/abs/hep-th/0408040}.
 
 \bibitem{Karch2002}
-Andreas Karch and Emanuel Katz.
-\newblock {Adding flavor to AdS/CFT}.
-\newblock {\em Journal of High Energy Physics}, 2002(06):043--043, June 2002,
-  0205236.
+A.~Karch and E.~Katz, ``{Adding flavor to AdS/CFT},''
+  \href{%http://dx.doi.org/10.1088/1126-6708/2002/06/043}{{\em Journal of High
+  Energy Physics} {\bfseries 2002} no.~06, (June, 2002) 043--043},
+  \href{%http://arxiv.org/abs/0205236}{{\ttfamily arXiv:0205236 [hep-th]}}.
+  %\url{%http://arxiv.org/abs/hep-th/0205236}.
+
+\bibitem{Kruczenski2004}
+M.~Kruczenski, D.~Mateos, R.~C. Myers, and D.~J. Winters, ``{Towards a
+  holographic dual of large- N c QCD},''
+  \href{%http://dx.doi.org/10.1088/1126-6708/2004/05/041}{{\em Journal of High
+  Energy Physics} {\bfseries 2004} no.~05, (May, 2004) 041--041},
+  \href{%http://arxiv.org/abs/0311270}{{\ttfamily arXiv:0311270 [hep-th]}}.
+  %\url{%http://stacks.iop.org/1126-6708/2004/i=05/a=041?key=crossref.392ca7ecfe583a7e8acb54fdab5b15d2
+  %http://arxiv.org/abs/hep-th/0311270}.
+
+\bibitem{Filev2007}
+V.~G. Filev, C.~V. Johnson, R.~C. Rashkov, and K.~S. Viswanathan, ``{Flavoured
+  large N gauge theory in an external magnetic field},''
+  \href{%http://dx.doi.org/10.1088/1126-6708/2007/10/019}{{\em Journal of High
+  Energy Physics} {\bfseries 2007} no.~10, (Oct., 2007) 019--019},
+  \href{%http://arxiv.org/abs/0701001}{{\ttfamily arXiv:0701001 [hep-th]}}.
+  %\url{%http://arxiv.org/abs/hep-th/0701001
+  %http://stacks.iop.org/1126-6708/2007/i=10/a=019?key=crossref.f71e59b9a07535c84fc7c20954160930}.
+
+\bibitem{Alvares2010}
+R.~Alvares, N.~Evans, A.~Gebauer, and G.~J. Weatherill, ``{Holographic integral
+  equations and walking technicolor},''
+  \href{%http://dx.doi.org/10.1103/PhysRevD.81.025013}{{\em Physical Review D}
+  {\bfseries 81} no.~2, (Jan., 2010) 025013},
+  \href{%http://arxiv.org/abs/0910.3073}{{\ttfamily arXiv:0910.3073}}.
+  %\url{%http://arxiv.org/abs/0910.3073
+  %http://link.aps.org/doi/10.1103/PhysRevD.81.025013}.
 
 \bibitem{Sakai2005}
-T.~Sakai and S.~Sugimoto.
-\newblock {Low Energy Hadron Physics in Holographic QCD}.
-\newblock {\em Progress of Theoretical Physics}, 113(4):843--882, April 2005,
-  0412141.
+T.~Sakai and S.~Sugimoto, ``{Low Energy Hadron Physics in Holographic QCD},''
+  \href{%http://dx.doi.org/10.1143/PTP.113.843}{{\em Progress of Theoretical
+  Physics} {\bfseries 113} no.~4, (Apr., 2005) 843--882},
+  \href{%http://arxiv.org/abs/0412141}{{\ttfamily arXiv:0412141 [hep-th]}}.
+  %\url{%http://arxiv.org/abs/hep-th/0412141}.
 
 \bibitem{Sakai2005a}
-T.~Sakai and S.~Sugimoto.
-\newblock {More on a Holographic Dual of QCD}.
-\newblock {\em Progress of Theoretical Physics}, 114(5):1083--1118, November
-  2005, 0507073.
+T.~Sakai and S.~Sugimoto, ``{More on a Holographic Dual of QCD},''
+  \href{%http://dx.doi.org/10.1143/PTP.114.1083}{{\em Progress of Theoretical
+  Physics} {\bfseries 114} no.~5, (Nov., 2005) 1083--1118},
+  \href{%http://arxiv.org/abs/0507073}{{\ttfamily arXiv:0507073 [hep-th]}}.
+  %\url{%http://arxiv.org/abs/hep-th/0507073}.
 
 \bibitem{stephanov-katz-son}
-Joshua Erlich, Emanuel Katz, Dam Son, and Mikhail Stephanov.
-\newblock {QCD and a Holographic Model of Hadrons}.
-\newblock {\em Physical Review Letters}, 95(26):261602, December 2005, 0501128.
+J.~Erlich, E.~Katz, D.~Son, and M.~Stephanov, ``{QCD and a Holographic Model of
+  Hadrons},'' \href{%http://dx.doi.org/10.1103/PhysRevLett.95.261602}{{\em
+  Physical Review Letters} {\bfseries 95} no.~26, (Dec., 2005) 261602},
+  \href{%http://arxiv.org/abs/0501128}{{\ttfamily arXiv:0501128 [hep-ph]}}.
+  %\url{%http://arxiv.org/abs/hep-ph/0501128
+  %http://link.aps.org/doi/10.1103/PhysRevLett.95.261602}.
 
 \bibitem{DaRold:2005zs}
-Leandro {Da Rold} and Alex Pomarol.
-\newblock {Chiral symmetry breaking from five-dimensional spaces}.
-\newblock {\em Nuclear Physics B}, 721(1-3):79--97, August 2005, 0501218.
+L.~{Da Rold} and A.~Pomarol, ``{Chiral symmetry breaking from five-dimensional
+  spaces},'' \href{%http://dx.doi.org/10.1016/j.nuclphysb.2005.05.009}{{\em
+  Nuclear Physics B} {\bfseries 721} no.~1-3, (Aug., 2005) 79--97},
+  \href{%http://arxiv.org/abs/0501218}{{\ttfamily arXiv:0501218 [hep-ph]}}.
+  %\url{%http://arxiv.org/abs/hep-ph/0501218
+  %http://linkinghub.elsevier.com/retrieve/pii/S0550321305004074}.
 
 \bibitem{DaRold:2005vr}
-Leandro~Da Rold and Alex Pomarol.
-\newblock {The scalar and pseudoscalar sector in a five-dimensional approach to
-  chiral symmetry breaking}.
-\newblock {\em Journal of High Energy Physics}, 2006(01):157--157, January
-  2006, 0510268.
+L.~D. Rold and A.~Pomarol, ``{The scalar and pseudoscalar sector in a
+  five-dimensional approach to chiral symmetry breaking},''
+  \href{%http://dx.doi.org/10.1088/1126-6708/2006/01/157}{{\em Journal of High
+  Energy Physics} {\bfseries 2006} no.~01, (Jan., 2006) 157--157},
+  \href{%http://arxiv.org/abs/0510268}{{\ttfamily arXiv:0510268 [hep-ph]}}.
+  %\url{%http://arxiv.org/abs/hep-ph/0510268
+  %http://stacks.iop.org/1126-6708/2006/i=01/a=157?key=crossref.47589a0c63f40f060b7a4619dfb9e62a}.
 
 \bibitem{karch-katz-son-adsqcd}
-Andreas Karch, Emanuel Katz, Dam Son, and Mikhail Stephanov.
-\newblock {Linear confinement and AdS/QCD}.
-\newblock {\em Physical Review D}, 74(1):015005, July 2006, 0602229.
+A.~Karch, E.~Katz, D.~Son, and M.~Stephanov, ``{Linear confinement and
+  AdS/QCD},'' \href{%http://dx.doi.org/10.1103/PhysRevD.74.015005}{{\em Physical
+  Review D} {\bfseries 74} no.~1, (July, 2006) 015005},
+  \href{%http://arxiv.org/abs/0602229}{{\ttfamily arXiv:0602229 [hep-ph]}}.
+  %\url{%http://arxiv.org/abs/hep-ph/0602229
+  %http://link.aps.org/doi/10.1103/PhysRevD.74.015005}.
 
 \bibitem{Evans:2006ea}
-Nick Evans and Andrew Tedder.
-\newblock {Perfecting the ultra-violet of holographic descriptions of QCD}.
-\newblock {\em Physics Letters B}, 642(5-6):546--550, November 2006, 0609112.
+N.~Evans and A.~Tedder, ``{Perfecting the ultra-violet of holographic
+  descriptions of QCD},''
+  \href{%http://dx.doi.org/10.1016/j.physletb.2006.10.019}{{\em Physics Letters
+  B} {\bfseries 642} no.~5-6, (Nov., 2006) 546--550},
+  \href{%http://arxiv.org/abs/0609112}{{\ttfamily arXiv:0609112 [hep-ph]}}.
+  %\url{%http://arxiv.org/abs/hep-ph/0609112
+  %http://linkinghub.elsevier.com/retrieve/pii/S037026930601286X}.
 
 \bibitem{Grigoryan:2007my}
-H.~Grigoryan and A.~Radyushkin.
-\newblock {Structure of vector mesons in a holographic model with linear
-  confinement}.
-\newblock {\em Physical Review D}, 76(9):095007, November 2007, 0706.1543.
+H.~Grigoryan and A.~Radyushkin, ``{Structure of vector mesons in a holographic
+  model with linear confinement},''
+  \href{%http://dx.doi.org/10.1103/PhysRevD.76.095007}{{\em Physical Review D}
+  {\bfseries 76} no.~9, (Nov., 2007) 095007},
+  \href{%http://arxiv.org/abs/0706.1543}{{\ttfamily arXiv:0706.1543}}.
+  %\url{%http://arxiv.org/abs/0706.1543
+  %http://link.aps.org/doi/10.1103/PhysRevD.76.095007}.
 
 \bibitem{kwee-lebed-pion}
-Herry Kwee and Richard Lebed.
-\newblock {Pion form factor in improved holographic QCD backgrounds}.
-\newblock {\em Physical Review D}, 77(11):115007, June 2008, 0712.1811.
+H.~Kwee and R.~Lebed, ``{Pion form factor in improved holographic QCD
+  backgrounds},'' \href{%http://dx.doi.org/10.1103/PhysRevD.77.115007}{{\em
+  Physical Review D} {\bfseries 77} no.~11, (June, 2008) 115007},
+  \href{%http://arxiv.org/abs/0712.1811}{{\ttfamily arXiv:0712.1811}}.
+  %\url{%http://arxiv.org/abs/0712.1811
+  %http://link.aps.org/doi/10.1103/PhysRevD.77.115007}.
 
 \bibitem{Cherman2009}
-Aleksey Cherman, Thomas Cohen, and Elizabeth Werbos.
-\newblock {Chiral condensate in holographic models of QCD}.
-\newblock {\em Physical Review C}, 79(4):045203, April 2009, 0804.1096.
+A.~Cherman, T.~Cohen, and E.~Werbos, ``{Chiral condensate in holographic models
+  of QCD},'' \href{%http://dx.doi.org/10.1103/PhysRevC.79.045203}{{\em Physical
+  Review C} {\bfseries 79} no.~4, (Apr., 2009) 045203},
+  \href{%http://arxiv.org/abs/0804.1096}{{\ttfamily arXiv:0804.1096}}.
+  %\url{%http://arxiv.org/abs/0804.1096
+  %http://dx.doi.org/10.1103/PhysRevC.79.045203
+  %http://link.aps.org/doi/10.1103/PhysRevC.79.045203}.
 
 \bibitem{colangelo2008}
-P.~Colangelo, F.~{De Fazio}, F.~Giannuzzi, F.~Jugeau, and S.~Nicotri.
-\newblock {Light scalar mesons in the soft-wall model of AdS/QCD}.
-\newblock {\em Physical Review D}, 78(5):17, July 2008, 0807.1054.
+P.~Colangelo, F.~{De Fazio}, F.~Giannuzzi, F.~Jugeau, and S.~Nicotri, ``{Light
+  scalar mesons in the soft-wall model of AdS/QCD},''
+  \href{%http://dx.doi.org/10.1103/PhysRevD.78.055009}{{\em Physical Review D}
+  {\bfseries 78} no.~5, (July, 2008) 17},
+  \href{%http://arxiv.org/abs/0807.1054}{{\ttfamily arXiv:0807.1054}}.
+  %\url{%http://arxiv.org/abs/0807.1054
+  %http://link.aps.org/doi/10.1103/PhysRevD.78.055009}.
 
 \bibitem{Huang:2007fv}
-Song He, Mei Huang, Qi-Shu Yan, and Yi~Yang.
-\newblock {Confront Holographic QCD with Regge Trajectories of vectors and
-  axial-vectors}.
-\newblock page~9, October 2007, 0710.0988.
+S.~He, M.~Huang, Q.-S. Yan, and Y.~Yang, ``{Confront Holographic QCD with Regge
+  Trajectories of vectors and axial-vectors},''
+  \href{%http://arxiv.org/abs/0710.0988}{{\ttfamily arXiv:0710.0988}}.
+  %\url{%http://arxiv.org/abs/0710.0988}.
 
 \bibitem{gherghetta-kelley}
-Tony Gherghetta, Joseph Kapusta, and Thomas Kelley.
-\newblock {Chiral symmetry breaking in the soft-wall AdS/QCD model}.
-\newblock {\em Physical Review D}, 79(7):076003, April 2009, 0902.1998.
+T.~Gherghetta, J.~Kapusta, and T.~Kelley, ``{Chiral symmetry breaking in the
+  soft-wall AdS/QCD model},''
+  \href{%http://dx.doi.org/10.1103/PhysRevD.79.076003}{{\em Physical Review D}
+  {\bfseries 79} no.~7, (Apr., 2009) 076003},
+  \href{%http://arxiv.org/abs/0902.1998}{{\ttfamily arXiv:0902.1998}}.
+  %\url{%http://dx.doi.org/10.1103/PhysRevD.79.076003
+  %http://arxiv.org/abs/0902.1998
+  %http://link.aps.org/doi/10.1103/PhysRevD.79.076003}.
 
 \bibitem{Batell2008}
-Brian Batell and Tony Gherghetta.
-\newblock {Dynamical soft-wall AdS/QCD}.
-\newblock {\em Physical Review D}, 78(2):026002, July 2008, 0801.4383.
+B.~Batell and T.~Gherghetta, ``{Dynamical soft-wall AdS/QCD},''
+  \href{%http://dx.doi.org/10.1103/PhysRevD.78.026002}{{\em Physical Review D}
+  {\bfseries 78} no.~2, (July, 2008) 026002},
+  \href{%http://arxiv.org/abs/0801.4383}{{\ttfamily arXiv:0801.4383}}.
+  %\url{%http://link.aps.org/doi/10.1103/PhysRevD.78.026002
+  %http://arxiv.org/abs/0801.4383}.
 
 \bibitem{Li:2013xpa}
-Danning Li and Mei Huang.
-\newblock {Dynamical holographic QCD model: resembling renormalization group
-  from ultraviolet to infrared}.
-\newblock November 2013, 1311.0593.
+D.~Li and M.~Huang, ``{Dynamical holographic QCD model: resembling
+  renormalization group from ultraviolet to infrared},''
+\newblock Nov., 2013.
+\newblock \href{%http://arxiv.org/abs/1311.0593}{{\ttfamily arXiv:1311.0593}}.
+\newblock %\url{%http://inspirehep.net/record/1263181
+  %http://arxiv.org/abs/1311.0593}.
 
 \bibitem{Li2013}
-Danning Li and Mei Huang.
-\newblock {Dynamical holographic QCD model for glueball and light meson
-  spectra}.
-\newblock {\em Journal of High Energy Physics}, 2013(11):88, November 2013,
-  1303.6929.
+D.~Li and M.~Huang, ``{Dynamical holographic QCD model for glueball and light
+  meson spectra},'' \href{%http://dx.doi.org/10.1007/JHEP11(2013)088}{{\em
+  Journal of High Energy Physics} {\bfseries 2013} no.~11, (Nov., 2013) 88},
+  \href{%http://arxiv.org/abs/1303.6929}{{\ttfamily arXiv:1303.6929}}.
+  %\url{%http://arxiv.org/abs/1303.6929
+  %http://link.springer.com/10.1007/JHEP11(2013)088}.
 
 \bibitem{DePaula2009}
-Wayne de~Paula, Tobias Frederico, Hilmar Forkel, and Michael Beyer.
-\newblock {Dynamical holographic QCD with area-law confinement and linear Regge
-  trajectories}.
-\newblock {\em Physical Review D}, 79(7):075019, April 2009, 0806.3830.
+W.~de~Paula, T.~Frederico, H.~Forkel, and M.~Beyer, ``{Dynamical holographic
+  QCD with area-law confinement and linear Regge trajectories},''
+  \href{%http://dx.doi.org/10.1103/PhysRevD.79.075019}{{\em Physical Review D}
+  {\bfseries 79} no.~7, (Apr., 2009) 075019},
+  \href{%http://arxiv.org/abs/0806.3830}{{\ttfamily arXiv:0806.3830}}.
+  %\url{%http://arxiv.org/abs/0806.3830
+  %http://link.aps.org/doi/10.1103/PhysRevD.79.075019
+  %http://arxiv.org/abs/arXiv:0806.3830}.
 
 \bibitem{DePaula2010}
-W.~de~Paula and T.~Frederico.
-\newblock {Scalar mesons within a dynamical holographic QCD model}.
-\newblock {\em Physics Letters B}, 693(3):287--291, October 2010, 0908.4282.
+W.~de~Paula and T.~Frederico, ``{Scalar mesons within a dynamical holographic
+  QCD model},'' \href{%http://dx.doi.org/10.1016/j.physletb.2010.08.045}{{\em
+  Physics Letters B} {\bfseries 693} no.~3, (Oct., 2010) 287--291},
+  \href{%http://arxiv.org/abs/0908.4282}{{\ttfamily arXiv:0908.4282}}.
+  %\url{%http://arxiv.org/abs/0908.4282}.
 
 \bibitem{Wang2012}
-Qi~Wang and An~Min Wang.
-\newblock {Chiral Symmetry Breaking in the Dynamical Soft-Wall Model}.
-\newblock page~4, January 2012, 1201.3349.
+Q.~Wang and A.~M. Wang, ``{Chiral Symmetry Breaking in the Dynamical Soft-Wall
+  Model},'' \href{%http://arxiv.org/abs/1201.3349}{{\ttfamily arXiv:1201.3349}}.
+  %\url{%http://arxiv.org/abs/1201.3349}.
 
 \bibitem{Li2013a}
-Danning Li, Mei Huang, and Qi-Shu Yan.
-\newblock {A dynamical soft-wall holographic QCD model for chiral symmetry
-  breaking and linear confinement}.
-\newblock {\em The European Physical Journal C}, 73(10):2615, October 2013,
-  1206.2824.
+D.~Li, M.~Huang, and Q.-S. Yan, ``{A dynamical soft-wall holographic QCD model
+  for chiral symmetry breaking and linear confinement},''
+  \href{%http://dx.doi.org/10.1140/epjc/s10052-013-2615-3}{{\em The European
+  Physical Journal C} {\bfseries 73} no.~10, (Oct., 2013) 2615},
+  \href{%http://arxiv.org/abs/1206.2824}{{\ttfamily arXiv:1206.2824}}.
+  %\url{%http://arxiv.org/abs/1206.2824
+  %http://link.springer.com/10.1140/epjc/s10052-013-2615-3
+  %http://inspirehep.net/record/1118181}.
 
 \bibitem{karch-dilaton-sign}
-Andreas Karch, Emanuel Katz, Dam~T Son, and Mikhail~A Stephanov.
-\newblock {On the sign of the dilaton in the soft wall models}.
-\newblock {\em Journal of High Energy Physics}, 2011(4):66, April 2011,
-  1012.4813.
+A.~Karch, E.~Katz, D.~T. Son, and M.~A. Stephanov, ``{On the sign of the
+  dilaton in the soft wall models},''
+  \href{%http://dx.doi.org/10.1007/JHEP04(2011)066}{{\em Journal of High Energy
+  Physics} {\bfseries 2011} no.~4, (Apr., 2011) 66},
+  \href{%http://arxiv.org/abs/1012.4813}{{\ttfamily arXiv:1012.4813}}.
+  %\url{%http://arxiv.org/abs/1012.4813
+  %http://link.springer.com/10.1007/JHEP04(2011)066}.
 
 \bibitem{maldacena}
-Juan~M. Maldacena.
-\newblock {The Large N Limit of Superconformal Field Theories and
-  Supergravity}.
-\newblock {\em Advances in Theoretical Mathematical Physics}, 2:20, November
-  1997, 9711200.
+J.~M. Maldacena, ``{The Large N Limit of Superconformal Field Theories and
+  Supergravity},'' {\em Advances in Theoretical Mathematical Physics}
+  {\bfseries 2} (Nov., 1997) 20, \href{%http://arxiv.org/abs/9711200}{{\ttfamily
+  arXiv:9711200 [hep-th]}}. %\url{%http://arxiv.org/abs/hep-th/9711200}.
 
 \bibitem{klebanov-witten}
-Igor~R. Klebanov and Edward Witten.
-\newblock {Ads/CFT correspondence and symmetry breaking}.
-\newblock {\em Nuclear Physics B}, 556(1-2):89--114, September 1999, 9905104.
+I.~R. Klebanov and E.~Witten, ``{Ads/CFT correspondence and symmetry
+  breaking},'' \href{%http://dx.doi.org/10.1016/S0550-3213(99)00387-9}{{\em
+  Nuclear Physics B} {\bfseries 556} no.~1-2, (Sept., 1999) 89--114},
+  \href{%http://arxiv.org/abs/9905104}{{\ttfamily arXiv:9905104 [hep-th]}}.
+  %\url{%http://arxiv.org/abs/hep-th/9905104
+  %http://linkinghub.elsevier.com/retrieve/pii/S0550321399003879}.
 
 \bibitem{Gubser:1998bc}
-S.S. Gubser, I.R. Klebanov, and A.M. Polyakov.
-\newblock {Gauge theory correlators from non-critical string theory}.
-\newblock {\em Physics Letters B}, 428(1-2):105--114, May 1998, 9802109.
+S.~Gubser, I.~Klebanov, and A.~Polyakov, ``{Gauge theory correlators from
+  non-critical string theory},''
+  \href{%http://dx.doi.org/10.1016/S0370-2693(98)00377-3}{{\em Physics Letters
+  B} {\bfseries 428} no.~1-2, (May, 1998) 105--114},
+  \href{%http://arxiv.org/abs/9802109}{{\ttfamily arXiv:9802109 [hep-th]}}.
+  %\url{%http://arxiv.org/abs/hep-th/9802109
+  %http://linkinghub.elsevier.com/retrieve/pii/S0370269398003773}.
 
 \bibitem{Witten:1998qj}
-Edward Witten.
-\newblock {Anti De Sitter Space And Holography}.
-\newblock {\em Adv.Theor.Math.Phys.}, 2:253--291, February 1998, 9802150.
+E.~Witten, ``{Anti De Sitter Space And Holography},'' {\em
+  Adv.Theor.Math.Phys.} {\bfseries 2} (Feb., 1998) 253--291,
+  \href{%http://arxiv.org/abs/9802150}{{\ttfamily arXiv:9802150 [hep-th]}}.
+  %\url{%http://inspirehep.net/record/467400
+  %http://arxiv.org/abs/hep-th/9802150}.
 
 \bibitem{Breitenlohner:1982bm}
-Peter Breitenlohner and Daniel~Z. Freedman.
-\newblock {Positive energy in anti-de Sitter backgrounds and gauged extended
-  supergravity}.
-\newblock {\em Physics Letters B}, 115(3):197--201, September 1982.
+P.~Breitenlohner and D.~Z. Freedman, ``{Positive energy in anti-de Sitter
+  backgrounds and gauged extended supergravity},''
+  \href{%http://dx.doi.org/10.1016/0370-2693(82)90643-8}{{\em Physics Letters B}
+  {\bfseries 115} no.~3, (Sept., 1982) 197--201}.
+  %\url{%http://linkinghub.elsevier.com/retrieve/pii/0370269382906438}.
 
 \bibitem{Kim:2008ff}
-Hyun-Chul Kim and Youngman Kim.
-\newblock {Quark-gluon mixed condensate of the QCD vacuum in holographic QCD}.
-\newblock {\em Journal of High Energy Physics}, 2008(10):011--011, October
-  2008, 0808.3639.
+H.-C. Kim and Y.~Kim, ``{Quark-gluon mixed condensate of the QCD vacuum in
+  holographic QCD},''
+  \href{%http://dx.doi.org/10.1088/1126-6708/2008/10/011}{{\em Journal of High
+  Energy Physics} {\bfseries 2008} no.~10, (Oct., 2008) 011--011},
+  \href{%http://arxiv.org/abs/0808.3639}{{\ttfamily arXiv:0808.3639}}.
+  %\url{%http://arxiv.org/abs/0808.3639
+  %http://stacks.iop.org/1126-6708/2008/i=10/a=011?key=crossref.9ca3c9b0710f746662464815034b9d94}.
 
 \bibitem{sui-pion}
-Yan-Qin Sui, Yue-Liang Wu, Zhi-Feng Xie, and Yi-Bo Yang.
-\newblock {Prediction for the mass spectra of resonance mesons in the soft-wall
-  AdS/QCD model with a modified 5D metric}.
-\newblock {\em Physical Review D}, 81(1):014024, January 2010, 0909.3887.
+Y.-Q. Sui, Y.-L. Wu, Z.-F. Xie, and Y.-B. Yang, ``{Prediction for the mass
+  spectra of resonance mesons in the soft-wall AdS/QCD model with a modified 5D
+  metric},'' \href{%http://dx.doi.org/10.1103/PhysRevD.81.014024}{{\em Physical
+  Review D} {\bfseries 81} no.~1, (Jan., 2010) 014024},
+  \href{%http://arxiv.org/abs/0909.3887}{{\ttfamily arXiv:0909.3887}}.
+  %\url{%http://arxiv.org/abs/0909.3887
+  %http://link.aps.org/doi/10.1103/PhysRevD.81.014024}.
 
 \bibitem{sui-3flavor}
-Yan-Qin Sui, Yue-Liang Wu, and Yi-Bo Yang.
-\newblock {Predictive AdS/QCD Model for Mass Spectra of Mesons with Three
-  Flavors}.
-\newblock {\em Physical Review D}, 83(6):065030, March 2011, 1012.3518.
+Y.-Q. Sui, Y.-L. Wu, and Y.-B. Yang, ``{Predictive AdS/QCD Model for Mass
+  Spectra of Mesons with Three Flavors},''
+  \href{%http://dx.doi.org/10.1103/PhysRevD.83.065030}{{\em Physical Review D}
+  {\bfseries 83} no.~6, (Mar., 2011) 065030},
+  \href{%http://arxiv.org/abs/1012.3518}{{\ttfamily arXiv:1012.3518}}.
+  %\url{%http://arxiv.org/abs/1012.3518
+  %http://link.aps.org/doi/10.1103/PhysRevD.83.065030}.
 
 \bibitem{GMOR}
-Murray Gell-Mann, R.J. Oakes, and B.~Renner.
-\newblock {Behavior of Current Divergences under SU\_\{3\}×SU\_\{3\}}.
-\newblock {\em Physical Review}, 175(5):2195--2199, November 1968.
+M.~Gell-Mann, R.~Oakes, and B.~Renner, ``{Behavior of Current Divergences under
+  SU\_\{3\}×SU\_\{3\}},''
+  \href{%http://dx.doi.org/10.1103/PhysRev.175.2195}{{\em Physical Review}
+  {\bfseries 175} no.~5, (Nov., 1968) 2195--2199}.
+  %\url{%http://link.aps.org/doi/10.1103/PhysRev.175.2195}.
 
 \bibitem{Peskin:qft}
-D.~{Peskin, M. and Schroeder}.
-\newblock {An Introduction to Quantum Field Theory}.
-\newblock 1995.
+D.~{Peskin, M. and Schroeder}, ``{An Introduction to Quantum Field Theory},''.
 
 \bibitem{Greiner}
-Walter Greiner, Stefan Schramm, and Eckart Stein.
-\newblock {\em {Quantum Chromodynamics}}.
-\newblock Springer, Berlin, 3rd edition, 2007.
-
-\bibitem{Csaki:2006ji}
-Csaba Cs\'{a}ki and Matthew Reece.
-\newblock {Toward a systematic holographic QCD: a braneless approach}.
-\newblock {\em Journal of High Energy Physics}, 2007(05):062--062, May 2007,
-  0608266.
-
-\bibitem{Springer2010}
-J.~I. Kapusta and T.~Springer.
-\newblock {Potentials for soft-wall AdS/QCD}.
-\newblock {\em Physical Review D}, 81(8):086009, April 2010, 1001.4799.
-
-\bibitem{Gursoy:2008bu}
-Umut G\"{u}rsoy, Elias Kiritsis, Liuba Mazzanti, and Francesco Nitti.
-\newblock {Deconfinement and Gluon Plasma Dynamics in Improved Holographic
-  QCD}.
-\newblock {\em Physical Review Letters}, 101(18):181601, October 2008,
-  0804.0899.
-
-\bibitem{Gursoy:2008za}
-U~G\"{u}rsoy, E.~Kiritsis, L.~Mazzanti, and F.~Nitti.
-\newblock {Holography and thermodynamics of 5D dilaton-gravity}.
-\newblock {\em Journal of High Energy Physics}, 2009(05):033--033, May 2009,
-  0812.0792.
-
-\bibitem{Springer:thesis}
-Todd Springer.
-\newblock {\em {Hydrodynamics of strongly coupled non-conformal fluids from
-  gauge/gravity duality}}.
-\newblock Ph.d. thesis, University of Minnesota, August 2009, 0908.1587.
-
-\bibitem{Afonin2009}
-S.~S. Afonin.
-\newblock {Holographic like models as a five-dimensional rewriting of large-Nc
-  QCD}.
-\newblock {\em International Journal of Modern Physics A}, 25(31):33, January
-  2010, 1001.3105.
+W.~Greiner, S.~Schramm, and E.~Stein, {\em {Quantum Chromodynamics}}.
+\newblock Springer, Berlin, 3rd~ed., 2007.
 
 \bibitem{stringnutshell}
-Elias Kiritsis.
-\newblock {\em {String Theory in a Nutshell}}.
+E.~Kiritsis, {\em {String Theory in a Nutshell}}.
 \newblock Princeton University Press, 2011.
 
+\bibitem{Csaki:2006ji}
+C.~Cs\'{a}ki and M.~Reece, ``{Toward a systematic holographic QCD: a braneless
+  approach},'' \href{%http://dx.doi.org/10.1088/1126-6708/2007/05/062}{{\em
+  Journal of High Energy Physics} {\bfseries 2007} no.~05, (May, 2007)
+  062--062}, \href{%http://arxiv.org/abs/0608266}{{\ttfamily arXiv:0608266
+  [hep-ph]}}. %\url{%http://xxx.lanl.gov/abs/hep-ph/0608266
+  %http://arxiv.org/abs/hep-ph/0608266
+  %http://stacks.iop.org/1126-6708/2007/i=05/a=062?key=crossref.6d40a68e55d3285a4275d6ec4d227d04}.
+
+\bibitem{Springer2010}
+J.~I. Kapusta and T.~Springer, ``{Potentials for soft-wall AdS/QCD},''
+  \href{%http://dx.doi.org/10.1103/PhysRevD.81.086009}{{\em Physical Review D}
+  {\bfseries 81} no.~8, (Apr., 2010) 086009},
+  \href{%http://arxiv.org/abs/1001.4799}{{\ttfamily arXiv:1001.4799}}.
+  %\url{%http://arxiv.org/abs/1001.4799
+  %http://link.aps.org/doi/10.1103/PhysRevD.81.086009
+  %http://dx.doi.org/10.1103/PhysRevD.81.086009}.
+
+\bibitem{Gursoy:2008bu}
+U.~G\"{u}rsoy, E.~Kiritsis, L.~Mazzanti, and F.~Nitti, ``{Deconfinement and
+  Gluon Plasma Dynamics in Improved Holographic QCD},''
+  \href{%http://dx.doi.org/10.1103/PhysRevLett.101.181601}{{\em Physical Review
+  Letters} {\bfseries 101} no.~18, (Oct., 2008) 181601},
+  \href{%http://arxiv.org/abs/0804.0899}{{\ttfamily arXiv:0804.0899}}.
+  %\url{%http://arxiv.org/abs/0804.0899
+  %http://link.aps.org/doi/10.1103/PhysRevLett.101.181601}.
+
+\bibitem{Gursoy:2008za}
+U.~G\"{u}rsoy, E.~Kiritsis, L.~Mazzanti, and F.~Nitti, ``{Holography and
+  thermodynamics of 5D dilaton-gravity},''
+  \href{%http://dx.doi.org/10.1088/1126-6708/2009/05/033}{{\em Journal of High
+  Energy Physics} {\bfseries 2009} no.~05, (May, 2009) 033--033},
+  \href{%http://arxiv.org/abs/0812.0792}{{\ttfamily arXiv:0812.0792}}.
+  %\url{%http://arxiv.org/abs/0812.0792
+  %http://stacks.iop.org/1126-6708/2009/i=05/a=033?key=crossref.73b2a8e564edc15fb4bc940c287f5a06}.
+
+\bibitem{Springer:thesis}
+T.~Springer, {\em {Hydrodynamics of strongly coupled non-conformal fluids from
+  gauge/gravity duality}}.
+\newblock Ph.d. thesis, University of Minnesota, Aug., 2009.
+\newblock \href{%http://arxiv.org/abs/0908.1587}{{\ttfamily arXiv:0908.1587}}.
+\newblock %\url{%http://arxiv.org/abs/0908.1587}.
+
+\bibitem{Afonin2009}
+S.~S. Afonin, ``{Holographic like models as a five-dimensional rewriting of
+  large-Nc QCD},'' \href{%http://dx.doi.org/10.1142/S0217751X10051049}{{\em
+  International Journal of Modern Physics A} {\bfseries 25} no.~31, (Jan.,
+  2010) 33}, \href{%http://arxiv.org/abs/1001.3105}{{\ttfamily
+  arXiv:1001.3105}}. %\url{%http://arxiv.org/abs/1001.3105
+  %http://www.worldscientific.com/doi/abs/10.1142/S0217751X10051049}.
+
 \bibitem{Shifman-2008}
-M.~Shifman and A.~Vainshtein.
-\newblock {Highly excited mesons, linear Regge trajectories, and the pattern of
-  the chiral symmetry realization}.
-\newblock {\em Physical Review D}, 77(3):034002, February 2008, 0710.0863.
+M.~Shifman and A.~Vainshtein, ``{Highly excited mesons, linear Regge
+  trajectories, and the pattern of the chiral symmetry realization},''
+  \href{%http://dx.doi.org/10.1103/PhysRevD.77.034002}{{\em Physical Review D}
+  {\bfseries 77} no.~3, (Feb., 2008) 034002},
+  \href{%http://arxiv.org/abs/0710.0863}{{\ttfamily arXiv:0710.0863}}.
+  %\url{%http://dx.doi.org/10.1103/PhysRevD.77.034002
+  %http://link.aps.org/doi/10.1103/PhysRevD.77.034002
+  %http://arxiv.org/abs/0710.0863}.
 
 \bibitem{qgp}
-Joseph~I. Kapusta, Berndt M$\backslash$\{"u\}ller, and J.~Rafelski.
-\newblock {Quark-Gluon Plasma: Theoretical Foundations}.
-\newblock 2003.
+J.~I. Kapusta, B.~M$\backslash$\{"u\}ller, and J.~Rafelski, ``{Quark-Gluon
+  Plasma: Theoretical Foundations},''.
 
 \bibitem{qgp3}
-R.C. Hwa and X.-N. Wang.
-\newblock {Quark-Gluon Plasma 3}.
-\newblock 2004.
+R.~Hwa and X.-N. Wang, ``{Quark-Gluon Plasma 3},''.
 
 \bibitem{phases}
-B.~Kogut and Mikhail~A Stephanov.
-\newblock {The Phases of Quantum Chromodynamics}.
-\newblock 2004.
+B.~Kogut and M.~A. Stephanov, ``{The Phases of Quantum Chromodynamics},''.
 
 \bibitem{Kovtun2005}
-P.~Kovtun, D.~Son, and A.~Starinets.
-\newblock {Viscosity in Strongly Interacting Quantum Field Theories from Black
-  Hole Physics}.
-\newblock {\em Physical Review Letters}, 94(11):111601, March 2005, 0405231.
+P.~Kovtun, D.~Son, and A.~Starinets, ``{Viscosity in Strongly Interacting
+  Quantum Field Theories from Black Hole Physics},''
+  \href{%http://dx.doi.org/10.1103/PhysRevLett.94.111601}{{\em Physical Review
+  Letters} {\bfseries 94} no.~11, (Mar., 2005) 111601},
+  \href{%http://arxiv.org/abs/0405231}{{\ttfamily arXiv:0405231 [hep-th]}}.
+  %\url{%http://arxiv.org/abs/hep-th/0405231
+  %http://link.aps.org/doi/10.1103/PhysRevLett.94.111601}.
 
 \bibitem{Son:2007vk}
-Dam~T. Son and Andrei~O. Starinets.
-\newblock {Viscosity, Black Holes, and Quantum Field Theory}.
-\newblock {\em Annual Review of Nuclear and Particle Science}, 57(1):95--118,
-  November 2007, 0704.0240.
+D.~T. Son and A.~O. Starinets, ``{Viscosity, Black Holes, and Quantum Field
+  Theory},''
+  \href{%http://dx.doi.org/10.1146/annurev.nucl.57.090506.123120}{{\em Annual
+  Review of Nuclear and Particle Science} {\bfseries 57} no.~1, (Nov., 2007)
+  95--118}, \href{%http://arxiv.org/abs/0704.0240}{{\ttfamily arXiv:0704.0240}}.
+  %\url{%http://www.annualreviews.org/doi/abs/10.1146/annurev.nucl.57.090506.123120
+  %http://arxiv.org/abs/0704.0240}.
 
 \bibitem{Herzog:2006ra}
-Christopher Herzog.
-\newblock {Holographic Prediction for the Deconfinement Temperature}.
-\newblock {\em Physical Review Letters}, 98(9):091601, February 2007, 0608151.
+C.~Herzog, ``{Holographic Prediction for the Deconfinement Temperature},''
+  \href{%http://dx.doi.org/10.1103/PhysRevLett.98.091601}{{\em Physical Review
+  Letters} {\bfseries 98} no.~9, (Feb., 2007) 091601},
+  \href{%http://arxiv.org/abs/0608151}{{\ttfamily arXiv:0608151 [hep-th]}}.
+  %\url{%http://arxiv.org/abs/hep-th/0608151
+  %http://link.aps.org/doi/10.1103/PhysRevLett.98.091601}.
 
 \bibitem{BallonBayona:2007vp}
-C.~Bayona, Henrique Boschi-Filho, Nelson Braga, and Leopoldo Zayas.
-\newblock {On a holographic model for confinement/deconfinement}.
-\newblock {\em Physical Review D}, 77(4):046002, February 2008, 0705.1529.
+C.~Bayona, H.~Boschi-Filho, N.~Braga, and L.~Zayas, ``{On a holographic model
+  for confinement/deconfinement},''
+  \href{%http://dx.doi.org/10.1103/PhysRevD.77.046002}{{\em Physical Review D}
+  {\bfseries 77} no.~4, (Feb., 2008) 046002},
+  \href{%http://arxiv.org/abs/0705.1529}{{\ttfamily arXiv:0705.1529}}.
+  %\url{%http://arxiv.org/abs/0705.1529
+  %http://link.aps.org/doi/10.1103/PhysRevD.77.046002}.
 
-\end{thebibliography}
+\bibitem{Carroll}
+S.~Carroll, {\em {Spacetime and Geometry}}.
+\newblock Addison-Wesley, 2003.
+
+\end{thebibliography}\endgroup
