@@ -8,22 +8,22 @@ of a good universe next door; let's go \\
 \end{flushright}
 
 In this chapter, we cover the background of gauge/gravity dualities and the AdS/CFT correspondence.
-Our focus is on the phenomenological applications of these models, so many of the technical details of the correspondence will not be presented here.
+Our focus is on the phenomenological applications of these models, so many of the technical details of the correspondence is not presented here.
 A variety of review articles cover the topic in more mathematical detail \cite{Ramallo2013,Zaffaroni2000,Kim2012,Erdmenger:2007cm,Edelstein:2009iv,KLEBANOV2006,Gubser2009}.
-Once we have motivated the AdS/CFT correspondence, we will review the applications of the duality to hadronic physics. 
+Having motivated the AdS/CFT correspondence, we review the applications of the duality to hadronic physics. 
 We discuss the two major approaches to alter the conformal field theory to more closely resemble quantum chromodynamics.
 We also introduce a scheme to put these models on a more consistent theoretical basis.
 
 \section{What is AdS/CFT?}
-The general principle of dualities is to describe the same physical systems with two different but equivalent theories. 
+The general principle of dualities is to describe a single physical system with two different but equivalent theories. 
 The goal of this approach is to find that one of the theories is more analytically tractable than the other, and therefore more useful in describing physical phenomena.
 The original work on the AdS/CFT correspondence began with a duality between ten-dimensional string theory on $AdS_5 \times S^5$ and $\mathcal{N}=4 $ Super Yang-Mills Theory.
-The details of the string theory are not crucial to the understanding of the derivation of the correspondence.
+The details of string theory are not crucial to the understanding of the derivation of the correspondence.
 The constituents of the theory are extended objects known as $p$-branes, where $p$ refers to the spatial dimension of the object. 
 One-dimensional $p$-branes are more commonly known as strings, which can be either closed or open.
-Closed strings are propagate freely through space, while open strings have  their endpoints on $p$-dimensional Dirichlet-branes (D-branes). 
+Closed strings propagate freely through space, while open strings have  their endpoints on $p$-dimensional Dirichlet-branes (D-branes). 
 These strings are characterized by their length $l_s$ and the coupling constant $g_s$ that describes the strength of their interactions. 
-These parameters are are related to the $D$-dimensional Newton's constant
+These parameters are related to the $D$-dimensional Newton's constant
 \be
 G_D \sim g_s^2 l_s^{D-2}.
 \ee
@@ -37,13 +37,13 @@ We motivate the AdS/CFT correspondence by examining a stack of $N$ D3 branes as 
 We consider the dynamics of this system by taking the limits of low energy and strong coupling. 
 The order in which these limits are taken determines the appearance of the result, yielding the two sides of the duality.
 
-Taking the low-energy limit first gives an $SU(N)$ gauge theory, $\mathcal{N} =4 $ Super Yang-Mills (SYM) Theory. 
-\footnote{N.B.  $N$ refers to the number of D3 branes and the number of colors in the gauge theory, while $\mathcal{N}$ indicates the number of supercharges in the SYM theory.}
+Taking the low-energy limit first gives an $SU(N)$ gauge theory, $\mathcal{N} =4 $ Super Yang-Mills (SYM) Theory.\footnotemark 
 The gauge coupling in this theory is related to the string coupling by
 \be
 g_{YM}^2=4\pi g_s.
 \label{eq:gYM}
 \ee
+\footnotetext{N.B.  $N$ refers to the number of D3 branes and the number of colors in the gauge theory, while $\mathcal{N}$ indicates the number of supercharges in the SYM theory.}
 Assuming the string length is small, any interactions involving the open strings in the bulk (the region away from the branes) can be ignored.
 We are now free to make the assumption of strong coupling in the SYM theory.
 There are now two decoupled components of the low-energy system: the string theory governing the open strings in the bulk, and the strongly-coupled SYM theory on the branes.
@@ -53,7 +53,7 @@ In this instance, we have a large number of coincident D-branes resulting in a l
 The classical metric that solves the supergravity equations is
 \be
  \label{equSGmetric}
-ds^{2} = \frac{1}{\sqrt{1+\frac{L^{4}}{r^{4}}}}\left( -dt^{2} + d\vec{x}^{2}\right) + \sqrt{1+\frac{L^{4}}{r^{4}}}(dr^{2}+r^2 d\Omega_5),
+ds^{2} = \frac{1}{\sqrt{1+L^4/r^4}}\left( -dt^{2} + d\vec{x}^{2}\right) + \sqrt{1+L^4/r^4}(dr^{2}+r^2 d\Omega_5),
 \ee
 where the curvature radius $L$ sets the scale and is given by\cite{Witten:1995im,Horowitz:1991cd}
 \be
@@ -70,7 +70,7 @@ The metric becomes
 ds^{2} = \frac{r^{2}}{L^{2}} (-dt^{2}+d\vec{x}^{2}) + \frac{L^{2}}{r^{2}}dr^{2} + L^2 d\Omega_{5},
 \ee
 where $r$ is strictly positive.
-This metric is a product of five dimensional anti-de Sitter space with a five-dimensional sphere ($AdS_5\times S_5$).
+This metric is a product of five-dimensional anti-de Sitter space with a five-dimensional sphere ($AdS_5\times S_5$).
 We can re-write this metric using the coordinate transformation
 \be
 z = \frac{L^{2}}{r}.
@@ -85,7 +85,7 @@ The closed string excitations in the bulk are decoupled from the excitations nea
 
 In each of these descriptions, we began with a stack of $N$ D3 branes and ended with a low-energy, strongly-coupled system.
 Taking the low-energy limit first results in an $\mathcal{N}=4$ SYM gauge theory, while taking the strong coupling limit first yields a system of excitations on an $AdS_5 \times S_5$ metric.
-Maldacena's conjecture is that these two systems should describe the same physics.
+Maldacena's conjecture is that these two systems describe the same physics.
 Each system has closed strings in the bulk that are decoupled from the rest of the system, so the conjecture results in a proposed duality between the $\mathcal{N}=4$ SYM theory and type IIB string theory in anti-de Sitter space.
 
 This duality is particularly useful if we can ignore all stringy effects and treat the type IIB string theory as a classical supergravity theory on the metric (\ref{equ10drmetric}). 
@@ -97,14 +97,14 @@ We can relate these quantities to the Yang-Mills coupling using (\ref{eq:ReggeSl
 \be
 \frac{L^4}{l_s^4} = g_{YM}^2 N.
 \ee
-The quantity $g_{YM} N$ is known as the 't Hooft coupling, $\lambda$.
+The quantity $g_{YM}^2 N$ is known as the 't Hooft coupling, $\lambda$.
 Thus, the requirement that the string length be small is equivalent to requiring the 't Hooft coupling to be large, $\lambda \gg 1$.
 In other words, the classical approximation is valid when the dual gauge theory is strongly coupled.
 The 't Hooft coupling acts as the effective gauge coupling, which is often expressed as a scalar field called the dilaton, $\Phi$, where
 \be
 \Phi = \log \lambda.
 \ee
-The behavior of the dilaton field will take a central role in this thesis.
+The behavior of the dilaton field takes a central role in this thesis.
 
 In summary, Maldacena conjectured that a ten-dimensional string theory is dual to $\mathcal{N} = 4 $ super Yang-Mills theory.
 We showed that the regime in which stringy effects can be neglected is equivalent to the strong-coupling limit of the gauge theory.
@@ -112,56 +112,57 @@ The usefulness of this duality is evident, because the strong-coupling regime of
 Conveniently, this regime is dual to the string theory regime where calculations are easy because they can be done classically.
 
 For our purposes, we reduce the 10-dimensional metric (\ref{equ10drmetric}) to a five-dimensional space by ignoring the $S_5$ manifold and keeping only the $AdS_5$ metric (\ref{equ5dzmetric}).
-It turns out that discarding $S_5$ removes the supersymmetry from the SYM theory, resulting in a non-supersymmetric conformal field theory.
+Discarding $S_5$ removes the supersymmetry from the SYM theory, resulting in a non-supersymmetric conformal field theory.
 In the end, we have a duality between a classical gravity theory in five dimensional anti-de Sitter space and a four-dimensional conformal field theory, our AdS/CFT correspondence.
-It is this relationship between a field theory in four dimensions and a gravitational theory in five dimensions that lends these models the evocative name \emph{holography}.
+This relationship between a field theory in four dimensions and a gravitational theory in five dimensions lends these models the evocative name \emph{holography}.
 
 \section{Applying AdS/CFT to Quantum Chromodynamics}
 
-Phenomenologists would like to apply gauge/theory dualities to physical theories like quantum chromodynamics, rather than supersymmetric Yang-Mills theories that do not directly relate to real-world phenomena.
+Phenomenologists would like to apply gauge/gravity dualities to physical theories like quantum chromodynamics, rather than supersymmetric Yang-Mills theories that do not directly relate to real-world phenomena.
 These theories are closely-related enough to encourage a variety of attempts to bridge this gap.
 To do so, we must examine the differences between SYM theories and QCD.
 
 We have shown how to remove the supersymmetry aspect of the gauge theory in the correspondence in the preceding section, which is necessary because QCD is not supersymmetric.
 However, we are still left with a conformal field theory, with no intrinsic energy scale.
-QCD has an energy scale called $\Lambda_{QCD}$, which is related to the phenomenon of confinement.
+QCD has an energy scale, $\Lambda_{QCD}$, related to the phenomenon of confinement.
 Confinement is caused by the running of the QCD coupling with respect to energy scale.
-Conformal field theories have coupling constants which do not run, and therefore are not confining.
+Conformal field theories have coupling constants which do not run, and are consequently not confining.
 Finally, the Yang-Mills theory has $N\gg 1$, while $N_c$, the number of colors in QCD is 3.
 Despite these differences, there are a variety of approaches to adapt the AdS/CFT correspondence to apply to QCD.
 
 \section{Top-Down Approach}
 
-One approach, known as the top-down approach, consists of modifying the string theory in some way in an attempt to produce a gauge theory that more accurately models QCD.
+The top-down approach to applying AdS/CFT to QCD consists of modifying the string theory in some way in an attempt to produce a gauge theory that more accurately models QCD.
 Models that break conformal symmetry can study confinement \cite{Babington2004,Ghoroku2004}.
-The pure gauge theory with $N$ D3 branes consists of only gluons, leading to the insertion of D7 ``flavor branes" in the bulk to include quarks in the theory \cite{Karch2002}.
+The pure gauge theory with $N$ D3 branes consists of only gluons, requiring the insertion of D7 ``flavor branes" in the bulk to include quarks in the theory \cite{Karch2002}.
 The chiral symmetry of these models can also be broken \cite{Kruczenski2004,Filev2007,Alvares2010}
 Strings that begin and end on the D7 branes represent quark/anti-quark pairs.
 These strings lack color indices and are therefore color singlets because they do not begin and end on the D3 branes.
-The excitations of this system corresponds to hadronic states.
+The excitations of this system correspond to hadronic states.
 A prominent example that adds flavor and chiral symmetry breaking to the confining models is the Sakai-Sugimoto model \cite{Sakai2005, Sakai2005a}.
+However, a gravitational dual that captures all features of QCD still remains to be found.
 
 \section{Bottom-Up Approach}
 
-Another approach, known as bottom-up or AdS/QCD models, begin from a phenomenological viewpoint, modifying the existing AdS background to capture some essential features of QCD.
+Another approach, known as bottom-up or AdS/QCD models, begins from a phenomenological viewpoint, modifying the existing AdS background to capture some essential features of QCD.
 Because of this motivation, it is not known whether such models could eventually be derived from string theory.
 However, it is useful to investigate AdS/QCD as an effective phenomenological model, as well as a means to gain insights that may help in constructing an eventual string theory dual.
  
 The modifications to the AdS background are constructions imposed by hand to introduce features such as confinement and chiral dynamics.
 Fields that are dual to the operators of the field theory are introduced by hand into the bulk of the AdS background.
-A Lagrangian is constructed from these fields, and the Euler-Lagrange equations that result are the equations of motion of the gauge field excitations.
+A Lagrangian is constructed from these fields, and the Euler-Lagrange equations that result from varying the action are the equations of motion of the gauge field excitations.
 The normalizable solutions to these equations of motion are the hadronic states of the theory.
 The masses of the excited states of the mesons are calculated immediately from these eigenvalue problems, and other factors including decay constants and form factors can be calculated as well.
 
 The backgrounds of these bottom-up models are imposed by hand, and not dynamically generated from any equations of motion.
 They are not derived from string theory, nor is it likely that they could be somehow embedded within any such theory.
 Despite the \emph{ad hoc} nature of these models, the phenomenological results are often accurate to 10\% or better.
-Importantly, they also give insight into how to capture the major features of QCD, such as confinement and chiral symmetry breaking.
+Importantly, they also give insight into how to capture the major features of QCD, including confinement and chiral symmetry breaking.
 There are two major approaches to AdS/QCD, distinguished by the means used to break the conformal symmetry.
 
 \subsubsection{The Hard Wall}
 The simplest way to break the conformal symmetry of the gauge theory is to impose a hard cutoff in the conformal ($z$) dimension.
-The model was proposed by \cite{stephanov-katz-son} and further explored by \cite{DaRold:2005zs,DaRold:2005vr}
+This model was proposed by \cite{stephanov-katz-son} and further explored by \cite{DaRold:2005zs,DaRold:2005vr}
 These so-called hard-wall AdS/QCD models insert both a UV brane located at $z\rightarrow 0$ and an IR brane at 
 \be
 z_1 = \frac{1}{\Lambda_{QCD}}.
@@ -187,30 +188,30 @@ A common and simple choice for the dilaton's behavior is a power-law,
 \Phi = (\mu z)^\nu,
 \ee
 where $\mu$ introduces an energy scale into the model on the order of $\Lambda_{QCD}$.
-It was shown by Karch, \emph{et al} \cite{karch-katz-son-adsqcd} that a quadratic dilaton field
+It was shown by Karch, \emph{et al}, \cite{karch-katz-son-adsqcd} that a quadratic dilaton field
 \be
 \Phi \sim z^2
 \ee
 yields meson spectra with the desired $m_n^2 \sim n$ behavior.
-Because these linear Regge trajectories apply only when $n$ becomes large, the power-law behavior is necessary strictly when $z$ becomes large.
+Because these linear Regge trajectories apply only when $n$ becomes large, the power-law behavior is only necessary when $z$ becomes large.
 Improved predictions for the lower meson states can be obtained by modifying the UV behavior of the dilaton field.
 Such modifications to this model were explored in \cite{gherghetta-kelley}.
-The details of past work on soft-wall models will be explored further in Chapter \ref{sec:Soft-Wall-Model}.
+The details of past work on soft-wall models is explored further in Chapter \ref{sec:Soft-Wall-Model}.
 
 \section{Dynamical AdS/QCD}
 The early AdS/QCD models rely on parameterizations for the background fields such as the dilaton.
 A power law is the simplest choice for the dilaton's behavior, and was suggested in \cite{karch-katz-son-adsqcd}.
-Later models including \cite{gherghetta-kelley} improved phenomenology by modifying the dilaton in the UV limit.
+Later models with improved phenomenology modified the dilaton in the UV limit \cite{gherghetta-kelley}.
 However, the models rely on \emph{ad hoc} choices for the parameterization of the background fields and do not examine the dynamics of these fields.
 
 So-called dynamical AdS/QCD models attempt a more rigorous examination of the vacuum dynamics of the dual model, as an attempt to remedy some of the shortcomings of the bottom-up approach discussed above \cite{Batell2008,Li:2013xpa,Li2013,DePaula2009,DePaula2010,Wang2012,Li2013a}. 
 These models examine terms in the Lagrangian involving the dilaton field as well as a tachyonic field that may be related to the chiral symmetry breaking of the model.
-Previous work examines the construction of the potential terms in the Lagrangian that will give rise to the desired behavior of the background fields.
-There has also been some work on examining meson spectra in dynamical AdS/QCD models, with some success.
+Previous work examines the construction of the potential terms in the Lagrangian that gives rise to the desired behavior of the background fields.
+There has also been work on examining meson spectra in dynamical AdS/QCD models, with some success.
 
 \section{Summary}
 In this chapter, we have presented the basics of AdS/CFT, including a conceptual motivation for the correspondence.
 We have also discussed the application of the correspondence to QCD, including the main research programs attempting to make this connection: the top-down and bottom-up approaches. 
-Finally, we have introduced two areas of research in bottom-up AdS/QCD: the soft-wall model and dynamical AdS/QCD. 
-These topics will be elaborated upon in the following chapters.
+Finally, we have introduced the soft-wall model and dynamical AdS/QCD, two areas of research in bottom-up AdS/QCD. 
+These topics is elaborated upon in the following chapters.
 

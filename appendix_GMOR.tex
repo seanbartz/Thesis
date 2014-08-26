@@ -2,7 +2,7 @@
 \label{app_GMOR}
 
  A quark-antiquark pair may spontaneously appear from the vacuum, in keeping with Heisenberg's Uncertainty Principle. 
- This pair will have zero total momentum and angular momentum, resulting that a left-handed quark will be paired with a right-handed antiquark, and vice versa, resulting in a nonzero net chirality.
+ This pair will have zero total momentum and angular momentum, with a left-handed quark paired with a right-handed antiquark, and vice versa, resulting in a nonzero net chirality.
  The QCD vacuum contains a condensate of these chiral quark-antiquark states, resulting in a nonzero vacuum expectation value for the chiral operator
  \be
  \langle\bar{q}q\rangle = \langle \bar{q}_L q_R +\bar{q}_R q_L \rangle \neq 0.
@@ -11,22 +11,22 @@
  
  We can explore the relationship of spontaneous chiral symmetry breaking to the pion by parameterizing the matrix element of the axial current
   \be
-  j^{\mu5a}(x)=\bar{q}\gamma^\mu\gamma5\tau^a q
+  j^{\mu a}_5(x)=\bar{q}\gamma^\mu\gamma_5 \tau^a q
   \ee
    between the vacuum and a pion \cite{Peskin:qft}
  \be
- \langle0|j^{\mu5a}(x)|\pi^b(p)\rangle = -i p^\mu f_\pi \delta^{ab} \EXP^{-ip\cdot x},
+ \langle0|j^{\mu a}_5(x)|\pi^b(p)\rangle = -i p^\mu f_\pi \delta^{ab} \EXP^{-ip\cdot x},
  \label{eq:pidecay}
  \ee
  where $f_\pi$ is known as the \emph{pion decay constant} and has dimensions of mass.
  Taking the derivative $\partial_\mu$ of the left-hand side of (\ref{eq:pidecay}) is equivalent to contracting the right-hand side with $p_\mu$, yielding
 \be
-\langle0|\partial_\mu j^{\mu5a}(x)|\pi^b(p)\rangle = -p_\mu(i p^\mu f_\pi \delta^{ab}\EXP^{-ip\cdot x}) = -ip^2  f_\pi \delta^{ab}\EXP^{-ip\cdot x}.
+\langle0|\partial_\mu j^{\mu a}_5(x)|\pi^b(p)\rangle = -p_\mu(i p^\mu f_\pi \delta^{ab}\EXP^{-ip\cdot x}) = -ip^2  f_\pi \delta^{ab}\EXP^{-ip\cdot x}.
 \label{eq:axialCurrent}
 \ee
 Taking $x=0$, and making the substitution $p^2 = m_\pi^2 $ for an on-shell pion, we obtain the so-called partially conserved axial current (PCAC) relation
 \be
-\partial_\mu j^{\mu5a} = f_\pi m_\pi^2 \pi^a.
+\partial_\mu j^{\mu a}_5 = f_\pi m_\pi^2 \pi^a.
 \label{eq:PCAC}
 \ee
 In the limit of zero quark mass, the axial current is exactly conserved, i.e. $\partial_\mu j^{\mu5}(x)=0$, implying that $m_\pi^2=0$, and the pion is massless, as required by Goldstone's theorem.
@@ -35,7 +35,7 @@ When the quark masses are not equal to zero, the chiral symmetry is said to be b
 This is because the QCD Lagrangian contains terms of the form $  m_q \bar{q}q = m_q (\bar{q}_L q_R + \bar{q}_R q_L)$, which requires a mixing of the chiral components.
 The axial field is no longer exactly conserved, becoming
 \be
-\partial_\mu j^{\mu5a}(x) = i\bar{q}\{M,\tau^a\}\gamma^5 q,
+\partial_\mu j^{\mu a}_5(x) = i\bar{q}\{M,\tau^a\}\gamma_5 q,
 \ee
 where M is the mass matrix
 \be
@@ -46,13 +46,13 @@ m_u&0 \\
 \ee
 Using this equation with \ref{eq:axialCurrent}, we find
 \be
- \langle0|\partial_\mu j^{\mu5a}(0)|\pi^v(p)\rangle = -p^2 f_\pi \delta^{ab} = \langle 0| i \bar{q}\{M,\tau^a\}\gamma^5 q | \pi^b(p)\rangle.
+ \langle0|\partial_\mu j^{\mu a}_5(0)|\pi^v(p)\rangle = -p^2 f_\pi \delta^{ab} = \langle 0| i \bar{q}\{M,\tau^a\}\gamma_5 q | \pi^b(p)\rangle.
  \ee
  
  We derive the Gell-Mann--Oakes--Renner relation using the argument presented in \cite{Greiner}.
  We calculate the quantity
  \be
- I=\int d^4 x e^{-ip\cdot x} \left \langle 0 \left | \mathrm{Tr} \left(\partial^\mu j^{5a}_\mu(0) \partial^\nu j^{5b}_\nu(x)\right)\right |0\right\rangle.
+ I=\int d^4 x e^{-ip\cdot x} \left \langle 0 \left | \mathrm{Tr} \left(\partial^\mu j^{a}_{5\mu}(0) \partial^\nu j^{b}_{5\nu}(x)\right)\right |0\right\rangle.
  \ee
  Using the PCAC relation (\ref{eq:PCAC}), we can substitute the pion operators and reduce the expression to the pion propagator,
  \ba
@@ -66,24 +66,24 @@ Using this equation with \ref{eq:axialCurrent}, we find
  \ee
  Alternatively, we can calculate the quantity $I$ by integrating by parts, 
  \ba
- I&=&\int d^4x \left(-\partial^\nu e^{-ip\cdot x} \right) \left \langle 0 \left | \mathrm{Tr} \left(\partial^\mu j_\mu^{5a}(0) j_\nu ^{5b}(x)\right)\right | 0 \right \rangle \nonumber \\
- &-&\int d^4x \, e^{-ip\cdot x} \big \langle 0 \big | \big ( \partial^\nu \Theta(t) j_\nu^{5b}(x)\partial^\mu j_\mu^{5a} (0) \nonumber \\
- &+& \partial^\nu \Theta(-t) \partial^\mu j_\mu^{5a}(0) j_\nu^{5b} (x) \big) \big | 0 \big \rangle,
+ I&=&\int d^4x \left(-\partial^\nu e^{-ip\cdot x} \right) \left \langle 0 \left | \mathrm{Tr} \left(\partial^\mu j_{5\mu}^{a}(0) j_{5\nu} ^{b}(x)\right)\right | 0 \right \rangle \nonumber \\
+ &-&\int d^4x \, e^{-ip\cdot x} \big \langle 0 \big | \big ( \partial^\nu \Theta(t) j_{5\nu}^{b}(x)\partial^\mu j_{5\mu}^{a} (0) \nonumber \\
+ &+& \partial^\nu \Theta(-t) \partial^\mu j_{5\mu}^{a}(0) j_{5\nu}^{b} (x) \big) \big | 0 \big \rangle,
  \ea
  where $\Theta$ is the Heaviside step function.
  In the limit $p\rightarrow 0$, the first term vanishes.
  We can write the second and third terms as a commutator, and the Heaviside function becomes a Dirac delta,
  \be
- I = \int d^4 x \, \delta(t) \left \langle0\left | \left[ j^{5b}_0(x),\partial^\mu j_\mu^{5a}\right ] \right | 0  \right\rangle.
+ I = \int d^4 x \, \delta(t) \left \langle0\left | \left[ j^{b}_{5t}(x),\partial^\mu j_\mu^{5a}\right ] \right | 0  \right\rangle.
  \ee
  Integrating over the delta function, we obtain
  \be
- I=\int d^3x \, \left \langle 0 \left | \left [ j_0^{5b}(0,\vec{x}),\partial^0 j_0^{5a}(0,0) \right ]  \right | 0 \right \rangle.
+ I=\int d^3x \, \left \langle 0 \left | \left [ j_{5t}^{b}(0,\vec{x}),\partial^t j_{5t}^{a}(0,0) \right ]  \right | 0 \right \rangle.
  \ee
  
- Because the axial current $j_0^{5a}$ is not explicitly time-dependent, the time derivative can be re-written as a commutator with the Hamiltonian,
+ Because the axial current $j_{5t}^{a}$ is not explicitly time-dependent, the time derivative can be re-written as a commutator with the Hamiltonian,
  \be
- I = i \int d^3x \, \left \langle 0 \left | \left [ j_0^{5b}(0,\vec{x}), [j_0^{5a}(0,0),H(0) ] \right] \right | 0 \right \rangle .
+ I = i \int d^3x \, \left \langle 0 \left | \left [ j_{5t}^{b}(0,\vec{x}), [j_{5t}^{a}(0,0),H(0) ] \right] \right | 0 \right \rangle .
  \ee
 Using the mass term from the Hamiltonian,
 \be

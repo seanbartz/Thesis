@@ -10,22 +10,22 @@ In this chapter, we expand upon the dynamical models of AdS/QCD introduced in Ch
 We pay particular attention to developing a model with the correct form of chiral symmetry breaking, as exemplified by the mass splitting between the axial-vector and vector meson sectors.
 To this end, we introduce a field that has not been included in the models presented so far -- the glueball field. 
 This field has fluctuations whose mass eigenvalues can be calculated, as well as a condensate that must be included in the analysis of the background fields. 
-We will show that this additional background field allows the freedom to separate the parameter setting the overall mass scale of the meson spectra from the parameter controlling the axial-vector mass spectrum.
+We show that this additional background field allows the freedom to separate the parameter setting the overall mass scale of the meson spectra from the parameter controlling the axial-vector mass spectrum.
 
-In contrast to the dynamical models in Chapter \ref{ch:dynamical}, we will not separate the action into gravitational and matter sectors. 
-Rather, we will place all of the fields of the model in the bulk,
+In contrast to the dynamical models in Chapter \ref{ch:dynamical}, we do not separate the action into gravitational and matter sectors. 
+Rather, we place all of the fields of the model in the bulk,
 \be
-\cS = \int d^4x e^{-2\Phi} \left( \cL_{grav} + \cL_{meson} \right) .
+\cS = \int d^5 x e^{-2\Phi} \left( \cL_{grav} + \cL_{meson} \right) .
 \ee
-This is in keeping with the original AdS/QCD models \cite{stephanov-katz-son,karch-katz-son-adsqcd}, which placed the meson fields in the bulk.
-It is possible that one setup or the other may be easier to embed in string theory, but without such an argument, the choice is motivated by phenomenology. 
+This choice is in keeping with the original AdS/QCD models \cite{stephanov-katz-son,karch-katz-son-adsqcd}, which placed the meson fields in the bulk.
+It is possible that one setup or the other may be more easily embedded in string theory, but without such an argument, the choice is motivated by phenomenology. 
 This model allows for good phenomenological results while also allowing the metric to remain purely anti-de Sitter.
 
 In this chapter, we derive the equations of motion for this three-field model.
 We construct a potential for the background fields that accounts for their asymptotic behavior. 
 Using this potential, we parameterize solutions to the background fields that numerically solve the background equations.
 There is an additional term in the potential that is determined numerically and fit as a function of the dilaton.
-In Chapter \ref{ch:meson_spectra}, we will calculate the meson spectra that result from this model.
+In Chapter \ref{ch:meson_spectra}, we calculate the meson spectra that result from this model.
 
 \section{Review and Motivation}
 \label{secReview}
@@ -72,12 +72,13 @@ One of the equations of motion is independent of the choice of potential,
 \chidot^2  = \frac{\rt6}{z^2} \Dz(z^2\phidot) \, . 
 \label{twofield}
 \ee
-To obtain linear confinement, the dilaton should have quadratic behavior in the IR limit, $\phi(z)=\lambda z^2$.
+To obtain linear confinement, the string-frame dilaton should have quadratic behavior in the IR limit, $\Phi(z)=\lambda z^2$.
+Using the re-scaling relation yields the IR behavior for the Einstein-frame dilaton, $\phi(z)=\sqrt{8/3} \lambda z^2$.
 The chiral field should have linear behavior in the IR, $\chi(z)=A z$, where $A$ sets the mass splitting between the axial-vector and vector mesons for large radial quantum numbers $n$. 
 This constant mass-splitting at large $n$ occurs because of the non-restoration of chiral symmetry \cite{Shifman-2008}.
 Inserting this into (\ref{twofield}), we find that the chiral field behaves as
 \be
-\chi(z)=6^{3/4}\sqrt{\lambda}z \, ,
+\chi(z)=2\sqrt{6 \lambda}z \, ,
 \ee
 which removes one of the independent parameters of the model in \cite{gherghetta-kelley}. 
 Using the phenomenological value of $\lambda$, which determines the slope of the radial Regge trajectories, we find a mass splitting that is much too large.
@@ -143,33 +144,33 @@ U=\thalf \rt6 z^2 \phiddot - \tthalf (z\phidot)^2 - 3 \rt6 z\phidot
 z^2\Gddot -3z\Gdot \left(1+\frac{z\phidot}{\rt6} \right) \, .
 \label{G}
 \ee
-We assume that the potential has no explicit dependence on the coordinate $z$,  so the equations \ref{phi}-\ref{G} are not independent, and we can eliminate one. 
+We assume that the potential has no explicit dependence on the coordinate $z$,  so the equations (\ref{phi}-\ref{G}) are not independent, and we can eliminate one. 
 
 %%%%%%%%%%%%%%%%%%%%%
 \subsection{Infrared Limit}
 
 The requirement of linear confinement requires a solution in the large $z$ limit of the  form
 \ba
-\phi &=& \lambda z^2 \, , \\
+\phi &=& \sqrt{8/3} \lambda z^2 \, , \\
 \chi &=& Az \, , \\
 G &=& B z \, .
 \label{Lz}
 \ea
 Substitution into (\ref{C}) gives
 \be
-A^2 + B^2 = 6\rt6 \lambda \, .
+A^2 + B^2 = 48 \lambda \, .
 \label{Clarge}
 \ee
 The parameter $\lambda$ is fixed by the slope of the linear trajectory and $A$ is fixed by the axial-vector -- vector mass difference.  
 It is useful to write these as
 \bd
-A = 6^{3/4} \sqrt{\lambda} \cos\theta \, ,
+A = 2 \sqrt{6\lambda} \cos\theta \, ,
 \ed
 \be
-B = 6^{3/4} \sqrt{\lambda} \sin\theta \, ,
+B = 2 \sqrt{6\lambda} \sin\theta \, ,
 \ee
 where $\theta$ now becomes the parameter controlling the axial-vector -- vector mass splitting.
-Inserting (\ref{Lz}) into (\ref{U}-\ref{G}) suggests the following terms in our ansatz for the potential
+Inserting (\ref{Lz}) into (\ref{U}-\ref{G}) suggests the following terms in our \emph{ansatz} for the potential
 \be
 U =  a_1 \phi \chi^2 + a_2 \phi G^2 + a_3 \chi^4 + a_4 G^4 + a_5 \chi^2 G^2 
 + a_6 G^2 \tanh(g\phi) \, .
@@ -177,7 +178,7 @@ U =  a_1 \phi \chi^2 + a_2 \phi G^2 + a_3 \chi^4 + a_4 G^4 + a_5 \chi^2 G^2
 We see that there must be a $G^2$ term in the IR limit, but this is forbidden in the weak-field limit because the glueball condensate field is massless. 
 To circumvent this, we propose the term $G^2 \tanh(g\phi)$ with $g>0$.  
 In the weak field limit this goes to $g\phi G^2$, which is acceptable.  
-The $\tanh$ is suggested by \ref{transform}, and it provides a rapid exponential transition from the weak field to the strong field limits that is supported by phenomenology.
+The hyperbolic tangent term is suggested by (\ref{transform}), and it provides a rapid exponential transition from the weak field to the strong field limits that is supported by phenomenology.
 By substitution one finds the following constraints on the parameters:
 \bd
 U \rightarrow 6 + a_0 + 6\rt6 \left( \cos^2 \theta \, a_1 + \sin^2 \theta \, a_2 \right)
@@ -198,7 +199,7 @@ U \rightarrow 6 + a_0 + 6\rt6 \left( \cos^2 \theta \, a_1 + \sin^2 \theta \, a_2
 \label{LargeZ2}
 \ee
 We have chosen to exclude (\ref{phi}) because it is not independent. 
-The parameter $a_6$ is determined, and the others will be determined by an examination of the UV limit.
+The parameter $a_6$ is determined, and the others are determined by an examination of the UV limit.
 
 %%%%%%%%%%%%%%%%%%%%%
 \subsection{Ultraviolet Limit}
@@ -342,7 +343,7 @@ We use equations (\ref{C}, \ref{chi}, \ref{G}), which allows for an additional t
 \be
 \frac{\partial }{\partial \chi} \Delta U = \frac{\partial }{\partial G}\Delta U = 0 \, ,
 \ee
-which will be determined from the numerical solution.
+which is determined from the numerical solution.
 
 The differential equations represent a stiff system, and treatment of the problem as an initial value problem leads to numerical instabilities. 
 We treat it instead as a boundary value problem, using Dirichlet boundary conditions at both boundaries. 
@@ -366,12 +367,12 @@ As an alternative to direct solution, we parameterize the fields as follows:
 Here $f(z)$ is some function that transitions smoothly from 1 at small values of $z$ to 0 at large $z$, while $\psi(z)_{xy}$ represents the known UV and IR limits of the fields $\phi, \chi,$ and $G$. 
 The switching functions need not be the same for each field. We choose 
 \ba
-f_\phi(z)&=&e^{-(\beta_1z)^{10}} \, , \\ \label{param1}
-f_\chi(z)&=&e^{-(\beta_2z)^4} \, , \\  \label{param2}
+f_\phi(z)&=&e^{-(\beta_1z)^{10}} \, ,  \label{param1} \\
+f_\chi(z)&=&e^{-(\beta_2z)^4} \, ,   \label{param2} \\
 f_G(z)&=&e^{-(\beta_3z)^5} \, . \label{param3}
 \ea
 The powers of the exponential are chosen to be greater than the known power-law behavior of the fields in the UV limit so as to not interfere with this behavior. 
-The $\beta_i$ will be determined by numerical fitting.
+The $\beta_i$ are determined by numerical fitting.
 
 The chiral condensate $\Sigma$ is set using the Gell-Mann--Oakes--Renner relation:
 \be
@@ -382,7 +383,7 @@ Using $m_\pi = 139.6$ MeV, $f_\pi = 92 $ MeV, and $m_u+m_d = 7.0 $ MeV yields a 
 In all, we have eight parameters to be determined numerically. 
 The first constraint is to obtain the best global visual fit to the vector and axial-vector meson spectra.   
 We do not simply do a chi-squared fitting to the experimental data because the measurement error for the ground state $\rho$ meson is so much smaller than for the others that this would effectively act as the only constraint. 
-Second, we seek to minimize the error in the finite-difference approximations to equations $\ref{C}, \ref{chi},$ and $\ref{G}$.  
+Second, we seek to minimize the error in the finite-difference approximations to equations ($\ref{C}), (\ref{chi}),$ and ($\ref{G}$).  
 This is done to an accuracy of one part in $10^4$. 
 
 Three of the parameters are most phenomenologically relevant: $\lambda,$ which controls the slope of the meson spectra in the large-$n$ limit; $\theta,$ which controls the mass splitting between the $a_1$ and $\rho$ mesons at large $n$, and $\beta_2$, which controls the location of the ``bend" in the $a_1$ spectrum.
@@ -412,7 +413,7 @@ The asymptotic power-law behavior of the fields is evident in the linear portion
 \clearpage
 
 \begin{figure}[ht]
-\center{\includegraphics[width=290pt]{dilaton.eps}}
+\center{\includegraphics[width=\textwidth]{dilaton.eps}}
 \caption{A plot of the dilaton field $\Phi$ generated by the parameterization (\ref{param1}).
 The UV and IR asymptotic behavior is apparent.
 The coordinate $x$ is a dimensionless re-scaling of the conformal coordinate, $x=\sqrt{\lambda}z$.}
@@ -420,7 +421,7 @@ The coordinate $x$ is a dimensionless re-scaling of the conformal coordinate, $x
 \end{figure}
 \nopagebreak
 \begin{figure}[*hb]
-\center{\includegraphics[width=290pt]{chiral.eps}}
+\center{\includegraphics[width=\textwidth]{chiral.eps}}
 \caption{A plot of the chiral field $\chi$ generated by the parameterization (\ref{param2}). 
 The UV and IR asymptotic behavior is apparent, with a rapid transition between them.
 The coordinate $x$ is a dimensionless re-scaling of the conformal coordinate, $x=\sqrt{\lambda}z$.}
@@ -430,7 +431,7 @@ The coordinate $x$ is a dimensionless re-scaling of the conformal coordinate, $x
 \clearpage
 
 \begin{figure}[ht]
-\center{\includegraphics[width=290pt]{glueball.eps}}
+\center{\includegraphics[width=\textwidth]{glueball.eps}}
 \caption{A plot of the glueball field $G$ generated by the parameterization (\ref{param3}).
 The UV and IR asymptotic behavior is apparent, with a rapid transition between them.
 The coordinate $x$ is a dimensionless re-scaling of the conformal coordinate, $x=\sqrt{\lambda}z$.}
@@ -438,7 +439,7 @@ The coordinate $x$ is a dimensionless re-scaling of the conformal coordinate, $x
 \end{figure}
 \nopagebreak
 \begin{figure}[hb]
-\center{\includegraphics[width=285pt]{deltaU.eps}}
+\center{\includegraphics[width=\textwidth]{deltaU.eps}}
 \caption{Plot of the ``extra" term in the potential, $\Delta U(\phi)$. The solid line represents the numerical result, while the dashed line is the fitting of (\ref{eqFit}) using the parameters of Table \ref{deltaUfit}.}
 \label{figdeltaU}
 \end{figure}
@@ -446,7 +447,7 @@ The coordinate $x$ is a dimensionless re-scaling of the conformal coordinate, $x
 \clearpage
 
 We now analyze the ``extra" term in the potential, $\Delta U$. 
-We obtain this term numerically by subtracting the right-hand side of \ref{U} from its left-hand side.
+We obtain this term numerically by subtracting the right-hand side of (\ref{U}) from its left-hand side.
 This term can be approximated numerically as a function of the dilaton field, 
 \be
 \Delta U\left(\phi\right) = \alpha_1 \phi^2 e^{-\left(\phi-\gamma_1\right)^2/\delta_1 } +   \alpha_2 \phi^2 e^{-\left(\phi-\gamma_2\right)^2/\delta_2 } \, .
@@ -487,6 +488,6 @@ Finally, terms can be added that do not affect the equations of motion at all, n
 \ee
 
 The background fields from this potential can be used to calculate mass spectra for the various light mesons.
-This work will be presented in the next chapter.
+This work is presented in the next chapter.
 
 

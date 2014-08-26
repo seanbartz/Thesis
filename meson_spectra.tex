@@ -1,30 +1,35 @@
 \chapter{Meson Spectra}
 \label{ch:meson_spectra}
-
+\begin{minipage}[r]{0.333\textwidth}
+ $ \left. \right.$
+\end{minipage}
+\begin{minipage}[c]{0.667\textwidth}
 \begin{flushright}
-If it disagrees with experiment it is wrong. In that simple statement\\
-is the key to science. It does not make any difference how beautiful\\
-your guess is. It does not make any difference how smart you are, who\\
-made the guess, or what his name is Ð if it disagrees with experiment\\
-it is wrong. That is all there is to it. -- Richard Feynman
+If it disagrees with experiment it is wrong. In that simple statement
+is the key to science. It does not make any difference how beautiful
+your guess is. It does not make any difference how smart you are, who
+made the guess, or what his name is -- if it disagrees with experiment
+it is wrong. That is all there is to it. \\ Richard Feynman
 \end{flushright}
+\end{minipage}
+\vspace*{\baselineskip}
 
 In this chapter, we calculate the meson spectra for the vector, axial-vector, and pseudoscalar mesons from the dynamical three-field model of AdS/QCD introduced in the preceding chapter.
 The analysis is much the same as that presented in Chapter \ref{sec:Soft-Wall-Model}.
 
 To calculate the spectra of the radial excitations of the mesons, we examine the relevant terms from the string frame action (\ref{eqStringAction}),
 \ba
-\cS_{{\rm meson}}=-\frac{1}{16\pi G_5} \int d^5x \sqrt{-g} e^{-2\Phi}\mathrm{Tr}\left[ \left|DX\right|^2+V_m(\Phi,X^2,\mathcal{G}) \right. \nonumber\\
-\left.+\frac{1}{2g_5^2}\left(F_A^2 +F_V^2\right) \right] \, .
+\cS_{{\rm meson}}=-\frac{1}{16\pi G_5} \int d^5x \sqrt{-g} e^{-2\Phi}\mathrm{Tr}\Big[ \left|DX\right|^2+V_m(\Phi,X^2,\mathcal{G}) \nonumber\\
++\frac{1}{2g_5^2}\left(F_A^2 +F_V^2\right) \Big] \, .
 \label{eqMesonL}
 \ea
 The $2 \times 2$ field $X$ contains the scalar and pseudoscalar fields $(S,\pi)$, as well as the VEV.
-We will use the exponential representation for the scalar field discussed in \cite{bartz-pions},
+We use the exponential representation for the scalar field discussed in \cite{bartz-pions},
 \be
 X_e = \left( S(x,z)+\frac{\chi(z)}{2}\right)I \, e^{2i\pi^a_e(x,z)t^a},
 \ee
 where $I$ is the $2\times2$ identity matrix.
-The scalar potential $V_m$ does not contribute to the equations of motion for the vector, axial-vector, or pseudoscalar mesons, although terms from the background potential $U(\phi,\chi, G)$ will be useful in the pseudoscalar analysis.
+The scalar potential $V_m$ does not contribute to the equations of motion for the vector, axial-vector, or pseudoscalar mesons, although terms from the background potential $U(\phi,\chi, G)$ are useful in the pseudoscalar analysis.
 
 \section{Vector Sector}
 We find the equations of motion for the various meson fields by varying the meson action and performing a Kaluza-Klein decomposition.
@@ -32,7 +37,7 @@ For the vector sector, the equation of motion takes the following form,
 \be
 -\partial_{z}^{2}V_{n}+\omega'\partial_{z}V_{n}=m_{V_{n}}^{2}V_{n},
 \ee
-where we have again defined $\omega \equiv \Phi(z)+\log z.$
+where we have  defined $\omega \equiv 2 \Phi(z)+\log z.$
 We can eliminate the first derivative of the field, bringing the equation of motion into Schr{\"o}dinger-like form, using the substitution 
 \be
 V_{n}(z)=e^{\omega/2}v_{n}(z).
@@ -45,8 +50,9 @@ These equations are analytically solvable in the IR limit, giving the same resul
 This model finds a better phenomenological fit than the results presented in \cite{gherghetta-kelley}, particularly for the ground state $\rho$ meson, as shown in Figure \ref{figRho}. 
 
 \begin{figure}[htb]
-\center{\includegraphics[width=300pt]{rho.eps}}
-\caption{Comparison of the predicted mass eigenvalues for the vector sector with the experimental $\rho$ meson spectrum \cite{PDG}.}
+\center{\includegraphics[width=\textwidth]{rho.eps}}
+\caption{Comparison of the predicted mass eigenvalues for the vector sector with the experimental $\rho$ meson spectrum.
+The included resonances are based upon the review \cite{Bugg} with the $n=2$ resonance as suggested by \cite{Bertin}.}
 \label{figRho}
 \end{figure}
 
@@ -66,12 +72,13 @@ n & $\rho$ experimental (MeV) & $\rho$ model \\
 7 &  2265 $\pm$  40& 2276 \\ 
 \hline
 \end{tabular}
-\caption{The experimental \cite{PDG} and predicted values for the masses of the vector mesons.}
+\caption{Comparison of the predicted mass eigenvalues for the vector sector with the experimental $\rho$ meson spectrum.
+The included resonances are based upon the review \cite{Bugg} with the $n=2$ resonance as suggested by \cite{Bertin}.}
 \label{tabRho}
 \end{table}
 
 \section{Axial-Vector Sector}
-Varying the action with respect to the axial vector field and performing a KK decomposition,the equation of motion becomes
+Varying the action with respect to the axial vector field and performing a Kaluza-Klein decomposition,the equation of motion becomes
 \be
 -\partial_z^2 A_{n}+\omega'\partial_zA_{n} +\frac{g_5^2 \chi(z)^2}{z^2}= m_{A_{n}}^{2}A_{n}.
 \ee
@@ -89,7 +96,7 @@ The model fits the experimental data well, with the  large-n states following th
 
 
 \begin{figure}[htb]
-\center{\includegraphics[width=300pt]{axial.eps}}
+\center{\includegraphics[width=\textwidth]{axial.eps}}
 \caption{Comparison of the predicted mass eigenvalues for the axial-vector sector with the experimental $a_1$ meson spectrum \cite{PDG}.}
 \label{fig:axial3}
 \end{figure}
@@ -178,7 +185,7 @@ We include this state in the figure and in the table, but it should be recognize
 
 
 \begin{figure}[htb]
-\center{\includegraphics[width=300pt]{pion_unconfirmed.eps}}
+\center{\includegraphics[width=\textwidth]{pion_unconfirmed.eps}}
 \caption{Comparison of the predicted mass eigenvalues for the pseudoscalar sector with the experimental $\pi$ meson spectrum \cite{PDG}.
   The states plotted here with $n=4$ and $n=6$ are identified as radial excitations of the pion only in the further states of the PDG.  
   The unconfirmed state X(2210), with unknown quantum numbers, is plotted here as the $n=5$ state of the pion.}
@@ -248,7 +255,7 @@ The terms of $\mathrm{Tr} V_m$  that are relevant for the analysis of the scalar
 Expanding and keeping only terms that are quadratic in the fields $S$ and $ H$, we obtain
 \ba
 \mathrm{Tr} V_m &\sim &\left(m_X^2 + 2 a_1 \phi + 12  a_3 \chi^2 +2 a_5 G^2\right)S^2 \nonumber \\
-&+& \left(2a_2 \phi +12 a_4 G^2 + 2a_5 \chi^2 + 2 \tanh(g\phi)\right)H^2 + 4 a_5 G\chi H S.
+&+& \left(2a_2 \phi +12 a_4 G^2 + 2a_5 \chi^2 + 2 a_6 \tanh(g\phi)\right)H^2 + 4 a_5 G\chi H S.
 \ea
 We can simplify the expression by collecting some of the terms and writing them as derivatives of $U$ with respect to the scalar and glueball fields,
 \be
@@ -257,42 +264,58 @@ We can simplify the expression by collecting some of the terms and writing them 
 \ee
 where the derivative terms are calculated to be
 \ba
-\frac{\partial^2 U}{\partial \chi^2} &=& 2a_1 \phi \chi + 4 a_3 \chi^3 +2a_5 \chi G^2,\\
-\frac{\partial^2 U}{\partial G^2} &=& 2a_2 \phi G +4 a_4 G^3 +2a_5 \chi^2 G+ 2a_6 G \tanh(g\phi).
+\frac{\partial^2 U}{\partial \chi^2} &=& 2a_1 \phi  + 12 a_3 \chi^2 +2a_5 G^2,\\
+\frac{\partial^2 U}{\partial G^2} &=& 2a_2 \phi  +12 a_4 G^2 +2a_5 \chi^2 + 2a_6  \tanh(g\phi).
 \ea
-We see the advantage of solving the background equations (\ref{C} - \ref{G}) in such a way that $\Delta U$ is a function of the dilaton only, as (\ref{eq:traceV}) does not depend on $\Delta U$, and the equations of motion will not depend upon this numerically-derived term.
+We see the advantage of solving the background equations (\ref{C} - \ref{G}) in such a way that $\Delta U$ is a function of the dilaton only, as (\ref{eq:traceV}) does not depend on $\Delta U$, and the equations of motion do not depend upon this numerically-derived term.
 
 The equations of motion are calculated in the usual way.
-Varying with respect to $S$ gives the equation of motion
-\be 
-\partial_z(z^{-3}e^{-2\Phi}S')-z^{-5}e^{-2\Phi}\left(m_X^2 + \frac{\partial^2 U}{\partial \chi^2}\right)S -4a_5 z^5 e^{-2\Phi} G\chi H = -z^3 e^{-3} m_S^2 S.
-\ee
-Varying with respect to $H$ yields the equation of motion
+Varying with respect to $S$ and performing a Kaluza-Klein decomposition gives the equation of motion
+\ba 
+\partial_z(z^{-3}e^{-2\Phi}S_n')-z^{-5}e^{-2\Phi}\left(m_X^2 + \frac{\partial^2 U}{\partial \chi^2}\right)S_n -4a_5 z^{-5} e^{-2\Phi} G\chi H_n\nonumber \\
+ = -z^3 e^{-3} m_S^2 S_n.
+\ea
+Varying with respect to $H$ and performing a Kaluza-Klein decomposition yields the equation of motion
 \be
-\partial_z(z^{-3}e^{-2\Phi}H')-z^{-5}e^{-2\Phi} \frac{\partial^2 U}{\partial G^2}H -4a_5 z^5 e^{-2\Phi} G\chi S = -z^3 e^{-3} m_S^2 H.
+\partial_z(z^{-3}e^{-2\Phi}H_n')-z^{-5}e^{-2\Phi} \frac{\partial^2 U}{\partial G^2}H_n -4a_5 z^{-5} e^{-2\Phi} G\chi S_n  = -z^3 e^{-3} m_H^2 H_n.
 \ee
 The equations of motion are coupled by the mixing term $a_5 X^2 \mathcal{G}^2$ in the scalar potential.
 If the coefficient $a_5$ were set to zero, the equations of motion for the scalar and glueball fluctuations would decouple completely.
 
 To put the equations of motion in Schr{\"o}dinger form, we make the substitutions 
 \ba
-S&\rightarrow&e^{\omega_s/2}S ,\\ 
-H&\rightarrow&e^{\omega_s/2}H,
+S_n&\rightarrow&e^{\omega_s/2}S_n ,\\ 
+H_n&\rightarrow&e^{\omega_s/2}H_n,
 \ea
 where $\omega_s=2\Phi+3\log z$.
 This reduces the equations of motion to
 \ba
--S''+\left(\oneqt \omega_s'^2-\thalf \omega_s''+m_X^2 -\frac{\partial^2 U}{\partial\chi^2}\right)S +4a_5 G\chi H &=& m_S^2 S , \\
--H'' +\left(\oneqt \omega_s'^2-\thalf \omega_s'' -\frac{\partial^2 U}{\partial G^2}\right)H +4a_5 G\chi S &=& m_H^2 H .
+-S_n''+\left(\oneqt \omega_s'^2-\thalf \omega_s''+\frac{m_X^2}{z^2} +\frac{1}{z^2} \frac{\partial^2 U}{\partial\chi^2}\right)S_n +\frac{4a_5}{z^2} G\chi H_n &=& m_S^2 S_n , \\
+-H_n'' +\left(\oneqt \omega_s'^2-\thalf \omega_s'' + \frac{1}{z^2}\frac{\partial^2 U}{\partial G^2}\right)H_n +\frac{4a_5}{z^2} G\chi S_n &=& m_H^2 H_n  .
 \ea
 These equations must be solved simultaneously for the eigenvalues $m_S^2$, $m_H^2$.
-This numerical analysis will be completed in a later work.
 
+We can analyze the behavior of this system in the IR limit, where the behavior is simpler.
+Using the IR limit of the background fields in dimensionless variable $x\equiv \sqrt{\lambda}z$, 
+\ba
+ \Phi & =& x^2, \\
+ \chi &=& 2\rt6 x \cos{\theta} , \\
+ G &=& 2 \rt6 x \sin{\theta} ,
+ \ea
+ the equations of motion become
+\ba
+-S'' +\left(x^2+2+\rt6 \left(1-48a_3 \cos^2 \theta \right)\right) S + \gamma H &=& m_S^2 S \label{eq:S1},\\
+-H'' +\left(x^2+2 + \rt6 \left(1-48a_4 \sin^2 \theta \right) \right) H +\gamma S &=& m_H^2 H \label{eq:H1},
+\ea
+where $\gamma = 96 a_5  \cos{\theta} \sin{\theta}$. 
+Solving these equations of motion in the large-$x$ limit is more difficult than the analysis of the pseudoscalar sector performed in Section \ref{sub:piEigen} because in this instance we are solving for two eigenvalues, $m_S^2$ and $m_H^2$.
+We cannot assume that one field is a constant multiple of the other, e.g. $H_n = c_n S_n$, because there are not enough equations to solve for $c_n$ and both eigenvalues.
+Further analytic analysis of the large-$n$ limit of the scalar and glueball sectors will be performed in a later work, along with the full numerical analysis of these sectors.
 
 \section{Summary}
 In this chapter, we calculated the meson spectra for the vector, axial-vector, and pseudoscalar mesons from the dynamical three-field AdS/QCD model discussed in Chapter \ref{ch:dynamical_threefield}. 
 Portions of the vector and axial-vector spectra were used as inputs for the parameters used in the determination of the potential.
-While acknowledging theses inputs, the overall goodness of fit is notable.
+While acknowledging these inputs, the overall goodness of fit is notable.
 
 The pseudoscalar spectrum was not used to set any of the parameters in the model, so it can be regarded as a true prediction. 
 The overall fit to the pion spectrum is quite good.

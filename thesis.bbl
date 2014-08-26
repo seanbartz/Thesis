@@ -1,36 +1,36 @@
 \providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
 
-\bibitem{PDG}
-J.~Beringer, \emph{et al},
-  ``{Review of Particle Physics},''
-  \href{%http://dx.doi.org/10.1103/PhysRevD.86.010001}{{\em Physical Review D}
-  {\bfseries 86} no.~1, (July, 2012) 010001}.
-  %%\url{%http://link.aps.org/doi/10.1103/PhysRevD.86.010001}.
-
-\bibitem{Hyakutake2013}
-Y.~Hyakutake, ``{Quantum Near Horizon Geometry of Black 0-Brane},''
-  \href{%http://arxiv.org/abs/1311.7526}{{\ttfamily arXiv:1311.7526}}.
-  %%\url{%http://arxiv.org/abs/1311.7526}.
-
-\bibitem{Hanada2013}
-M.~Hanada, Y.~Hyakutake, G.~Ishiki, and J.~Nishimura, ``{Holographic
-  description of quantum black hole on a computer},''
-  \href{%http://arxiv.org/abs/1311.5607}{{\ttfamily arXiv:1311.5607}}.
-  %%\url{%http://arxiv.org/abs/1311.5607}.
-
 \bibitem{bartz-pions}
 T.~M. Kelley, S.~P. Bartz, and J.~I. Kapusta, ``{Pseudoscalar mass spectrum in
   a soft-wall model of AdS/QCD},''
   \href{%http://dx.doi.org/10.1103/PhysRevD.83.016002}{{\em Physical Review D}
   {\bfseries 83} no.~1, (Jan., 2011) 016002},
   \href{%http://arxiv.org/abs/1009.3009}{{\ttfamily arXiv:1009.3009}}.
-  %%\url{%http://arxiv.org/abs/1009.3009
- % %http://link.aps.org/doi/10.1103/PhysRevD.83.016002}.
+  %\url{%http://arxiv.org/abs/1009.3009
+  %http://link.aps.org/doi/10.1103/PhysRevD.83.016002}.
 
 \bibitem{Bartz2014}
 S.~P. Bartz and J.~I. Kapusta, ``{A Dynamical Three-Field AdS/QCD Model},''
   \href{%http://arxiv.org/abs/1406.3859}{{\ttfamily arXiv:1406.3859}}.
   %\url{%http://arxiv.org/abs/1406.3859}.
+
+\bibitem{PDG}
+J.~Beringer, \emph{ et al.},
+  ``{Review of Particle Physics},''
+  \href{%http://dx.doi.org/10.1103/PhysRevD.86.010001}{{\em Physical Review D}
+  {\bfseries 86} no.~1, (July, 2012) 010001}.
+  %\url{%http://link.aps.org/doi/10.1103/PhysRevD.86.010001}.
+
+\bibitem{Hyakutake2013}
+Y.~Hyakutake, ``{Quantum Near Horizon Geometry of Black 0-Brane},''
+  \href{%http://arxiv.org/abs/1311.7526}{{\ttfamily arXiv:1311.7526}}.
+  %\url{%http://arxiv.org/abs/1311.7526}.
+
+\bibitem{Hanada2013}
+M.~Hanada, Y.~Hyakutake, G.~Ishiki, and J.~Nishimura, ``{Holographic
+  description of quantum black hole on a computer},''
+  \href{%http://arxiv.org/abs/1311.5607}{{\ttfamily arXiv:1311.5607}}.
+  %\url{%http://arxiv.org/abs/1311.5607}.
 
 \bibitem{Ramallo2013}
 A.~V. Ramallo, ``{Introduction to the AdS/CFT correspondence},''
@@ -38,7 +38,7 @@ A.~V. Ramallo, ``{Introduction to the AdS/CFT correspondence},''
   %\url{%http://arxiv.org/abs/1310.4319}.
 
 \bibitem{Zaffaroni2000}
-a.~Zaffaroni, ``{Introduction to the AdS-CFT correspondence},''
+A.~Zaffaroni, ``{Introduction to the AdS-CFT correspondence},''
   \href{%http://dx.doi.org/10.1088/0264-9381/17/17/306}{{\em Classical and
   Quantum Gravity} {\bfseries 17} no.~17, (Sept., 2000) 3571--3597}.
   %\url{%http://stacks.iop.org/0264-9381/17/i=17/a=306?key=crossref.8da56e795bf0f9fe11838da874573d05}.
@@ -390,13 +390,6 @@ M.~Gell-Mann, R.~Oakes, and B.~Renner, ``{Behavior of Current Divergences under
   {\bfseries 175} no.~5, (Nov., 1968) 2195--2199}.
   %\url{%http://link.aps.org/doi/10.1103/PhysRev.175.2195}.
 
-\bibitem{Peskin:qft}
-D.~{Peskin, M. and Schroeder}, ``{An Introduction to Quantum Field Theory},''.
-
-\bibitem{Greiner}
-W.~Greiner, S.~Schramm, and E.~Stein, {\em {Quantum Chromodynamics}}.
-\newblock Springer, Berlin, 3rd~ed., 2007.
-
 \bibitem{stringnutshell}
 E.~Kiritsis, {\em {String Theory in a Nutshell}}.
 \newblock Princeton University Press, 2011.
@@ -409,6 +402,10 @@ C.~Cs\'{a}ki and M.~Reece, ``{Toward a systematic holographic QCD: a braneless
   [hep-ph]}}. %\url{%http://xxx.lanl.gov/abs/hep-ph/0608266
   %http://arxiv.org/abs/hep-ph/0608266
   %http://stacks.iop.org/1126-6708/2007/i=05/a=062?key=crossref.6d40a68e55d3285a4275d6ec4d227d04}.
+
+\bibitem{carroll}
+S.~Carroll, {\em {Spacetime and Geometry}}.
+\newblock Addison-Wesley, 2003.
 
 \bibitem{Springer2010}
 J.~I. Kapusta and T.~Springer, ``{Potentials for soft-wall AdS/QCD},''
@@ -440,7 +437,7 @@ U.~G\"{u}rsoy, E.~Kiritsis, L.~Mazzanti, and F.~Nitti, ``{Holography and
 \bibitem{Springer:thesis}
 T.~Springer, {\em {Hydrodynamics of strongly coupled non-conformal fluids from
   gauge/gravity duality}}.
-\newblock Ph.d. thesis, University of Minnesota, Aug., 2009.
+\newblock Ph.D. thesis, University of Minnesota, Aug., 2009.
 \newblock \href{%http://arxiv.org/abs/0908.1587}{{\ttfamily arXiv:0908.1587}}.
 \newblock %\url{%http://arxiv.org/abs/0908.1587}.
 
@@ -461,16 +458,22 @@ M.~Shifman and A.~Vainshtein, ``{Highly excited mesons, linear Regge
   %\url{%http://dx.doi.org/10.1103/PhysRevD.77.034002
   %http://link.aps.org/doi/10.1103/PhysRevD.77.034002
   %http://arxiv.org/abs/0710.0863}.
+  
+  \bibitem{Bugg}
+  D. Bugg, Physics Reports {\bf 397}, 257 (2004).
+  
+  \bibitem{Bertin} 
+  A. Bertin \emph{et al.} [OBELIX Colaboration], Phys. Lett. B {\bf 414}, 220 (1997).
 
 \bibitem{qgp}
-J.~I. Kapusta, B.~M$\backslash$\{"u\}ller, and J.~Rafelski, ``{Quark-Gluon
-  Plasma: Theoretical Foundations},''.
+J.~I. Kapusta, B.~M{\"u}ller, and J.~Rafelski, ``{Quark-Gluon
+  Plasma: Theoretical Foundations}.''
 
 \bibitem{qgp3}
-R.~Hwa and X.-N. Wang, ``{Quark-Gluon Plasma 3},''.
+R.~Hwa and X.-N. Wang, ``{Quark-Gluon Plasma 3}.''
 
 \bibitem{phases}
-B.~Kogut and M.~A. Stephanov, ``{The Phases of Quantum Chromodynamics},''.
+B.~Kogut and M.~A. Stephanov, ``{The Phases of Quantum Chromodynamics}.''
 
 \bibitem{Kovtun2005}
 P.~Kovtun, D.~Son, and A.~Starinets, ``{Viscosity in Strongly Interacting
@@ -507,8 +510,11 @@ C.~Bayona, H.~Boschi-Filho, N.~Braga, and L.~Zayas, ``{On a holographic model
   %\url{%http://arxiv.org/abs/0705.1529
   %http://link.aps.org/doi/10.1103/PhysRevD.77.046002}.
 
-\bibitem{Carroll}
-S.~Carroll, {\em {Spacetime and Geometry}}.
-\newblock Addison-Wesley, 2003.
+\bibitem{Peskin:qft}
+D.~{Peskin, M. and Schroeder}, ``{An Introduction to Quantum Field Theory}.''
+
+\bibitem{Greiner}
+W.~Greiner, S.~Schramm, and E.~Stein, {\em {Quantum Chromodynamics}}.
+\newblock Springer, Berlin, 3rd~ed., 2007.
 
 \end{thebibliography}\endgroup
